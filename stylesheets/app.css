@@ -6,10 +6,11 @@ body{
     padding:0;
     margin: 0;
     font-family: 'Alef', sans-serif;
+    background: linear-gradient(to right, #fdc830, #f37335);
 }
 
 #main_navbar{
-    min-height: 100px;
+    min-height: 40px;
 }
 
 #opening_hours{
@@ -32,6 +33,13 @@ flex-direction: row-reverse;
 
 #my_burger{
     border: none;
+    
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .jumbotron{
@@ -43,9 +51,14 @@ flex-direction: row-reverse;
     
 }
 
+
 hr{
     color: rgba(246, 81, 61, 0.5);	
 }
+
+.slick-slide {
+    margin: 0 10px;
+  }
 
 .owl-prev{
     left: -30px;
@@ -67,3 +80,12 @@ hr{
 .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent;
 }
+
+#carousel div{
+    width: 100%;
+}
+.slick img{
+    width: 100%;
+    height: auto;
+}
+       
