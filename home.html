@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="he">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,15 +25,16 @@
     <body>
 
         <nav id="main_navbar" class="navbar navbar-expand-lg mb-4 py-0 navbar-light">
-            <a id="my_brand" class="navbar-brand" href="home.html">
-                <img src="/assets/nav_icon2.png" height="80" alt="CoolBrand">
+            <a id="my_brand" class="navbar-brand mr-0" href="home.html">
+                <img src="/assets/coffeeMug.png" height="70" alt="CoolBrand">
             </a>
+            
             <button id="my_burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav ml-auto text-right pr-3">
+                <ul class="nav navbar-nav pr-3">
                     <li><a class="nav-item nav-link my_nav" href="#">יד שניה</a></li>
                     <li><a class="nav-item nav-link my_nav" href="#">התפריט שלנו</a></li>
                     <li><a class="nav-item nav-link my_nav" href="#my_footer">כדאי לדעת</a></li>
@@ -45,23 +46,25 @@
         </nav>
 
         <div class="container">
-            
+            <!-- <div id="jumbo">
+                
+            </div> -->
             <div class="jumbotron">
             </div>
         </div>
         
         <div class="container-fluid px-0">
             <section id="our_story">
-                <div class="row align-items-center content">
-                    <div class="col-lg-6 order-1">
+                <div class="row align-items-center content justify-content-between">
+                    <div id="partner_pic" class="col-lg-4 order-1 order-lg-2">
                         <img id="partners" src="assets/home_pics/partners.jpg" class="img-fluid">
                     </div>
-                    <div class="col-lg-6 text-center order-2">
+                    <div id="oriTry" class="col-lg-7 text-center order-2 order-lg-1">
                         <h1 class="display-4">הסיפור שלנו</h1>
                         <hr>
                         <p class="lead">
-                            נוני ופורטונה היא חנות יד שניה ווינטג' שהיא גם בית קפה קטן ומלא אופי בפרדס חנה כרכור.
-אנחנו שלושה שותפים, רות, מורן ואוהד ויש ביננו שותפות מיוחדת במינה. שלושתנו אוהבים יד שניה, וינטג', שווקי פשפשים, אסתטיקה ואוכל טוב וכך יצרנו לנו מקום שאנחנו שמחים לקום אליו בכל בוקר מחדש. יצרנו לנו מרחב מהמם שכל אחד יכול להרגיש בו בנוח, לשכוח מהצרות ולהתפנק. מלבדנו תפגשו אצלנו גם את הצוות המדהים של העובדות הנפלאות שלנו.
+                            נוני ופורטונה היא חנות יד שניה ווינטג' שהיא גם בית קפה קטן ומלא אופי בפרדס חנה כרכור.<br>
+אנחנו שלושה שותפים, רות, מורן ואוהד ויש ביננו שותפות מיוחדת במינה.<br> שלושתנו אוהבים יד שניה, וינטג', שווקי פשפשים, אסתטיקה ואוכל טוב וכך יצרנו לנו מקום שאנחנו שמחים לקום אליו בכל בוקר מחדש. יצרנו לנו מרחב מהמם שכל אחד יכול להרגיש בו בנוח, לשכוח מהצרות ולהתפנק. מלבדנו תפגשו אצלנו גם את הצוות המדהים של העובדות הנפלאות שלנו.
 תוכלו למצוא במקום שלנו אוצרות, פרטי אספנות והמון פריטים שעושים שמח בלב. יש אצלנו חפצים, בגדי נשים, בגדי ילדים, צעצועים, פרטי עיצוב לבית, כלים, ספרים, תמונות, תכשיטים ובפורים גם חנות יד שניה מטריפה לתחפושות.
 
                         </p>
@@ -77,9 +80,7 @@
             <section id="carousel" style="margin-top: 100px;">
 
                 <div class="slick">
-                    <div>
-                        <img src="/assets/home_pics/partners.jpg">
-                    </div>
+
                     <div>
                         <img src="/assets/home_pics/DSC_0532.JPG">
                     </div>
@@ -106,19 +107,54 @@
         </div>
             
             <footer id="my_footer" class="mt-5">
-                <h3 id="opening_hours" class="text-center">שעות פתיחה</h3>
-                <div class="row justify-content-center align-items-center mt-4">
-                    <div class="col-3 text-center">
-                        <h3>ראשון ושני</h3>
+                <h3 id="opening_hours" class="text-center pt-3">שעות פתיחה</h3>
+                <div id="hours_row" class="row justify-content-center align-items-center mt-4">
+                    <div class="col-md-3 text-center">
+                        <h3><em>ראשון - חמישי</em></h3>
+                        <h3>7:30 - 19:00</h3>
                     </div>
-                    <div class="col-3 text-center">
-                        <h3>שני ושלישי</h3>
+                    <div class="col-md-3 text-center">
+                        <h3><em>שישי</em></h3>
+                        <h3>7:30 - 14:00</h3>
                     </div>
-                    <div class="col-3 text-center ">
-                        <h3>שלישי ורביעי</h3>
+                    <div class="col-md-3 text-center">
+                        <h3><em>שבת</em></h3>
+                        <h3>מנוחה <i class="fas fa-bed"></i></h3>
+                        
                     </div>
                 </div>
-                <hr style: color="white">
+                <hr id="after_hours">
+                <!-- Add 10rem margin left and right to hr on large screen??  -->
+                <div id="second_row" class="row justify-content-around mt-3 text-center text-md-right">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h3 style="color:#F6513D;">בקרו אותנו!</h3>
+                        <h4><em>דרך הנדיב 16, פרדס חנה</em></h4>
+                        
+                        <a id="social_link" href="https://waze.com/ul?q=נוני%20ופורטונה&navigate=yes">
+                            <span id="social_icon"><i class="fab fa-waze"></i></span>
+                        </a>
+                        <a id="social_link" href="https://instagram.com/nuni_vefortuna?igshid=1gz8ph7fwby29">
+                            <span id="social_icon"><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a id="social_link" href="https://www.facebook.com/%D7%A0%D7%95%D7%A0%D7%99-%D7%95%D7%A4%D7%95%D7%A8%D7%98%D7%95%D7%A0%D7%94-%D7%99%D7%93-%D7%A9%D7%A0%D7%99%D7%94-%D7%95%D7%99%D7%A0%D7%98%D7%92-%D7%95%D7%A7%D7%A4%D7%94-1032462220228396">
+                            <span id="social_icon"><i class="fab fa-facebook"></i></span>
+                        </a>
+                        
+
+                    </div>
+                    <div class="horizontal_line d-inline d-lg-none">
+                    </div>
+                    <div class="col-md-2 mt-3 mt-md-0">
+                        <h3 style="color:#F6513D;">דברו איתנו</h3>
+                        <h4><em>אוהד - 052-5055503</em></h4>
+                        <a id="social_link" href="https://wa.me/0542236362">
+                            <span id="social_icon"><i class="fab fa-whatsapp"></i></span>
+                        </a>
+                        <a id="social_link" href="tel:0542236362"><span id="social_icon"><i class="fas fa-phone"></i></span></a>
+                            
+                        </a>
+                    </div>
+                </div>
 
             </footer>
         </div>

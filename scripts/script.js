@@ -8,6 +8,7 @@ $(document).ready(function(){
   autoplay: true,
   autoplaySpeed: 2500,
   loop: true,
+  rtl: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -46,6 +47,7 @@ $(document).ready(function(){
   ]
   });
 });
+
 
 
 // $('#my_burger').click(function(){

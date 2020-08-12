@@ -1,11 +1,12 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
 }
 
 body{
-    padding:0;
-    margin: 0;
+    padding:0px;
+    margin: 0px;
     font-family: 'Alef', sans-serif;
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
@@ -14,6 +15,17 @@ body{
     background-repeat: repeat;
     background-size: cover; */
 }
+
+.horizontal_line{
+    border: none; 
+    border-bottom: 1px solid rgba(255,255,255, 0.5)
+    ;  
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
 
 #our_story{
     /* background-color: #787878; */
@@ -24,14 +36,32 @@ body{
     background-size: cover; */
     
 }
+.lead{
+    font-weight: 700;;
+}
+@media (min-width: 692px) {
+    #oriTry {
+        margin-right: 6vh;
+    }
+  }
+
+
 #partners{
     border-radius: 0px 20px 20px 0px;
+    margin-left: 0;
 }
+#partner_pic{
+    justify-self: flex-start;
+}
+
 
 #main_navbar{
     min-height: 40px;
     background-color: transparent;
+    /* box-shadow: 0 0 5px rgba(246, 81, 61, 0.5); */
+    /* box-shadow:  3px 3px 5px 6px #ccc;; */
 }
+
 
 .navbar-toggler-icon{
     background-image: url("/assets/hamburger.svg") !important;
@@ -41,19 +71,38 @@ body{
     color: #F6513D;
 }
 
-#my_footer > .row{
+/* #my_footer > .row{
 flex-direction: row-reverse;
+} */
+#social_icon{
+    margin-left: 20px;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Lato;
+    
 }
-
+#social_link{
+    color:inherit;
+}
 #my_footer{
-    height: 200px;
+    margin-left: 0;
+    padding-left: 0;
     width: 100%;
-    background-color: #06457b;
+    /* background-color: #06457b; */
+    /* background-image:url("/assets/footer_images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+    background-size: 100% 100%; */
+
+    /* background-image:url("/assets/footer_images/jose-larrazolo-S8bde3hkBR8-unsplash.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px); */
+
+    background-image:url("/assets/footer_images/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
 }
 
-#opening_hours > h3{
+/* #opening_hours > h3{
     color:white;
-}
+} */
 
 #my_burger{
     border: none;
@@ -73,6 +122,15 @@ flex-direction: row-reverse;
 .my_nav:hover{
     color: #ff3333 !important;
 }
+/* 
+#jumbo{
+    background-image: url("/assets/jumboLogo.png");
+    height: 300px;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+} */
 
 .jumbotron{
     background-color: transparent;
@@ -125,8 +183,20 @@ hr{
 }
 
 @media (max-width: 800px) {
-    #my_footer > .row{
+    #my_footer > #second_row{
         flex-direction: column;
+        /* Changed .row to #second_row */
     }
 
   }
+
+  @media (max-width: 800px) {
+    #hours_row > h3{
+        font-size: 10px;
+    }
+
+  }
+
+#after_hours{
+    border-color: rgba(255,255,255, 0.5);
+}
