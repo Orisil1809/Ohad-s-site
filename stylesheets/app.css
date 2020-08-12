@@ -8,9 +8,11 @@ body{
     margin: 0;
     font-family: 'Alef', sans-serif;
     /* background: linear-gradient(to right, #fdc830, #f37335); */
-    background-image: url("/assets/home_pics/dylan-nolte-SH_IjrKwG8c-unsplash.jpg");
+    /* background: linear-gradient(to right, #CB356B, #BD3F32); */
+    background-color: #295129;
+    /* background-image: url("/assets/home_pics/dylan-nolte-SH_IjrKwG8c-unsplash.jpg");
     background-repeat: repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 #our_story{
