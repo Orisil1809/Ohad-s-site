@@ -48,6 +48,10 @@ $(document).ready(function(){
 });
 
 
-$('#my_burger').click(function(){
+// $('#my_burger').click(function(){
     
-});
+// });
+
+// $('.navbar-toggler-icon').click(function(){
+//     $(this)
+// });

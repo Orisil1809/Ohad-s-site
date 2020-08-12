@@ -1,8 +1,10 @@
 html{
     scroll-behavior: smooth;
+    
 }
 
 body{
+    
     padding:0;
     margin: 0;
     font-family: 'Alef', sans-serif;
@@ -12,6 +14,10 @@ body{
 #main_navbar{
     min-height: 40px;
     background-color: transparent;
+}
+
+.navbar-toggler-icon{
+    background-image: url("/assets/hamburger.svg") !important;
 }
 
 #opening_hours{
@@ -54,7 +60,8 @@ flex-direction: row-reverse;
 .jumbotron{
     background-color: transparent;
     background-image: url("../assets/new_image2.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     
