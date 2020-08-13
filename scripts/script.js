@@ -82,10 +82,14 @@ $(window).scroll( function(){
 
 });
 
+//Animate #our_Story - either width show or opacity change - on scroll or onload?
+
 // window.onload =  function(){
 //   console.log("PRESSED!!!");
 //   $('#our_story').each(function(i){
-//     $(this).animate({ width: 'show'});
+//     // $(this).animate({ width: 'show'});
+//     $(this).animate({'opacity':'1'} ,'slow');
+
 //   });
 // };
 

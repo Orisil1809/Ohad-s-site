@@ -18,8 +18,8 @@ body{
 
 .horizontal_line{
     border: none; 
-    border-bottom: 1px solid rgba(255,255,255, 0.5)
-    ;  
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+
 }
 
 .navbar .navbar-collapse {
@@ -29,8 +29,10 @@ body{
 
 #our_story{
     /* background-color: #787878; */
+
     /* opacity: 0; */
     display: none;
+
     /* background-image: url("/assets/nuniBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover; */
