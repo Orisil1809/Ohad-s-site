@@ -163,7 +163,7 @@ hr{
     right: -30px;
 }
 
-.owl-prev, .owl-next{
+/* .owl-prev, .owl-next{
     position: absolute;
     top: 30%;
 }
@@ -174,7 +174,7 @@ hr{
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent;
-}
+} */
 
 #carousel div{
     width: 100%;
