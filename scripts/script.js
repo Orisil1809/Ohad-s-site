@@ -102,11 +102,8 @@ $(".my_nav").click(function () {
   });
 
 $("#read_more").click(function(){
-  console.log("We're HERE!");
-  console.log($("#more_story"));
   if($("#more_story").hasClass("hide_story")){
     $(this).html('מזער');
-    console.log("this:" + ($(this)));
     $("#more_story").removeClass("hide_story");
     $("#more_story").addClass("show_story");
   }
