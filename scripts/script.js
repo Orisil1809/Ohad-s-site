@@ -114,3 +114,9 @@ $("#read_more").click(function(){
   }
 
 });
+
+$("#second").click(function(){
+  console.log("ORITTTTT");
+  setTimeout(function () { window.location = "https://www.facebook.com"; }, 25); 
+  window.location = "fb://";
+})
