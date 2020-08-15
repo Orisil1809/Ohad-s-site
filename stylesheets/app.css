@@ -42,7 +42,7 @@ body{
     font-weight: 700;;
 }
 @media (min-width: 692px) {
-    #oriTry {
+    #story_paragraph {
         margin-right: 6vh;
     }
   }
@@ -54,6 +54,7 @@ body{
 }
 #partner_pic{
     justify-self: flex-start;
+    padding-left: 0;
 }
 
 
@@ -86,6 +87,10 @@ flex-direction: row-reverse;
 }
 #social_link{
     color:inherit;
+}
+#fb_link{
+    color:inherit;
+
 }
 #my_footer{
     margin-left: 0;
@@ -203,7 +208,7 @@ hr{
     border-color: rgba(255,255,255, 0.5);
 }
 
-#oriTry h1, p{
+#story_paragraph h1, p{
     color: rgb(252, 177, 3);
 }
 
@@ -219,3 +224,6 @@ hr{
     color: rgb(252, 177, 3);
 }
 
+/* #read_more{
+    color: rgb(252, 177, 3)
+} */

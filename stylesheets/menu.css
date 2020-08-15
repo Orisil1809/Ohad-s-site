@@ -94,12 +94,14 @@ body{
     
 }
 
+
 @media (max-width: 991px) {
     #menu{
         width: 95%;
     }
     h5{
         font-size: 1rem;
+        font-weight: 400;
     }
 
     p{
