@@ -91,6 +91,8 @@ body{
     outline: 2px solid #804000;
     outline-offset: -15px;
     padding-top: 20px;
+    /* padding-bottom: 150px; */
+    
     
 }
 
@@ -112,3 +114,30 @@ body{
         margin-bottom: 0.5rem;
     }
 }
+
+
+@media (max-width: 767px) {
+    #menu{
+        margin-bottom: 2vh;
+    }
+}
+
+
+.footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #804000;
+    color: #fff;
+    font-size: 120%;
+    direction: rtl;
+    position: fixed;
+    bottom: 0px;
+    z-index: 15;
+ }
+
+ .footer {
+     color: rgb(252, 177, 3);
+     padding:0;
+     margin:0;
+ }
