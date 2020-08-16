@@ -118,5 +118,5 @@ $("#read_more").click(function(){
 $("#fb_link").click(function(){
   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
   setTimeout(function () { window.location = address; }, 25); 
-  window.location = "fb://profile/1443420679019869";
+  window.location = "fb://profile/1032462220228396";
 })
