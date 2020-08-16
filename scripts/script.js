@@ -118,7 +118,6 @@ $("#fb_link").click(function(){
   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
   setTimeout(function () { window.location = address; }, 25); 
   let os_sys = getMobileOperatingSystem()
-  alert("HERE is: " + os_sys);
   switch(os_sys){
     case "Windows Phone":
       window.location = "fb://page/1032462220228396";
@@ -132,23 +131,20 @@ $("#fb_link").click(function(){
 
 function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  console.log(userAgent);
+  // console.log(userAgent);
       // Windows Phone must come first because its UA also contains "Android"
     if (/windows phone/i.test(userAgent)) {
-      console.log("11111");
         return "Windows Phone";
     }
 
     if (/android/i.test(userAgent)) {
-      console.log("222222");
         return "Android";
     }
 
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      console.log("SDasdasd");
+  
         return "iOS";
     }
-    console.log("3333333");
     return "unknown";
 }
