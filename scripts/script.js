@@ -139,12 +139,20 @@ $("#fb_link").click(function(){
     case "iOS":
       app_location = "fb://profile/1032462220228396";
     }
+    // window.location = app_location;
+    // console.log(window.location);
+    // setTimeout(function () {
+    //   console.log("ORIII");
+    //   window.location = (address); }, 2000);
+    if(app_location==""){
+      console.log("!!!!!!!!!!!!!!!!");
+      window.location = address;
+    }
+    else{
+    window.location.replace(app_location); setTimeout(function () {
 
-    window.location = app_location;
-
-    setTimeout(function () {
-
-      window.location = (address); }, 2000);
+    window.location.replace(address); }, 2000);
+  }
 
 })
 
