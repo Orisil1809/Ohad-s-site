@@ -114,20 +114,41 @@ $("#read_more").click(function(){
 
 });
 
+// $("#fb_link").click(function(){
+//   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
+//   setTimeout(function () { window.location = address; }, 25); 
+//   let os_sys = getMobileOperatingSystem()
+//   switch(os_sys){
+//     case "Windows Phone":
+//       window.location = "fb://page/1032462220228396";
+//     case "Android":
+//       window.location = "fb://page/1032462220228396";
+//     case "iOS":
+//       window.location = "fb://profile/1032462220228396";
+
+//   }
+// })
+
 $("#fb_link").click(function(){
   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
-  setTimeout(function () { window.location = address; }, 25); 
+  let app_location="";
   let os_sys = getMobileOperatingSystem()
   switch(os_sys){
-    case "Windows Phone":
-      window.location = "fb://page/1032462220228396";
-    case "Android":
-      window.location = "fb://page/1032462220228396";
+    case "Android" || "Windows Phone":
+      app_location = "fb://page/1032462220228396";
     case "iOS":
-      window.location = "fb://profile/1032462220228396";
+      app_location = "fb://profile/1032462220228396";
+    }
 
-  }
+    window.location = app_location;
+
+    setTimeout(function () {
+
+      window.location = (address); }, 2000);
+
 })
+
+
 
 function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
