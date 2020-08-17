@@ -114,6 +114,12 @@ $("#read_more").click(function(){
 
 });
 
+$("#fb_link").click(function(){
+  const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
+  window.location.replace("fb://profile/1032462220228396"); setTimeout(function () {
+  window.location.replace(address); }, 2000);
+})
+
 // $("#fb_link").click(function(){
 //   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
 //   setTimeout(function () { window.location = address; }, 25); 
@@ -129,32 +135,33 @@ $("#read_more").click(function(){
 //   }
 // })
 
-$("#fb_link").click(function(){
-  const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
-  let app_location="";
-  let os_sys = getMobileOperatingSystem()
-  switch(os_sys){
-    case "Android" || "Windows Phone":
-      app_location = "fb://page/1032462220228396";
-    case "iOS":
-      app_location = "fb://profile/1032462220228396";
-    }
-    // window.location = app_location;
-    // console.log(window.location);
-    // setTimeout(function () {
-    //   console.log("ORIII");
-    //   window.location = (address); }, 2000);
-    if(app_location==""){
-      console.log("!!!!!!!!!!!!!!!!");
-      window.location = address;
-    }
-    else{
-    window.location.replace(app_location); setTimeout(function () {
+// $("#fb_link").click(function(){
+//   setTimeout(function(){alert("ORI")}, 2000);
+//   // const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
+//   // let app_location="";
+//   // let os_sys = getMobileOperatingSystem()
+//   // switch(os_sys){
+//   //   case "Android" || "Windows Phone":
+//   //     app_location = "fb://page/1032462220228396";
+//   //   case "iOS":
+//   //     app_location = "fb://profile/1032462220228396";
+//   //   }
+//   //   // window.location = app_location;
+//   //   // console.log(window.location);
+//   //   // setTimeout(function () {
+//   //   //   console.log("ORIII");
+//   //   //   window.location = (address); }, 2000);
+//   //   if(app_location==""){
+//   //     console.log("!!!!!!!!!!!!!!!!");
+//   //     window.location = address;
+//   //   }
+//   //   else{
+//   //   window.location.replace(app_location); setTimeout(function () {
 
-    window.location.replace(address); }, 2000);
-  }
+//   //   window.location.replace(address); }, 2000);
+//   // }
 
-})
+// })
 
 
 
