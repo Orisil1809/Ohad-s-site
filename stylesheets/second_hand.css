@@ -1,10 +1,12 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+
     
 }
 
 body{
+
     padding:0px;
     margin: 0px;
     font-family: 'Alef', sans-serif;
@@ -14,7 +16,9 @@ body{
 }
 #main_navbar{
     min-height: 40px;
-    background-color: transparent;
+    /* background-color: transparent; */
+
+    
     /* box-shadow: 0 0 5px rgba(246, 81, 61, 0.5); */
     /* box-shadow:  3px 3px 5px 6px #ccc;; */
 }
@@ -56,7 +60,7 @@ body{
   } */
 
 
-  .menu {
+  .nav_menu {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -102,3 +106,21 @@ body{
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
+
+  /* #overlay{
+    z-index: 100;
+    display: none;
+    width: 100vh;
+    height: 100vw;
+    background-color: blue;
+  } */
+
+  /* .navbar-collapse{
+    z-index: 102;
+  } */
+
+  .colored{
+    transition: background-color 0.5s ease;
+    background-color: red;
+  }
+

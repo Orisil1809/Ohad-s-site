@@ -91,11 +91,10 @@ $(window).scroll( function(){
 //   });
 // };
 
-$(".my_nav").click(function () { 
+$("#story_link").click(function () { 
     $('#our_story').each(function(i){
       $(this).animate({ width: 'show'}, 'slow');
     });
-
   });
 
 $("#read_more").click(function(){
@@ -116,8 +115,9 @@ $("#read_more").click(function(){
 
 $("#fb_link").click(function(){
   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
-  window.location.replace("fb://profile/1032462220228396"); setTimeout(function () {
-  window.location.replace(address); }, 5000);
+  window.location.replace("fb://profile/1032462220228396");
+  setTimeout(function () {
+    window.location.replace(address); }, 5000);
 })
 
 // $("#fb_link").click(function(){

@@ -1,0 +1,68 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+body{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Alef', sans-serif;
+    background-color: #f4c33d;
+    /* background-image: url("/assets/menu_background.jpg");
+    background-size: cover;
+    background-repeat: repeat; */
+}
+#main_navbar{
+    min-height: 40px;
+    background-color: transparent;
+    /* box-shadow: 0 0 5px rgba(246, 81, 61, 0.5); */
+    /* box-shadow:  3px 3px 5px 6px #ccc;; */
+}
+
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-toggler-icon{
+    background-image: url("/assets/hamburger.svg") !important;
+}
+
+#my_burger{
+    border: none;
+    
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.my_nav{
+    font-size: 1.5rem;
+    color: white !important;
+}
+.my_nav:hover{
+    color: #804000 !important;
+}
+
+/* 
+#image_grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 30%));
+    column-gap: 10px;
+} */
+
+.card-img-top{
+    border-radius: 20px 20px 20px 20px;
+}
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+#main{
+    margin-top: 10vh;
+}
