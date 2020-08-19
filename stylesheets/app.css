@@ -61,6 +61,8 @@ body{
 
 #main_navbar{
     min-height: 40px;
+    /* Change to vh?? */
+
     /* background-color: transparent; */
 
 
@@ -98,8 +100,9 @@ flex-direction: row-reverse;
 #my_footer{
     margin-left: 0;
     padding-left: 0;
+    /* Commented recently */
     /* width: 100%; */
-    
+
     /* background-color: #06457b; */
     /* background-image:url("/assets/footer_images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
     background-size: 100% 100%; */
@@ -151,8 +154,8 @@ flex-direction: row-reverse;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 400px;
-    
-    width: 100%;
+    /* Commented recently */
+    /* width: 100%; */
     
 }
 
@@ -187,6 +190,7 @@ hr{
 } */
 
 #carousel div{
+    
     width: 100%;
 }
 .slick img{
