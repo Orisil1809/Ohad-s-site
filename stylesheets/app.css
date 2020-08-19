@@ -115,6 +115,10 @@ flex-direction: row-reverse;
     background-image:url("/assets/footer_images/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
 }
 
+/* #my_footer > *{
+    width:100%;
+} */
+
 /* #opening_hours > h3{
     color:white;
 } */
@@ -285,4 +289,33 @@ button:focus {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
+}
+
+#hours_row{
+    width: 100%;
+}
+
+#second_row{
+    width: 100%;
+}
+
+#steam{
+    /* color:yellow; */
+    animation: steam_animation 2s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes steam_animation{
+    0%{
+        transform: translateY(10px);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        transform: translateY(-10px);
+        opacity:0;
+    }
 }

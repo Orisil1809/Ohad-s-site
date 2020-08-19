@@ -1,55 +1,44 @@
-// Within style tags in your html file
-* { box-sizing: border-box; }
-
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+  
 }
 
-.grid-sizer,
-.grid-item {
-  width: 33.333%;
+body{
+  padding:0px;
+  margin: 0px;
+  font-family: 'Alef', sans-serif;
+  /* background: linear-gradient(to right, #fdc830, #f37335); */
+  /* background: linear-gradient(to right, #CB356B, #BD3F32); */
+  background-color: #295129;
+  /* background-image: url("/assets/home_pics/dylan-nolte-SH_IjrKwG8c-unsplash.jpg");
+  background-repeat: repeat;
+  background-size: cover; */
 }
-@media (max-width: 575px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
+
+#my_footer{
+  margin-left: 0;
+  padding-left: 0;
+  width:100%;
+  /* Commented recently */
+  /* width: 100%; */
+
+  /* background-color: #06457b; */
+  /* background-image:url("/assets/footer_images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+  background-size: 100% 100%; */
+
+  /* background-image:url("/assets/footer_images/jose-larrazolo-S8bde3hkBR8-unsplash.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px); */
+
+  background-image:url("/assets/footer_images/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
+}
+
+  @media (max-width: 800px) {
+    #my_footer > #second_row{
+        flex-direction: column;
+        /* Changed .row to #second_row */
+    }
+
   }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
-}
-
-/* To change the amount of columns on larger devices, uncomment the code below */
-
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .grid-sizer,
-  .grid-item {
-    width: 33.333%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .grid-sizer,
-  .grid-item {
-    width: 25%;
-  }
-}
-@media (min-width: 1200px) {
-  .grid-sizer,
-  .grid-item {
-    width: 20%;
-  }
-} */
-
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
