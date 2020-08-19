@@ -100,7 +100,7 @@ flex-direction: row-reverse;
 #my_footer{
     margin-left: 0;
     padding-left: 0;
-    width:inherit;
+    width:100%;
     /* Commented recently */
     /* width: 100%; */
 
