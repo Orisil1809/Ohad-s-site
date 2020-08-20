@@ -24,6 +24,8 @@ body{
 
 .navbar .navbar-collapse {
     text-align: center;
+
+    /* height: 100vh; */
 }
 
 .navbar-toggler-icon{
@@ -226,3 +228,24 @@ button:focus {
 .coffee_disappear{
     visibility: hidden;
   }
+
+  #steam{
+    /* color:yellow; */
+    animation: steam_animation 2s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes steam_animation{
+    0%{
+        transform: translateY(10px);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        transform: translateY(-10px);
+        opacity:0;
+    }
+}

@@ -50,12 +50,18 @@ $(document).ready(function(){
 
 
 
-// $('#my_burger').click(function(){
-    
-// });
 
-// $('.navbar-toggler-icon').click(function(){
-//     $(this)
+// $('.navbar-toggler').click(function(){
+//   console.log("ORI1");
+//   $(this).toggleClass('hidden');
+//   if(($this).hasClass('hidden')){
+//     console.log("ORI2");
+//     $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+//   }
+//   else{
+//     console.log("ORI3");
+//     $(this).animate({'width':'hide'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+//   }
 // });
 
 $(window).scroll( function(){
@@ -117,7 +123,7 @@ $("#fb_link").click(function(){
   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
   window.location.replace("fb://profile/1032462220228396");
   setTimeout(function () {
-    window.location.replace(address); }, 5000);
+    window.location.replace(address); }, 2000);
 })
 
 // $("#fb_link").click(function(){

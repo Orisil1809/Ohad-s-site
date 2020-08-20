@@ -319,3 +319,9 @@ button:focus {
         opacity:0;
     }
 }
+
+/* 
+.navbar-collapse{
+    background-color: yellow;
+    height:100vh;
+} */
