@@ -12,6 +12,13 @@ body{
     background-size: cover;
     background-repeat: repeat;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #main_navbar{
     min-height: 40px;
     /* background-color: transparent; */

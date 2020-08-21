@@ -50,6 +50,10 @@ $(document).ready(function(){
 
 
 
+$('.navbar-toggler').click(function(){
+  console.log("ORIIASD");
+  $("#main_navbar").toggleClass('colored');
+});
 
 // $('.navbar-toggler').click(function(){
 //   console.log("ORI1");
@@ -190,3 +194,12 @@ function getMobileOperatingSystem() {
     }
     return "unknown";
 }
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("#main_navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 80);
+    
+  });
+});
