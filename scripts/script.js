@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('.slick').slick({
+  lazyLoad: 'ondemand',
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -22,7 +23,8 @@ $(document).ready(function(){
       breakpoint: 848,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        dots: false
       }
     },
     {
@@ -30,7 +32,9 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        arrows: false
+        
+        dots: false
+        
       }
     },
     {
@@ -38,7 +42,8 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+       
+        dots: false,
         speed: 500,
         fade: true,
         cssEase: 'linear'
@@ -203,3 +208,9 @@ $(function () {
     
   });
 });
+
+// if ("loading" in HTMLImageElement.prototype) {
+//   console.log("OH YESSSS");
+// } else {
+//   console.log("OH NOOOO");
+// }

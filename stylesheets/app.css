@@ -335,5 +335,12 @@ button:focus {
 @media(max-width: 992px){
     #navbarCollapse{
         margin-bottom: 10vh;
+        min-height: 100vh;
+        
     }
+}
+
+#carousel-container{
+    padding-left: 30px;
+    padding-right: 30px;
 }
