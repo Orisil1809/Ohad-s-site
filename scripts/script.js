@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.slick').slick({
   lazyLoad: 'ondemand',
   infinite: true,
@@ -74,7 +75,7 @@ $('.navbar-toggler').click(function(){
 // });
 
 $(window).scroll( function(){
-    if(window)
+    // if(window)
   /* Check the location of each desired element */
   $('#our_story').each( function(i){
 
@@ -94,6 +95,11 @@ $(window).scroll( function(){
   }); 
 
 });
+
+// $(document).ready( function(){
+//   $('#our_story').animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+
+// });
 
 //Animate #our_Story - either width show or opacity change - on scroll or onload?
 
