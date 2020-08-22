@@ -11,6 +11,7 @@ $(document).ready(function(){
   autoplaySpeed: 2500,
   loop: true,
   rtl: true,
+  pauseOnFocus: false,
   responsive: [
     {
       breakpoint: 1024,
@@ -54,12 +55,24 @@ $(document).ready(function(){
   });
 });
 
-
-
-$('.navbar-toggler').click(function(){
-  console.log("ORIIASD");
-  $("#main_navbar").toggleClass('colored');
+$('#story_link').click(function(){
+  console.log($('.colored #navbarCollapse li'));
 });
+
+// $('.scrolled #navbarCollapse li').click(function(){
+//   console.log("CLICK1!");
+// });
+// $('.colored #navbarCollapse li').click(function(){
+//   console.log("CLICK2!");
+// });
+// $('.scrolled #navbarCollapse').click(function(){
+//   console.log("CLICK3!");
+// });
+// $('#navbarCollapse li').click(function(){
+//   console.log("CLICK4!");
+//   console.log($('.scrolled #navbarCollapse'));
+// });
+
 
 // $('.navbar-toggler').click(function(){
 //   console.log("ORI1");
@@ -212,11 +225,28 @@ function getMobileOperatingSystem() {
 }
 
 
+$('.navbar-toggler').click(function(){
+  console.log("ORIIASD");
+  $("#main_navbar").toggleClass('colored');
+  $('.colored #navbarCollapse').on("click", "li" , function(){
+    $('#navbarCollapse').collapse('hide');
+    $('.navbar-toggler').removeClass('opened');
+    $('.navbar-toggler').addClass('collapsed');
+
+  });
+  // console.log($('#navbarCollapse li'));
+});
+
 $(function () {
   $(document).scroll(function () {
     var $nav = $("#main_navbar");
     $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 80);
-    
+    $('.scrolled #navbarCollapse').on("click", "li" , function(){
+      $('#navbarCollapse').collapse('hide');
+      $('.navbar-toggler').removeClass('opened');
+      $('.navbar-toggler').addClass('collapsed');
+
+    });
   });
 });
 
