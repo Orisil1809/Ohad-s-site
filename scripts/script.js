@@ -96,8 +96,13 @@ $('.navbar-toggler').click(function(){
 
 // });
 
+// $(document).ready( function(){
+//   $('#our_story').animate({'width':'show'} , { duration: 500, easing: "linear" }); //Linear or Swing?? Speed of animation? What on mobile?
+
+// });
+
 $(document).ready( function(){
-  $('#our_story').animate({'width':'show'} , { duration: 500, easing: "linear" }); //Linear or Swing?? Speed of animation? What on mobile?
+  $('#our_story').animate({'opacity':'1'} ,'slow'); //Linear or Swing?? Speed of animation? What on mobile?
 
 });
 
