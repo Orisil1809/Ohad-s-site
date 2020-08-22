@@ -250,6 +250,17 @@ $(function () {
   });
 });
 
+$('#navbarCollapse').on('hide.bs.collapse', function () {
+  // $('.my_nav').css({ 'opacity' : 0 });
+  $('.my_nav').animate({'opacity':'0'} ,'fast');
+
+});
+
+$('#navbarCollapse').on('show.bs.collapse', function () {
+  $('.my_nav').css({ 'opacity' : 1 });
+
+});
+
 // if ("loading" in HTMLImageElement.prototype) {
 //   console.log("OH YESSSS");
 // } else {
