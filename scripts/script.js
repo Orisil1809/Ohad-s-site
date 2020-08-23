@@ -46,7 +46,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
        
         dots: false,
-        speed: 2000,
+        speed: 500,
         fade: true,
         cssEase: 'linear'
       }
@@ -268,3 +268,6 @@ $('#navbarCollapse').on('show.bs.collapse', function () {
 // } else {
 //   console.log("OH NOOOO");
 // }
+
+
+

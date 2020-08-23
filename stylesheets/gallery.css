@@ -66,3 +66,15 @@ body{
 #main{
     margin-top: 10vh;
 }
+
+/* .img-hover {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(60%);
+  }
+  
+  /* The Transformation */
+  .img-hover:hover {
+    filter: brightness(100%);
+    transform: scale(1.0);
+  } */
