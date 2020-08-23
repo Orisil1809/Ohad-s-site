@@ -270,4 +270,8 @@ $('#navbarCollapse').on('show.bs.collapse', function () {
 // }
 
 
-
+// $('.fa-bed').click(function(){
+//   console.log("ORIIII");
+//   const audio = new Audio('/assets/0170.mp3');
+//   audio.play();
+// });
