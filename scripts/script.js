@@ -46,7 +46,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
        
         dots: false,
-        speed: 500,
+        speed: 2000,
         fade: true,
         cssEase: 'linear'
       }
