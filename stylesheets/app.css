@@ -345,3 +345,15 @@ button:focus {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.img-hover-zoom img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(60%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom:hover img {
+    filter: brightness(100%);
+    transform: scale(1.0);
+  }
