@@ -32,3 +32,29 @@ $('.nav_menu').click(function(){
     
 
 });
+
+
+$(window).scroll( function(){
+    // if(window)
+  /* Check the location of each desired element */
+  $('.card').each( function(i){
+      console.log("##########");
+      console.log($(this));
+      // var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+      const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+      const bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* If the object is completely visible in the window, fade it in */
+      if( bottom_of_window > middle_of_object ){    
+          console.log("CARD REACHED");      
+          // $(this).animate({'opacity':'1'} ,'slow');
+          $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+          console.log($(this));
+
+
+      }
+
+  }); 
+
+});
