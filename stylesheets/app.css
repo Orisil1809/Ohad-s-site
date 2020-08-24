@@ -39,8 +39,8 @@ body{
 
 
 #our_story{
-    /* display: none; */
-    opacity: 0;
+    display: none;
+    /* opacity: 0; */
     padding-top: 80px;
     margin-top: -80px;
     
