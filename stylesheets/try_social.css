@@ -13,10 +13,7 @@ body{
     font-family: 'Alef', sans-serif;
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
-
     background-color: #295129;
-    /* background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
-
     /* background-image: url("/assets/home_pics/dylan-nolte-SH_IjrKwG8c-unsplash.jpg");
     background-repeat: repeat;
     background-size: cover; */
@@ -131,11 +128,6 @@ flex-direction: row-reverse;
     -webkit-filter: blur(8px); */
 
     background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
-
-    /* background-color: #1d1c1c; */
-
-    /* background-color: #295129; */
-
 }
 
 /* #my_footer > *{
@@ -382,6 +374,10 @@ button:focus {
 
 .slick-slide > div { height: 100%; }
 
+.slick-slide img{
+
+}
+
 #up_arrow{
     align-self: flex-end;
 }
@@ -465,3 +461,54 @@ button:focus {
 #fb_link, #social_link{
     text-decoration: none;
 }
+
+
+.contact{
+  background-color: #FED501;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 10px;
+  line-height: 80px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid transparent;
+  color: #2e3745;
+  padding: 5px 10px 5px 10px;
+  z-index: 1;
+}
+
+.contact .icon {
+    position: relative;
+    /* color: #262626; */
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .contact:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+
+  
+  .contact:hover:before {
+    top: 0;
+  }
+  
+  ul li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  ul li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  ul li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  .contact:hover {
+    background: #4FCE5D;
+    color: #fff;
+  }
