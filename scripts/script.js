@@ -258,6 +258,14 @@ $('#navbarCollapse').on('hide.bs.collapse', function () {
 
 });
 
+//NEW
+$('#navbarCollapse').on('hidden.bs.collapse', function () {
+  // $('.my_nav').css({ 'opacity' : 0 });
+  $('.navbar-toggler').removeClass('colored');
+  // $('.navbar-toggler').addClass('collapsed');
+
+});
+
 $('#navbarCollapse').on('show.bs.collapse', function () {
   $('.my_nav').css({ 'opacity' : 1 });
 
