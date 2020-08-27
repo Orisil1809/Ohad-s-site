@@ -471,7 +471,7 @@ button:focus {
     
     width: 100%;
     text-align: center;
-    background: #262626;
+    background: #1b1b1b;
     color: #fff;
     font-size: 120%;
     direction: ltr;
@@ -503,7 +503,7 @@ button:focus {
     background-color: #fff;
     text-align: center;
     line-height: 50px;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 15px;
     display: block;
     border-radius: 50%;
@@ -515,7 +515,7 @@ button:focus {
   
   #social-footer ul li a .icon {
     position: relative;
-    color: #262626;
+    color: #1b1b1b;
     transition: .5s;
     z-index: 3;
   }
@@ -537,7 +537,6 @@ button:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f00;
     transition: .5s;
     z-index: 2;
   }
