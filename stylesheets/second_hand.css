@@ -11,6 +11,7 @@ body{
     margin: 0px;
     font-family: 'Alef', sans-serif;
     box-sizing: border-box;
+    background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
     /* background-image: url("/assets/menu_background.jpg"); */
 
     /* background-image: url("/assets/39834967_1135988589875758_1516985356640059392_n.jpg");
@@ -23,7 +24,10 @@ h1{
   left: 40%;
   
 }
-
+.card-columns .card {
+  display: inline-block;
+  width:100%;
+}
 .card-columns{
   column-count: 1;
 }
@@ -80,9 +84,9 @@ h1{
     /* box-shadow:  3px 3px 5px 6px #ccc;; */
 }
 
-.card-columns .card{
+/* .card-columns .card{
   display: none;
-}
+} */
 
 .navbar .navbar-collapse {
     text-align: center;
