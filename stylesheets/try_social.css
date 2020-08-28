@@ -8,12 +8,15 @@ html{
 body{
     /* padding:0px; */
 
-    padding: 120px 0px 0px 0px;
     margin: 0px;
     font-family: 'Alef', sans-serif;
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
+
     background-color: #295129;
+    
+    /* background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
+
     /* background-image: url("/assets/home_pics/dylan-nolte-SH_IjrKwG8c-unsplash.jpg");
     background-repeat: repeat;
     background-size: cover; */
@@ -116,6 +119,7 @@ flex-direction: row-reverse;
     margin-left: 0;
     padding-left: 0;
     width:100%;
+    
     /* Commented recently */
     /* width: 100%; */
 
@@ -128,6 +132,11 @@ flex-direction: row-reverse;
     -webkit-filter: blur(8px); */
 
     background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
+
+    /* background-color: #1d1c1c; */
+
+    /* background-color: #295129; */
+
 }
 
 /* #my_footer > *{
@@ -194,6 +203,7 @@ hr{
 .slick img{
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 @media (max-width: 800px) {
@@ -374,10 +384,6 @@ button:focus {
 
 .slick-slide > div { height: 100%; }
 
-.slick-slide img{
-
-}
-
 #up_arrow{
     align-self: flex-end;
 }
@@ -463,52 +469,292 @@ button:focus {
 }
 
 
-.contact{
-  background-color: #FED501;
-  text-align: center;
-  border-radius: 50%;
-  position: relative;
-  margin: 0 10px;
-  line-height: 80px;
-  width: 80px;
-  height: 80px;
-  border: 1px solid transparent;
-  color: #2e3745;
-  padding: 5px 10px 5px 10px;
-  z-index: 1;
+#social-footer{
+    padding: env(safe-area-inset-bottom, 50px);
+
+    /* position: absolute;
+    bottom: auto; */
+    width: 100%;
+    text-align: center;
+    background: #1b1b1b;
+    color: #fff;
+    font-size: 120%;
+    direction: ltr;
+    
+    bottom: 0px;
+    z-index: 15;
+    padding:0;
+    margin:0;
+    min-height: 80px;
+    display: flex;
+    place-items: center;
+ 
 }
 
-.contact .icon {
+/* #second-half{
+    background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
+}
+#space_text{
+    visibility: hidden;
+} */
+#social-footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+
+  }
+  
+  #social-footer ul li {
+    list-style: none;
+  }
+  
+  #social-footer ul li a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 0 15px;
+    display: block;
+    border-radius: 50%;
     position: relative;
-    /* color: #262626; */
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  #social-footer ul li a .icon {
+    position: relative;
+    color: #1b1b1b;
     transition: .5s;
     z-index: 3;
   }
   
-  .contact:hover .icon {
+  #social-footer ul li a:hover .icon {
     color: #fff;
     transform: rotateY(360deg);
   }
-  
 
+  #social-footer ul li a:hover #waze {
+    color: black;
+    transform: rotateY(360deg);
+  }
   
-  .contact:hover:before {
+  #social-footer ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  #social-footer ul li a:hover:before {
     top: 0;
   }
   
-  ul li:nth-child(1) a:before{
+  #social-footer ul li:nth-child(1) a:before{
     background: #3b5999;
   }
   
-  ul li:nth-child(2) a:before{
+  #social-footer ul li:nth-child(2) a:before{
+    background: linear-gradient(#a8e063, #56ab2f)
+  }
+  
+  #social-footer ul li:nth-child(3) a:before {
     background: #55acee;
   }
   
-  ul li:nth-child(3) a:before {
-    background: #0077b5;
+  #social-footer ul li:nth-child(4) a:before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   }
-  
-  .contact:hover {
-    background: #4FCE5D;
-    color: #fff;
+
+  @media (max-width: 767px) {
+    #social-footer ul {
+        padding-left:0px;
+    }
+  }
+
+  .fixed-top.colored .navbar-collapse{
+    display: block;
+}
+/* .fixed-top .navbar-collapse{
+    display: none;
+} */
+.fixed-top.colored .navbar-collapse .nav-item.nav-link{
+    opacity: 1 !important;
+}
+/* .fixed-top .navbar-collapse .nav-item.nav-link{
+    opacity: 0 !important;
+} */
+
+@media (max-width: 991px) {
+    .fixed-top .navbar-collapse{
+        display: none;
+    }
+    .fixed-top .navbar-collapse .nav-item.nav-link{
+        opacity: 0 !important;
+    }
+  }
+  @media (min-width: 991px) {
+    .fixed-top .navbar-collapse{
+        display: block;
+    }
+    .fixed-top .navbar-collapse .nav-item.nav-link{
+        opacity: 1 !important;
+    }
+  }
+
+/* #contact1{
+    padding-left: 0!important;
+    margin-left: 0!important;
+}
+
+#contact2{
+    padding-right: 0 !important;
+    margin-right: 0!important;
+} */
+
+#bambi{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    /* animation: bambi_animation 2s ease infinite; */
+}
+
+/* @keyframes bambi_animation{
+    from{
+        transform: rotateY(0);
+    }
+
+    to{
+        transform: rotateY(360);
+    }
+} */
+
+
+#heart{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+#header{
+    height: 100vh;
+    background-color: #285AEB;
+}
+
+/* #bambi:hover{
+	transform: rotateY(360deg);
+} */
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  #bambi {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+
+  /* @-webkit-keyframes rotating  {
+    from {
+      -webkit-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -ms-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -webkit-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+  }
+  #bambi {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  } */
+
+  @-webkit-keyframes rotating  {
+    from {
+      -webkit-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -ms-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -webkit-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+  }
+  #heart {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
   }

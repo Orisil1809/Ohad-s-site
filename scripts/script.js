@@ -233,6 +233,8 @@ $('.navbar-toggler').click(function(){
     $('#navbarCollapse').collapse('hide');
     $('.navbar-toggler').removeClass('opened');
     $('.navbar-toggler').addClass('collapsed');
+    $('#main_navbar').removeClass('colored');
+
 
   });
   // console.log($('#navbarCollapse li'));
@@ -247,6 +249,8 @@ $(function () {
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');
+      $('#main_navbar').removeClass('colored');
+
 
     });
   });
