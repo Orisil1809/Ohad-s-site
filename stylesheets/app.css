@@ -488,12 +488,12 @@ button:focus {
  
 }
 
-#second-half{
+/* #second-half{
     background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
 }
 #space_text{
     visibility: hidden;
-}
+} */
 #social-footer ul {
     display: flex;
     justify-content: center;
