@@ -581,7 +581,8 @@ button:focus {
 /* .slick-slide > img{
     color: red;
 } */
-  .fixed-top.colored .navbar-collapse{
+
+  /* .fixed-top.colored .navbar-collapse{
     display: block;
 }
 .fixed-top .navbar-collapse{
@@ -592,7 +593,7 @@ button:focus {
 }
 .fixed-top .navbar-collapse .nav-item.nav-link{
     opacity: 0 !important;
-}
+} */
 
 /* #contact1{
     padding-left: 0!important;
