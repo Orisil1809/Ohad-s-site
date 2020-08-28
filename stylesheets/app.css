@@ -469,16 +469,16 @@ button:focus {
 
 
 #social-footer{
-    position: absolute;
-    bottom: auto;
+    /* position: absolute;
+    bottom: auto; */
     width: 100%;
     text-align: center;
     background: #1b1b1b;
     color: #fff;
     font-size: 120%;
     direction: ltr;
-
-    /* bottom: 0px; */
+    
+    bottom: 0px;
     z-index: 15;
     padding:0;
     margin:0;
@@ -488,6 +488,12 @@ button:focus {
  
 }
 
+#second-half{
+    background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
+}
+#space_text{
+    visibility: hidden;
+}
 #social-footer ul {
     display: flex;
     justify-content: center;
