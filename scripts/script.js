@@ -283,3 +283,7 @@ $('#navbarCollapse').on('show.bs.collapse', function () {
 //   const audio = new Audio('/assets/0170.mp3');
 //   audio.play();
 // });
+
+function delay (URL) {
+  setTimeout( function() { window.location = URL }, 500 );
+}
