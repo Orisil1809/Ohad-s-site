@@ -119,6 +119,8 @@ flex-direction: row-reverse;
     margin-left: 0;
     padding-left: 0;
     width:100%;
+    padding-top: 80px;
+    margin-top: -80px;
     
     /* Commented recently */
     /* width: 100%; */
