@@ -119,6 +119,7 @@ flex-direction: row-reverse;
     margin-left: 0;
     padding-left: 0;
     width:100%;
+    
     /* Commented recently */
     /* width: 100%; */
 
@@ -468,15 +469,16 @@ button:focus {
 
 
 #social-footer{
-    
+    position: absolute;
+    bottom: auto;
     width: 100%;
     text-align: center;
     background: #1b1b1b;
     color: #fff;
     font-size: 120%;
     direction: ltr;
-    /* position: bottom; */
-    bottom: 0px;
+
+    /* bottom: 0px; */
     z-index: 15;
     padding:0;
     margin:0;
