@@ -1,3 +1,5 @@
+//#region slick carousel
+
 $(document).ready(function(){
 
   $('.slick').slick({
@@ -54,37 +56,7 @@ $(document).ready(function(){
   });
 });
 
-$('#story_link').click(function(){
-  console.log($('.colored #navbarCollapse li'));
-});
-
-// $('.scrolled #navbarCollapse li').click(function(){
-//   console.log("CLICK1!");
-// });
-// $('.colored #navbarCollapse li').click(function(){
-//   console.log("CLICK2!");
-// });
-// $('.scrolled #navbarCollapse').click(function(){
-//   console.log("CLICK3!");
-// });
-// $('#navbarCollapse li').click(function(){
-//   console.log("CLICK4!");
-//   console.log($('.scrolled #navbarCollapse'));
-// });
-
-
-// $('.navbar-toggler').click(function(){
-//   console.log("ORI1");
-//   $(this).toggleClass('hidden');
-//   if(($this).hasClass('hidden')){
-//     console.log("ORI2");
-//     $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
-//   }
-//   else{
-//     console.log("ORI3");
-//     $(this).animate({'width':'hide'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
-//   }
-// });
+//#endregion
 
 $(window).scroll( function(){
     // if(window)
@@ -108,7 +80,7 @@ $(window).scroll( function(){
 
 });
 
-
+//#region our story animation try
 // $(document).ready( function(){
 //   $('#our_story').animate({'opacity':'1'} ,'slow'); //Linear or Swing?? Speed of animation? What on mobile?
 
@@ -130,6 +102,8 @@ $(window).scroll( function(){
 //   });
 // };
 
+//#endregion
+
 $("#story_link").click(function () { 
     $('#our_story').each(function(i){
       $(this).animate({ width: 'show'}, 'slow');
@@ -137,8 +111,7 @@ $("#story_link").click(function () {
   });
 
 $("#read_more").click(function(){
-  // var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  // console.log(userAgent);
+
   if($("#more_story").hasClass("hide_story")){
     $(this).html('מזער');
     $("#more_story").removeClass("hide_story");
@@ -158,6 +131,8 @@ $("#fb_link").click(function(){
   setTimeout(function () {
     window.location.replace(address); }, 2000);
 })
+
+//#region fb link try
 
 // $("#fb_link").click(function(){
 //   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
@@ -202,6 +177,7 @@ $("#fb_link").click(function(){
 
 // })
 
+//#endregion
 
 
 function getMobileOperatingSystem() {
@@ -237,7 +213,7 @@ $('.navbar-toggler').click(function(){
 
 
   });
-  // console.log($('#navbarCollapse li'));
+
 });
 
 $(function () {
@@ -262,17 +238,21 @@ $('#navbarCollapse').on('hide.bs.collapse', function () {
 
 });
 
+$('#navbarCollapse').on('show.bs.collapse', function () {
+  $('.my_nav').css({ 'opacity' : 1 });
+
+});
+
+function delay (URL) {
+  setTimeout( function() { window.location = URL }, 500 );
+}
+
 //Commented 29.08
 
 // $('#navbarCollapse').on('hidden.bs.collapse', function () {
 //   $('#main_navbar').removeClass('colored');
 
 // });
-
-$('#navbarCollapse').on('show.bs.collapse', function () {
-  $('.my_nav').css({ 'opacity' : 1 });
-
-});
 
 // if ("loading" in HTMLImageElement.prototype) {
 //   console.log("OH YESSSS");
@@ -287,6 +267,3 @@ $('#navbarCollapse').on('show.bs.collapse', function () {
 //   audio.play();
 // });
 
-function delay (URL) {
-  setTimeout( function() { window.location = URL }, 500 );
-}

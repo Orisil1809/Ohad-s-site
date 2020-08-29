@@ -13,7 +13,7 @@ body{
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
 
-    background-color: #295129;
+    background-color: rgba(228, 224, 224, 0.5);
     
     /* background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
 
@@ -625,6 +625,8 @@ button:focus {
     /* animation: bambi_animation 2s ease infinite; */
 }
 
+
+
 /* @keyframes bambi_animation{
     from{
         transform: rotateY(0);
@@ -636,16 +638,20 @@ button:focus {
 } */
 
 
-#heart{
+/* #heart{
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 10%; 
+}*/
+
+#heart{
+    position: absolute;
+    top: 80%;
+    
+
 }
 
-#header{
-    height: 100vh;
-    background-color: #285AEB;
-}
+
 
 /* #bambi:hover{
 	transform: rotateY(360deg);
@@ -758,3 +764,54 @@ button:focus {
     -o-animation: rotating 2s linear infinite;
     animation: rotating 2s linear infinite;
   }
+
+
+#header{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media (max-width: 991px) {
+    #header {
+        background-image: url("/assets/Gallery/background3.jpg");
+        background-position: 70%;
+        font-size: .5rem;
+    }
+    
+  }
+
+#logo{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+}
+
+#second{
+    height: 100vh;
+}
+
+#my_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
+    color: white;
+    font-weight: 400;
+    font-size: 3.5em;
+    line-height: 1.5;
+}
+
+#my_text::before{
+    content: '';
+    
+    display: block;
+    box-sizing: border-box;
+    border-top: 3px solid #56ab2f;
+}
