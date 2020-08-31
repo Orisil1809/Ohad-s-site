@@ -13,7 +13,8 @@ body{
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
 
-    background-color: rgba(228, 224, 224, 0.5);
+    /* background-color: rgba(228, 224, 224, 0.5); */
+    background-color: rgba(128, 122, 122, 0.5);
     
     /* background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
 
@@ -26,6 +27,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
 .logo-image{
     /* max-width: 80%; */
     height: auto;
@@ -119,6 +121,9 @@ flex-direction: row-reverse;
     margin-left: 0;
     padding-left: 0;
     width:100%;
+    padding-top: 2vh;
+    margin-top: 5vh;
+    
     
     /* Commented recently */
     /* width: 100%; */
@@ -136,6 +141,14 @@ flex-direction: row-reverse;
     /* background-color: #1d1c1c; */
 
     /* background-color: #295129; */
+
+}
+
+@media (max-width: 768px) {
+  #my_footer{
+    padding-top: 8vh;
+    margin-top: 15vh;
+  }
 
 }
 
@@ -608,16 +621,6 @@ button:focus {
     }
   }
 
-/* #contact1{
-    padding-left: 0!important;
-    margin-left: 0!important;
-}
-
-#contact2{
-    padding-right: 0 !important;
-    margin-right: 0!important;
-} */
-
 #bambi{
     position: absolute;
     top: 20%;
@@ -638,20 +641,11 @@ button:focus {
 } */
 
 
-/* #heart{
-    position: absolute;
-    top: 30%;
-    right: 10%; 
-}*/
-
 #heart{
     position: absolute;
     top: 80%;
-    
 
 }
-
-
 
 /* #bambi:hover{
 	transform: rotateY(360deg);
@@ -793,9 +787,22 @@ button:focus {
 }
 
 #second{
-    height: 100vh;
+  position: relative;
+    /* height: 100vh; */
 }
 
+#swipeIcon{
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#header, #second{
+  margin: 0;
+  padding: 0;
+}
 #my_text{
     position: absolute;
     top: 50%;
@@ -815,3 +822,98 @@ button:focus {
     box-sizing: border-box;
     border-top: 3px solid #56ab2f;
 }
+
+
+
+#hand{
+  
+  animation: swipe_animation 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+
+@keyframes swipe_animation{
+  from{
+      transform: translate3d(0);
+      
+  }
+  to{
+      transform: translate3d(-20px, -10px, 400px); 
+  }
+}
+
+
+
+
+/* #swipeIcon svg {
+	display: inline-block;
+	width: 250px;
+	margin: 3% auto;
+	padding: 0px 100px;
+} */
+
+/* SVG RULES */
+
+/* .hand, 
+.hand-double, 
+.hand-flick, 
+.hand-hold, 
+.hand-rock, 
+.hand-tap, 
+.hand-x, 
+.hand-y {
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.arrow-down, 
+.arrow-head, 
+.arrow-left, 
+.arrow-right, 
+.arrow-up, 
+.arrow-up-1, 
+.arrow-up-2, 
+.arrow-up-3,   
+.hold-1,
+.hold-2, 
+.line-horizontal, 
+.line-rotate, 
+.line-vertical, 
+.notes, 
+.tap-1, 
+.tap-2 {
+	fill: transparent;
+	stroke: #000;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.arrow-up-2, 
+.hold-1, 
+.tap-1 {
+	opacity: .5;
+}
+
+.arrow-up-1, 
+.hold-2, 
+.tap-2 {
+	opacity: .25;
+}
+
+.arrow-up-3, 
+.swipe-horizontal, 
+.swipe-rotate, 
+.swipe-vertical {
+	opacity: .75;
+}
+
+.hold-1, 
+.hold-2, 
+.notes {
+	opacity: 0;
+} */
