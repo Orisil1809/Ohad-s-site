@@ -10,11 +10,14 @@ body{
 
     margin: 0px;
     font-family: 'Alef', sans-serif;
+
+
+
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
 
-    /* background-color: rgba(228, 224, 224, 0.5); */
-    background-color: rgba(128, 122, 122, 0.5);
+    
+    /* background-color: rgba(128, 122, 122, 0.5); */
     
     /* background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
 
@@ -87,8 +90,11 @@ body{
 }
 
 #carousel{
-    margin-top: 15vh;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
 }
+
+
 .colored{
     background-color: #f0f0f0 !important;
 }
@@ -123,7 +129,7 @@ flex-direction: row-reverse;
     padding-left: 0;
     width:100%;
     padding-top: 2vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
     
     
     /* Commented recently */
@@ -772,7 +778,10 @@ button:focus {
 
 @media (max-width: 991px) {
     #header {
-        background-image: url("/assets/Gallery/background3.jpg");
+        /* background-image: url("/assets/Gallery/background3.jpg"); */
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: 70%;
         font-size: .5rem;
     }
@@ -789,21 +798,28 @@ button:focus {
 
 #second{
   position: relative;
+  background-color: #EFE2BA;
+
+
+  margin-top: 10vh;
+  /* background-image: url("/assets/home_pics/DSC_0654.JPG");
+  background-repeat: no-repeat;
+  background-size: cover; */
     /* height: 100vh; */
 }
 
 #swipeIcon{
   position: absolute;
-  bottom: -50%;
+  bottom: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 5%);
 }
 
 
-#header, #second{
+/* #header, #second{
   margin: 0;
   padding: 0;
-}
+} */
 #my_text{
     position: absolute;
     top: 50%;
@@ -917,4 +933,19 @@ button:focus {
 .hold-2, 
 .notes {
 	opacity: 0;
+}
+
+
+@media (max-width: 991px) {
+  #second h2{
+    font-size: 2.5rem;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  #second h2{
+    font-size:  2rem;
+  }
+  
 }
