@@ -846,16 +846,16 @@ button:focus {
 
 
 
-/* #swipeIcon svg {
+#swipeIcon svg {
 	display: inline-block;
 	width: 250px;
 	margin: 3% auto;
 	padding: 0px 100px;
-} */
+}
 
 /* SVG RULES */
 
-/* .hand, 
+.hand, 
 .hand-double, 
 .hand-flick, 
 .hand-hold, 
@@ -916,4 +916,4 @@ button:focus {
 .hold-2, 
 .notes {
 	opacity: 0;
-} */
+}

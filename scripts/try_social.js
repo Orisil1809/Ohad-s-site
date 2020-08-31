@@ -273,7 +273,8 @@ $(document).ready(function(){
   
   
   
-//   TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
+  TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
 
-//   //animation
-//   var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
+
+  var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
+
