@@ -50,6 +50,9 @@ $(document).ready(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
           speed: 250,
           //Also, changed speed from 500
           //fade: true,
