@@ -80,6 +80,7 @@ body{
     /* Change to vh?? */
     transition: background-color 300ms linear;
     box-shadow: none;
+    z-index: 1050;
     /* background-color: transparent; */
     /* box-shadow: 0 0 5px rgba(246, 81, 61, 0.5); */
     /* box-shadow:  3px 3px 5px 6px #ccc;; */
