@@ -769,7 +769,7 @@ button:focus {
 
 #header{
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535.JPG");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.JPG");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -779,7 +779,7 @@ button:focus {
 @media (max-width: 991px) {
     #header {
         /* background-image: url("/assets/Gallery/background3.jpg"); */
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535.JPG");
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.JPG");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 70%;
