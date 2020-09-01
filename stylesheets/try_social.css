@@ -397,12 +397,12 @@ button:focus {
     display: flex !important;
 }
 
-.slick-slide
+/* .slick-slide
 {
     height: inherit !important;
 }
 
-.slick-slide > div { height: 100%; }
+.slick-slide > div { height: 100%; } */
 
 #up_arrow{
     align-self: flex-end;
