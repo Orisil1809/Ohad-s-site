@@ -651,7 +651,7 @@ button:focus {
 #heart{
     position: absolute;
     top: 80%;
-    z-index: 1049;
+    z-index: auto;
 
 }
 
