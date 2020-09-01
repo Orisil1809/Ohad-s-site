@@ -11,7 +11,7 @@ body{
     margin: 0px;
     font-family: 'Alef', sans-serif;
 
-
+    background-color: #f0f0f0;
 
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
@@ -372,10 +372,10 @@ button:focus {
     }
 }
 
-#carousel-container{
+/* #carousel-container{
     padding-left: 30px;
     padding-right: 30px;
-}
+} */
 
   .slick-active .img-hover-zoom img{
     animation: opacity_animation 2s ease;
@@ -823,8 +823,8 @@ button:focus {
 #my_text{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 45%;
+    transform: translate(-45%, -50%);
     /* position: relative; */
     color: white;
     font-weight: 400;
@@ -834,12 +834,19 @@ button:focus {
 
 #my_text::before{
     content: '';
-    
+    margin-bottom: 10px;
+
     display: block;
     box-sizing: border-box;
     border-top: 3px solid #56ab2f;
 }
-
+#my_text::after{
+  content: '';
+  margin-top: 10px;
+  display: block;
+  box-sizing: border-box;
+  border-top: 3px solid #56ab2f;
+}
 
 
 #hand{
@@ -949,3 +956,12 @@ button:focus {
   }
   
 }
+
+
+#my_text{
+  display: none;
+}
+
+#second h2{
+  display: none;
+} 

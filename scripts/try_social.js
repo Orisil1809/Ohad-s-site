@@ -86,6 +86,9 @@ $(document).ready(function(){
   
   //#region our story animation try
   // $(document).ready( function(){
+
+        $('#my_text').animate({'height':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+
   //   $('#our_story').animate({'opacity':'1'} ,'slow'); //Linear or Swing?? Speed of animation? What on mobile?
   
   // });
@@ -278,3 +281,25 @@ $(document).ready(function(){
 
   var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
 
+
+  $(window).scroll( function(){
+    // if(window)
+  /* Check the location of each desired element */
+  $('#second h2').each( function(i){
+
+      // var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+      const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+      const bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* If the object is completely visible in the window, fade it in */
+      if( bottom_of_window > middle_of_object ){          
+          // $(this).animate({'opacity':'1'} ,'slow');
+          $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+
+
+      }
+
+  }); 
+
+});
