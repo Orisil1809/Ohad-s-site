@@ -2,9 +2,6 @@
 
 $(document).ready(function(){
 
-    let slides = $('.slick > div');
-    console.log(slides);
-
     $('.slick').slick({
     lazyLoad: 'ondemand',
     infinite: true,
@@ -212,7 +209,6 @@ $(document).ready(function(){
     console.log("ORIIASD");
     $("#main_navbar").toggleClass('colored');
     $('.colored #navbarCollapse').on("click", "li" , function(){
-      console.log("ORI11");
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');

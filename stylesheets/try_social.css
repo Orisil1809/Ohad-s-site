@@ -143,7 +143,7 @@ flex-direction: row-reverse;
     filter: blur(8px);
     -webkit-filter: blur(8px); */
 
-    background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg");
+    background-image:url("/assets/footer_backgrounds/footer_background_new.jpg");
 
     /* background-color: #1d1c1c; */
 
@@ -776,11 +776,22 @@ button:focus {
 }
 
 
+@media (max-width: 1024px) {
+  #header {
+      /* background-image: url("/assets/Gallery/background3.jpg"); */
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_1024_new.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 70%;
+      font-size: .5rem;
+  }
+  
+}
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     #header {
         /* background-image: url("/assets/Gallery/background3.jpg"); */
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg");
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_768_new.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 70%;
@@ -817,16 +828,13 @@ button:focus {
 }
 
 
-/* #header, #second{
-  margin: 0;
-  padding: 0;
-} */
+
 #my_text{
     position: absolute;
     top: 50%;
     left: 45%;
     transform: translate(-45%, -50%);
-    /* position: relative; */
+
     color: white;
     font-weight: 400;
     font-size: 3.5em;
