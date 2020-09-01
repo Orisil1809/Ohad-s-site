@@ -39,7 +39,6 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          
           dots: false
           
         }
@@ -51,7 +50,6 @@ $(document).ready(function(){
           slidesToScroll: 1,
           dots: false,
           arrows: false,
-
           speed: 250,
           //Also, changed speed from 500
           //fade: true,
