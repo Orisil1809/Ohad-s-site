@@ -787,7 +787,3 @@ button:focus {
     color: #fff;
   }
 
-  #button:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
