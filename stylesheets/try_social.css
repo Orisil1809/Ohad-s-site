@@ -490,7 +490,7 @@ button:focus {
 
 
 #social-footer{
-    padding: env(safe-area-inset-bottom, 50px);
+    /* padding: env(safe-area-inset-bottom, 50px); */
 
     /* position: absolute;
     bottom: auto; */
@@ -509,6 +509,16 @@ button:focus {
     display: flex;
     place-items: center;
  
+}
+
+@media (max-width: 767px) {
+  #social-footer {
+      /* padding-bottom: env(safe-area-inset-bottom); */
+      min-height: 100px;
+      align-items: flex-start;
+      padding-top: .5vh;
+
+  }
 }
 
 /* #second-half{
