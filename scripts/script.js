@@ -59,6 +59,24 @@ $(document).ready(function(){
 //#endregion
 
 $(window).scroll( function(){
+
+  $('.card').each( function(i){
+
+    const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+    const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+    const bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    /* If the object is completely visible in the window, fade it in */
+    if( bottom_of_window > middle_of_object ){          
+       
+        // $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+
+        $(this).addClass('anim');
+
+    }
+
+  }); 
+
     // if(window)
   /* Check the location of each desired element */
   $('#our_story').each( function(i){
@@ -81,10 +99,25 @@ $(window).scroll( function(){
 });
 
 //#region our story animation try
-// $(document).ready( function(){
-//   $('#our_story').animate({'opacity':'1'} ,'slow'); //Linear or Swing?? Speed of animation? What on mobile?
+$(document).ready( function(){
+  $('.card').each( function(i){
 
-// });
+    const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+    const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+    const bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    /* If the object is completely visible in the window, fade it in */
+    if( bottom_of_window > middle_of_object ){          
+       
+        // $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+
+        $(this).addClass('anim');
+
+    }
+
+  }); 
+
+});
 
 // $(document).ready( function(){
 //   $('#our_story').animate({'width':'show'} , { duration: 500, easing: "linear" }); //Linear or Swing?? Speed of animation? What on mobile?
@@ -266,6 +299,5 @@ function delay (URL) {
 //   const audio = new Audio('/assets/0170.mp3');
 //   audio.play();
 // });
-
 
 

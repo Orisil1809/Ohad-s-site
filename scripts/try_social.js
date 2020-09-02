@@ -206,7 +206,6 @@ $(document).ready(function(){
   
   
   $('.navbar-toggler').click(function(){
-    console.log("ORIIASD");
     $("#main_navbar").toggleClass('colored');
     $('.colored #navbarCollapse').on("click", "li" , function(){
       $('#navbarCollapse').collapse('hide');

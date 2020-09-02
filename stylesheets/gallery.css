@@ -64,6 +64,7 @@ body{
 }
 
 #main{
+    position: relative;
     margin-top: 10vh;
 }
 
@@ -78,3 +79,41 @@ body{
     filter: brightness(100%);
     transform: scale(1.0);
   } 
+
+.anim{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+.card{
+    transform: translateY(25%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
+}
+
+
+.card-img-top {
+
+    max-width: 100%;
+    
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform .5s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.05);
+  }
+
+
+/* @keyframes bambi_animation{
+    from{
+        transform: rotateY(0);
+    }
+
+    to{
+        transform: rotateY(360);
+    }
+} */
