@@ -68,7 +68,9 @@ $(window).scroll( function(){
 
     /* If the object is completely visible in the window, fade it in */
     if( bottom_of_window > middle_of_object ){          
-       
+      console.log("1111 " + bottom_of_window);
+      console.log("2222 " + middle_of_object);   
+      console.log($(this));   
         // $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
 
         $(this).addClass('anim');
@@ -87,7 +89,8 @@ $(window).scroll( function(){
       const bottom_of_window = $(window).scrollTop() + $(window).height();
 
       /* If the object is completely visible in the window, fade it in */
-      if( bottom_of_window > middle_of_object ){          
+      if( bottom_of_window > middle_of_object ){    
+
           // $(this).animate({'opacity':'1'} ,'slow');
           $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
 
@@ -98,19 +101,17 @@ $(window).scroll( function(){
 
 });
 
-//#region our story animation try
+
 $(document).ready( function(){
   $('.card').each( function(i){
 
-    const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
-    const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+    const top_of_object = $(this).offset().top
+    const middle_of_object = $(this).offset().top + $(this).outerHeight()/3;
     const bottom_of_window = $(window).scrollTop() + $(window).height();
 
-    /* If the object is completely visible in the window, fade it in */
     if( bottom_of_window > middle_of_object ){          
-       
-        // $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
-
+        console.log("1111 " + bottom_of_window);
+        console.log("2222 " + middle_of_object);
         $(this).addClass('anim');
 
     }
