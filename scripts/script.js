@@ -69,9 +69,7 @@ $(window).scroll( function(){
 
     /* If the object is completely visible in the window, fade it in */
     if( bottom_of_window > middle_of_object ){          
-      console.log("WTFFFFFF");
       $(this).addClass('anim');
-
     }
 
   }); 
@@ -107,8 +105,6 @@ $(window).on('load', function(){
     const bottom_of_window = $(window).scrollTop() + $(window).height();
 
     if( bottom_of_window > middle_of_object ){          
-        console.log("1111 " + bottom_of_window);
-        console.log("2222 " + middle_of_object);
         $(this).addClass('anim');
 
     }

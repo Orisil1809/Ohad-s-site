@@ -243,6 +243,47 @@ button:focus {
   }
 
 
+  @media (max-width: 480px) {
+    #gallery-title{
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+  }
+  @media (min-width: 767px) {
+    #gallery-title{
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+}
+@media (min-width: 1200px) {
+    #gallery-title{
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+    
+}   
+
+#gallery-title::after{
+    content: '\f083';
+    display: inline-block;
+    padding-right: 20px;
+    font-weight: 900;
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1em;
+    line-height: 30px;
+
+}
+
+@media(max-width: 768px){
+    #gallery-title::after{
+        display: block;
+        padding-top: 30px;
+        padding-right: 0;
+    }
+}
+
+
 /* @keyframes bambi_animation{
     from{
         transform: rotateY(0);
