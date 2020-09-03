@@ -188,6 +188,13 @@ button:focus {
   }
 }
 
+@media (max-width: 767px){
+  #coffee-svg{
+      height: 60px;
+      width: 60px;
+  }
+}
+
 /* 
 #image_grid{
     display: grid;

@@ -31,7 +31,7 @@
             <!-- <a id="my_brand" class="navbar-brand mr-0" href="home"> -->
                 
                 <!-- #region Coffee Animation -->
-                <svg width="70" height="70" viewBox="0 0 177 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="coffee-svg" width="70" height="70" viewBox="0 0 177 215" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="coffeeMug">
                     <g id="Group">
                     <g id="steam">
@@ -176,28 +176,25 @@
                     </svg>
                     <!-- #endregion-->
             </a>
-            
-            <!-- <button id="my_burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
 
             <button class="nav_menu navbar-toggler" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <svg width="60" height="60" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                  <path class="line line2" d="M 20,50 H 80"/>
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80"/>
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav pr-3">
-                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="#">יד שניה</a></li>
+                <ul class="nav navbar-nav pr-5">
                     <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu.html">התפריט שלנו</a></li>
                     <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu">התפריט שלנו</a></li> -->
                     <li><a class="nav-item nav-link my_nav pl-lg-4" href="#my_footer">כדאי לדעת</a></li>
                     <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="#our_story">מי אנחנו</a></li> -->
-                    <li><a id="story_link" class="nav-item nav-link my_nav pl-lg-4" href="#our_story">מי אנחנו</a></li>
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-story.html">מי אנחנו</a></li>
+
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand.html">יד שניה</a></li>
+                    <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand">גלריה</a></li> -->
                     <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery.html">גלריה</a></li>
-                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="try_social.html">עמוד בית</a></li>
                     <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery">גלריה</a></li> -->
 
                     
@@ -212,13 +209,13 @@
             </div>
         </div> -->
 
-        <div class="container">
+        <div class="container mt-lg-4">
             <img class="logo-image mx-auto d-block img-fluid" src="/assets/resizedLogo22.png" alt="logo">
         </div>
-        <div id="bambi" class="d-none d-lg-inline">
+        <div id="bambi" class="d-none d-xl-inline">
             <img src="/assets/Bambi.png" alt="">
         </div>
-        <div id="rose" class="d-none d-lg-inline float-right">
+        <div id="rose" class="d-none d-xl-inline float-right">
             <img src="/assets/rose.png" alt="">
         </div>
 
