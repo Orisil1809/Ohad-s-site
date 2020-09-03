@@ -220,6 +220,13 @@ button:focus {
   }
 }
 
+@media (max-width: 767px){
+  #coffee-svg{
+      height: 60px;
+      width: 60px;
+  }
+}
+
 #our_story{
     display: none;
     /* opacity: 0; */
@@ -791,13 +798,13 @@ hr{
     
   }
 
-#logo{
+/* #logo{
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -20%);
 
-}
+} */
 
 #second{
   position: relative;

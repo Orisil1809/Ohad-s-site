@@ -23,13 +23,11 @@
 
     </head>
     <body>
+        <nav id="main_navbar" class="navbar navbar-expand-lg mb-4 py-0 navbar-light fixed-top">
 
-        <nav id="main_navbar" class="navbar navbar-expand-lg mb-2 py-0 navbar-light">
-            <!--CHANGE-->
-            <!-- Navbar fixed-top? Add color to navbar? -->
-
-            <a id="my_brand" class="navbar-brand mr-0" href="/">
+            <a id="my_brand" class="navbar-brand mr-0" href="home.html">
             <!-- <a id="my_brand" class="navbar-brand mr-0" href="home"> -->
+                
                 <!-- #region Coffee Animation -->
                 <svg width="70" height="70" viewBox="0 0 177 215" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="coffeeMug">
@@ -177,31 +175,33 @@
                     <!-- #endregion-->
             </a>
             
+
             <button class="nav_menu navbar-toggler" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <svg width="60" height="60" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                  <path class="line line2" d="M 20,50 H 80" />
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80"/>
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </button>
-    
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav pr-3">
-                    <li><a class="nav-item nav-link my_nav mr-4" href="#">יד שניה</a></li>
-                    <!--CHANGE-->
-                    <li><a class="nav-item nav-link my_nav mr-2" href="our-menu.html">התפריט שלנו</a></li>
-                    <!-- <li><a class="nav-item nav-link my_nav" href="our-menu">התפריט שלנו</a></li> -->
-                    
-                    <li><a class="nav-item nav-link my_nav" href="home.html#my_footer">כדאי לדעת</a></li>
-                    <li><a class="nav-item nav-link my_nav" href="home.html#our_story">מי אנחנו</a></li>
-                    <!-- <li><a class="nav-item nav-link my_nav" href="home#my_footer">כדאי לדעת</a></li>
-                    <li><a class="nav-item nav-link my_nav" href="home#our_story">מי אנחנו</a></li> -->
-                    
+                <ul class="nav navbar-nav pr-5">
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="#">יד שניה</a></li>
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu.html">התפריט שלנו</a></li>
+                    <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu">התפריט שלנו</a></li> -->
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="#my_footer">כדאי לדעת</a></li>
+                    <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="#our_story">מי אנחנו</a></li> -->
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-story.html">מי אנחנו</a></li>
+
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand.html">יד שניה</a></li>
+                    <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand">גלריה</a></li> -->
+                    <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery.html">גלריה</a></li>
+                    <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery">גלריה</a></li> -->
+
                 </ul>
 
             </div>
         </nav>
-        <h1 class = "display-4 text-center mb-4" style="color: #804000";>התפריט שלנו</h1>
+        <h1 id = "menu-title" class = "display-4 text-center mb-4">התפריט שלנו</h1>
         <div id="menu" class="container">
             <div class="row justify-content-around align-items-start text-right mt-3 pr-2 pl-2 pr-md-0 pl-md-0">
                 <div class="col-md-5" id="food">
