@@ -12,7 +12,7 @@
 // });
 
 $('.nav_menu').click(function(){
-    console.log("ORIIII");
+
     $('#main_navbar').each(function(){
         // if($(this).hasClass('colored')){
         //     $(this).css("background-color", "transparent");
