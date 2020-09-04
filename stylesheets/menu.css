@@ -128,7 +128,7 @@ body{
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     #menu{
         margin-bottom: 3vh;
     }

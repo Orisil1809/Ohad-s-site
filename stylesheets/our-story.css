@@ -225,10 +225,12 @@ transform-box: fill-box;
     }
     .partner_pic{
         margin-left: 4vh;
+        margin-right: 4vh;
 
     }
     .partner_pic2{
         margin-right: 4vh;
+        margin-left: 4vh;
     }
     #story_paragraph2 {
         margin-left: 6vh;

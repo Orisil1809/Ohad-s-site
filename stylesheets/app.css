@@ -227,13 +227,13 @@ button:focus {
   }
 }
 
-#our_story{
+/* #our_story{
     display: none;
-    /* opacity: 0; */
+    
     padding-top: 80px;
     margin-top: -80px;
     
-}
+} */
 .lead{
     font-weight: 700;;
 }
@@ -522,7 +522,7 @@ hr{
  
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #social-footer {
       /* padding-bottom: env(safe-area-inset-bottom); */
       min-height: 120px;
