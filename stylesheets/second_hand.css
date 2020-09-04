@@ -11,7 +11,11 @@ body{
     margin: 0px;
     font-family: 'Alef', sans-serif;
     box-sizing: border-box;
-    background-color: #EFE2BA;
+    /* background-color: #EFE2BA; */
+    /* background-color: #bee4f8; */
+    background-color: rgba(190, 228, 248, 1);
+
+
     /* background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
     /* background-image: url("/assets/menu_background.jpg"); */
 
@@ -208,7 +212,7 @@ transform-box: fill-box;
 
 #store-img{
   height: 40vh;
-  width: 100%;
+  width: 40%;
 }
 .card-columns{
   column-count: 1;
@@ -244,11 +248,95 @@ transform-box: fill-box;
   
 }
 
-/* body {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  } */
+.card-body img{
+	height: 110px !important;
+}
+.flip-div{
+	cursor: pointer;
+}
+.flip-div:hover .back,.flip-div.hover .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.flip-div:hover .front,.flip-div.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip-main{
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front{
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+.back ul li a{
+	font-size: 18px;
+}
+.front,.back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
 
+
+#header-img{
+  margin-top: 10vh;
+}
+
+#main{
+  margin-top: 20vh;
+}
+
+#main-title{
+  color: #4b2807;
+}
+
+p, h5{
+  color: #4b2807;
+
+}
+
+#bolded{
+  font-weight: 800;
+}

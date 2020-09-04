@@ -11,7 +11,8 @@ body{
     margin: 0px;
     font-family: 'Alef', sans-serif;
 
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #f1ead2;
 
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
@@ -95,7 +96,8 @@ body{
     color: white !important;
 }
 .my_nav:hover{
-    color:  rgb(252, 177, 3) !important;
+    color: #FFCA26 !important;
+    /* color:  rgb(252, 177, 3) !important; */
   }
 
   .nav_menu {
@@ -153,9 +155,9 @@ button:focus {
   
 }
 .scrolled > .collapse > .nav .my_nav, .colored > .collapse > .nav .my_nav{
-  /* color: #DE444A !important; */
-  color: rgb(252, 177, 3) !important;
-  font-weight: 600;
+  /* color: #FFCA26 !important; */
+  color: #FFCA26 !important;
+  font-weight: 400;
 }
 .scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
   color: rgba(252, 177, 3, 0.5) !important;
@@ -287,12 +289,14 @@ button:focus {
     padding-left: 0;
     width:100%;
     padding-top: 2vh;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     
     
     /* Commented recently */
     /* width: 100%; */
-    background-image:url("/assets/footer_backgrounds/footer_background_new.jpg");
+
+    /* background-image:url("/assets/footer_backgrounds/footer_background_new.jpg"); */
+    background-color: #FFCA26;
     /* background-color: #1d1c1c; */
     /* background-color: #295129; */
 
@@ -301,7 +305,7 @@ button:focus {
 @media (max-width: 768px) {
   #my_footer{
     padding-top: 8vh;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
   }
 
 }
@@ -808,7 +812,9 @@ hr{
 
 #second{
   position: relative;
-  background-color: #EFE2BA;
+  /* background-color: #f1ead2; */
+  /* background-color: #f0f0f0; */
+  
 
   /* background-image: url("/assets/Gallery/DSC_0809_new.JPG");
   background-repeat: no-repeat;
@@ -835,8 +841,8 @@ hr{
 #my_text{
     position: absolute;
     top: 50%;
-    left: 45%;
-    transform: translate(-45%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     color: white;
     font-weight: 400;
@@ -850,14 +856,19 @@ hr{
 
     display: block;
     box-sizing: border-box;
-    border-top: 3px solid #5B879F;
+    /* border-top: 3px solid #5B879F; */
+    border-top: 3px solid #bee4f8;
+
 }
+
 #my_text::after{
   content: '';
   margin-top: 10px;
   display: block;
   box-sizing: border-box;
-  border-top: 3px solid #5B879F;
+  /* border-top: 3px solid #5B879F; */
+  border-top: 3px solid #bee4f8;
+
 }
 
 

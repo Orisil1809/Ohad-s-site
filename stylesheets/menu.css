@@ -51,8 +51,10 @@ body{
 }
 
 #menu{
-    border: 5px solid #804000;
-    outline: 2px solid #804000;
+      border: 5px solid #4b2807;
+    outline: 2px solid #4b2807;
+    /* border: 5px solid #804000;
+    outline: 2px solid #804000; */
     outline-offset: -15px;
     padding-top: 20px;
     /* padding-bottom: 150px; */
@@ -139,7 +141,8 @@ body{
     display: block;
     width: 100%;
     text-align: center;
-    background: #804000;
+    background-color: #4b2807;
+    /* background: #804000; */
     color: #fff;
     font-size: 120%;
     direction: rtl;
@@ -149,20 +152,22 @@ body{
  }
 
  .footer {
-     color: rgb(252, 177, 3);
+     /* color: rgb(252, 177, 3); */
+     color: #FFCA26;
      padding:0;
      margin:0;
      min-height: 30px;
  }
 
 #menu-title{
-    color: #804000;
+    color: #4b2807;
+    /* color: #804000; */
     margin-top: 10vh;
 }
 
 @media (max-width: 767px){
     #menu-title{
-        font-size: 2.5rem;
+        font-size: 3.25rem;
     }
     #coffee-svg{
         height: 60px;

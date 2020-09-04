@@ -14,7 +14,10 @@ body{
     /* background: linear-gradient(to right, #fdc830, #f37335); */
     /* background: linear-gradient(to right, #CB356B, #BD3F32); */
 
-    background-color: #295129;
+    /* background-color: #295129; */
+
+    background-color: #bee4f8;
+
     /* background-image:url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
 
     /* background-image: url("/assets/home_pics/dylan-nolte-SH_IjrKwG8c-unsplash.jpg");
@@ -357,11 +360,12 @@ hr{
 }
 
 #story_paragraph h1, p{
-    color: rgb(252, 177, 3);
+    /* color: rgb(252, 177, 3); */
+    color: #4b2807;
 }
-#story_paragraph2 h1, p{
+/* #story_paragraph2 h1, p{
     color: rgb(252, 177, 3);
-}
+} */
 .hide_story{
     display: none;
 }
@@ -371,7 +375,7 @@ hr{
 }
 
 #more_story p{
-    color: rgb(252, 177, 3);
+    color: #4b2807;
 }
 
 #more_story{
@@ -809,3 +813,6 @@ hr{
     color: #fff;
   }
 
+#first-text, #more-text{
+  font-size: 1.75rem;
+}
