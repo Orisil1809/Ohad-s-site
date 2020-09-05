@@ -67,3 +67,11 @@ $(window).scroll( function(){
   }); 
 
 });
+
+$('.flip-div .front').click(function(){
+  $('.ori2').addClass('margined');
+});
+
+$('.flip-div .back').click(function(){
+  $('.ori2').removeClass('margined');
+});

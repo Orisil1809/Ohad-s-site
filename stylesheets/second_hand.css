@@ -211,8 +211,18 @@ transform-box: fill-box;
 }
 
 #store-img{
-  height: 40vh;
-  width: 40%;
+  width: 90%;
+  /* border-radius: 5%; */
+
+  /* height: 40vh;
+  width: 40%; */
+}
+
+#row-img{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .card-columns{
   column-count: 1;
@@ -322,6 +332,11 @@ transform-box: fill-box;
 
 #header-img{
   margin-top: 10vh;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  
 }
 
 #main{
@@ -339,4 +354,8 @@ p, h5{
 
 #bolded{
   font-weight: 800;
+}
+
+.margined{
+  margin-top: 20vh;
 }
