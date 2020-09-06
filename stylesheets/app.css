@@ -535,7 +535,7 @@ transform: rotate(360deg);
 @media (max-width: 991px) {
 #social-footer {
     /* padding-bottom: env(safe-area-inset-bottom); */
-    min-height: 125px;
+    min-height: 130px;
     align-items: flex-start;
     padding-top: 1vh;
 }
