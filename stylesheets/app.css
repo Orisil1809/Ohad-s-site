@@ -1085,6 +1085,8 @@ transition: color 0.5s;
   .scroll-down {
       bottom: 25%;
   }
+}
+
 @keyframes upAnddown{
   0% {
     transform: translateY(0);
