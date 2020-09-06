@@ -1067,7 +1067,7 @@ transition: color 0.5s;
   color: #fff;
   font-size: 400%;
   position: absolute;
-  bottom: 15%;
+  bottom: 4%;
   z-index: 9;
   width: 100%;
   text-align: center;
@@ -1080,6 +1080,11 @@ transition: color 0.5s;
   animation-timing-function: ease-in-out!important;
 }
 
+@media (max-width: 767px)
+{
+  .scroll-down {
+      bottom: 25%;
+  }
 @keyframes upAnddown{
   0% {
     transform: translateY(0);
