@@ -63,7 +63,9 @@ body{
     color: white !important;
 }
 .my_nav:hover{
-    color:  rgb(252, 177, 3) !important;
+    /* color:  rgb(252, 177, 3) !important; */
+    color: #FFCA26 !important;
+
   }
 
   .nav_menu {
@@ -121,12 +123,16 @@ button:focus {
   
 }
 .scrolled > .collapse > .nav .my_nav, .colored > .collapse > .nav .my_nav{
-  /* color: #DE444A !important; */
-  color: rgb(252, 177, 3) !important;
-  font-weight: 600;
+
+  /* color: rgb(252, 177, 3) !important;
+  font-weight: 600; */
+  color: #FFCA26 !important;
+
 }
 .scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
-  color: rgba(252, 177, 3, 0.5) !important;
+  /* color: rgba(252, 177, 3, 0.5) !important; */
+  color: rgb(255, 202, 38, 0.7) !important;
+
 }
 
 @media(max-width: 992px){
@@ -241,6 +247,7 @@ button:focus {
     display: block;
     width: 100%;
     height: auto;
+    max-height:400px;
     transform: scale(1);
     transition: transform .5s ease;
   }

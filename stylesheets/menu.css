@@ -8,7 +8,8 @@ body{
     padding:0px;
     margin: 0px;
     font-family: 'Alef', sans-serif;
-    background-image: url("/assets/menu_background.jpg");
+    /* background-image: url("/assets/menu_background.jpg"); */
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("/assets/menu_background.jpg");
     background-size: cover;
     background-repeat: repeat;
 }
@@ -51,16 +52,18 @@ body{
 }
 
 #menu{
-      border: 5px solid #4b2807;
+    border: 5px solid #4b2807;
     outline: 2px solid #4b2807;
     /* border: 5px solid #804000;
     outline: 2px solid #804000; */
     outline-offset: -15px;
     padding-top: 20px;
+    margin-bottom: 20px;
     /* padding-bottom: 150px; */
     
     
 }
+
 .sandwich{
     position: relative;
 
@@ -127,12 +130,13 @@ body{
     #dish p{
         margin-bottom: 0.5rem;
     }
+    
 }
 
 
 @media (max-width: 991px) {
     #menu{
-        margin-bottom: 3vh;
+        margin-bottom: 4vh;
     }
 }
 
@@ -142,7 +146,7 @@ body{
     width: 100%;
     text-align: center;
     background-color: #4b2807;
-    /* background: #804000; */
+    
     color: #fff;
     font-size: 120%;
     direction: rtl;
@@ -226,7 +230,9 @@ body{
     color: white !important;
 }
 .my_nav:hover{
-    color:  rgb(252, 177, 3) !important;
+  /* color: rgb(255, 202, 38, 0.7) !important; */
+    color:  #FFCA26 !important;
+    
   }
 
   .nav_menu {
@@ -285,11 +291,13 @@ button:focus {
 }
 .scrolled > .collapse > .nav .my_nav, .colored > .collapse > .nav .my_nav{
   /* color: #DE444A !important; */
-  color: rgb(252, 177, 3) !important;
-  font-weight: 600;
+  color: #FFCA26 !important;
+  /* color: rgb(252, 177, 3) !important;
+  font-weight: 600; */
 }
 .scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
-  color: rgba(252, 177, 3, 0.5) !important;
+  /* color: rgba(252, 177, 3, 0.5) !important; */
+  color: rgb(255, 202, 38, 0.7) !important;
 }
 
 @media(max-width: 992px){
