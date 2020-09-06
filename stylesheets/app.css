@@ -988,3 +988,10 @@ hr{
 #second h2{
   display: none;
 } 
+
+
+#info-footer{
+  margin-top: -70px;        /* Size of fixed header */
+  padding-bottom: 70px; 
+  display: block; 
+}
