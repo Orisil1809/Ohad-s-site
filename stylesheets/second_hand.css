@@ -264,19 +264,33 @@ transform-box: fill-box;
 .flip-div{
 	cursor: pointer;
 }
-.flip-div:hover .back,.flip-div.hover .back {
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  transform: rotateY(0deg);
+
+@media(min-width: 1200px){
+    .flip-div:hover .back,.flip-div.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    }
+    .flip-div:hover .front,.flip-div.hover .front {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+  }
+
+.flipped{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-.flip-div:hover .front,.flip-div.hover .front {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
+
+
+
+
 .flip-main{
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
@@ -358,4 +372,13 @@ p, h5{
 
 .margined{
   margin-top: 20vh;
+}
+@media(min-width: 1200px){
+  .card-columns .card{
+    margin-bottom: 0 !important;
+  }
+}
+
+ul li{
+  margin: 10px 0;
 }
