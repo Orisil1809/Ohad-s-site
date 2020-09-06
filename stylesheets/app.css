@@ -990,17 +990,17 @@ hr{
 } 
 
 
-/* #info-footer{
-  margin-top: -70px;      
-  padding-bottom: 70px; 
+#info-footer{
+  margin-top: -50px;      
+  padding-bottom: 50px; 
   display: block; 
-} */
+}
 
-.hashlink:before{
+/* .hashlink:before{
   display:block;
   position:relative;
   margin-top: -80px;
   height:80px;
   content: " ";
   visibility:hidden;
-}
+} */
