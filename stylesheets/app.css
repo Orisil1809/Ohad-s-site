@@ -990,8 +990,17 @@ hr{
 } 
 
 
-#info-footer{
-  margin-top: -70px;        /* Size of fixed header */
+/* #info-footer{
+  margin-top: -70px;      
   padding-bottom: 70px; 
   display: block; 
+} */
+
+.hashlink:before{
+  display:block;
+  position:relative;
+  margin-top: -80px;
+  height:80px;
+  content: " ";
+  visibility:hidden;
 }
