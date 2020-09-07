@@ -1,13 +1,13 @@
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
-  
-  
+  /* height: 100%; */
+
 }
 
 body{
-  /* padding:0px; */
-
+  overflow-x: hidden;
+  /* height: 100%; */
   margin: 0px;
   font-family: 'Alef', sans-serif;
 
@@ -775,6 +775,8 @@ transform: rotateY(360deg);
 
 #header{
   height: 100vh;
+  /* overflow: hidden;
+  width: 100%; */
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -820,6 +822,7 @@ transform: rotateY(360deg);
 
 #second{
 position: relative;
+
 /* background-color: #f1ead2; */
 /* background-color: #f0f0f0; */
 

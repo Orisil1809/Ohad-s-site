@@ -223,6 +223,7 @@ $(document).ready(function(){
   $(function () {
     $(document).scroll(function () {
       var $nav = $("#main_navbar");
+      console.log($(this).scrollTop() + "HERE!");
       $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 80);
       $('.scrolled #navbarCollapse').on("click", "li" , function(){
         console.log("ORI22");
