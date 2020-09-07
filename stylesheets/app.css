@@ -202,7 +202,7 @@ opacity: 0 !important;
     opacity: 0 !important;
 }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
 .fixed-top .navbar-collapse{
     display: block;
 }
@@ -308,7 +308,7 @@ transform-box: fill-box;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 #my_footer{
   padding-top: 8vh;
   /* margin-top: 15vh; */
@@ -796,7 +796,7 @@ transform: rotateY(360deg);
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #header {
       /* background-image: url("/assets/Gallery/background3.jpg"); */
       /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg"); */
@@ -1083,10 +1083,16 @@ transition: color 0.5s;
 @media (max-width: 767px)
 {
   .scroll-down {
-      bottom: 25%;
+      bottom: 20%;
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px)
+{
+  .scroll-down {
+      bottom: 15%;
+  }
+}
 @keyframes upAnddown{
   0% {
     transform: translateY(0);
