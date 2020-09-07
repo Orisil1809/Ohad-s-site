@@ -13,8 +13,8 @@ body{
     box-sizing: border-box;
     /* background-color: #EFE2BA; */
     /* background-color: #bee4f8; */
-    background-color: rgba(190, 228, 248, 1);
-
+    
+    background-color: rgba(190,228,248, 0.5);
 
     /* background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
     /* background-image: url("/assets/menu_background.jpg"); */
