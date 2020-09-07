@@ -309,7 +309,7 @@ $(document).ready(function(){
 $('#scroll-arrow').click(function(){
   console.log("WERWERWERWER");
 
-  var defaultDuration = 1000 // ms
+  var defaultDuration = 777 // ms
   var edgeOffset = 125 // px
   zenscroll.setup(defaultDuration, edgeOffset)
   zenscroll.to(second)

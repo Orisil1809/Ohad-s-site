@@ -67,6 +67,7 @@ body{
 min-height: 40px;
 /* Change to vh?? */
 transition: background-color 300ms linear;
+
 box-shadow: none;
 z-index: 1050;
 /* background-color: transparent; */
