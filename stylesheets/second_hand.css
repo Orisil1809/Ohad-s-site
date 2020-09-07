@@ -225,13 +225,14 @@ transform-box: fill-box;
 }
 
 #flower-img{
-  width: 90%;
-  /* border-radius: 5%; */
+  width: 60%;
 
-  /* height: 40vh;
-  width: 40%; */
 }
-
+@media(max-width: 767px){
+  #flower-img{
+    width: 90%;
+  }
+}
 #row-img ,#first-row-img{
   padding-left: 0;
   padding-right: 0;
@@ -373,8 +374,19 @@ transform-box: fill-box;
 
 #main-title{
   color: #4b2807;
+  /* position: relative; */
 }
-
+/* #main-title::after{
+    content: url('/assets/Gallery/flowers-branch-03.png');
+    margin-top: 10px;
+    display: block;
+    box-sizing: border-box;
+    width: 230px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    
+} */
 p, h5{
   color: #4b2807;
 

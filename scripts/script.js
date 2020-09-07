@@ -209,11 +209,14 @@ $(document).ready(function(){
   
   $('.navbar-toggler').click(function(){
     $("#main_navbar").toggleClass('colored');
+    $("#main_navbar").toggleClass('my-background');
     $('.colored #navbarCollapse').on("click", "li" , function(){
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');
       $('#main_navbar').removeClass('colored');
+      $("#main_navbar").removeClass('my-background');
+
   
   
     });
@@ -223,7 +226,6 @@ $(document).ready(function(){
   $(function () {
     $(document).scroll(function () {
       var $nav = $("#main_navbar");
-      console.log($(this).scrollTop() + "HERE!");
       $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 80);
       $('.scrolled #navbarCollapse').on("click", "li" , function(){
         console.log("ORI22");
@@ -301,3 +303,27 @@ $(document).ready(function(){
   }); 
 
 });
+
+
+
+$('#scroll-arrow').click(function(){
+  console.log("WERWERWERWER");
+
+  var defaultDuration = 1000 // ms
+  var edgeOffset = 125 // px
+  zenscroll.setup(defaultDuration, edgeOffset)
+  zenscroll.to(second)
+
+  console.log(zenscroll.getY());
+
+});
+
+
+// $('#should-know').click(function(){
+//   var defaultDuration = 1000 // ms
+//   var edgeOffset = -0 // px
+//   zenscroll.setup(defaultDuration, edgeOffset);
+
+//   zenscroll.to(my_footer);
+
+// });
