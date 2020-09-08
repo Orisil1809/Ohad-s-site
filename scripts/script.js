@@ -242,6 +242,7 @@ $(document).ready(function(){
         $('.navbar-toggler').removeClass('opened');
         $('.navbar-toggler').addClass('collapsed');
         $('#main_navbar').removeClass('colored');
+        //ADDED 8.9 - NOT
 
   
   
@@ -251,25 +252,18 @@ $(document).ready(function(){
   
   $('#navbarCollapse').on('hide.bs.collapse', function () {
     $('.my_nav').animate({'opacity':'0'} ,'fast');
-    // Commented 8.9
-    // $("#main_navbar").removeClass('my-background');
+      //ADDED 8.9
+    $("#main_navbar").removeClass('my-background');
 
   
   });
 
-  // Commented 8.9
-  // $('#navbarCollapse').on('hidden.bs.collapse', function () {
-  //   console.log("ORIIIIIIII");
-  //   $("#main_navbar").toggleClass('my-background');
-  
-  // });
   
   $('#navbarCollapse').on('show.bs.collapse', function () {
-    // Commented 8.9
-    // $('.my_nav').css({ 'opacity' : 1 }, 'slow');
+
     $('.my_nav').css({ 'opacity' : 1 });
-    // Commented 8.9
-    // $("#main_navbar").toggleClass('my-background');
+    //ADDED 8.9
+    $("#main_navbar").addClass('my-background');
 
   });
   
