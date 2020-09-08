@@ -253,7 +253,7 @@ $(document).ready(function(){
   $('#navbarCollapse').on('hide.bs.collapse', function () {
     $('.my_nav').animate({'opacity':'0'} ,'fast');
       //ADDED 8.9
-    $("#main_navbar").removeClass('my-background');
+    // $("#main_navbar").removeClass('my-background');
 
   
   });
@@ -263,7 +263,7 @@ $(document).ready(function(){
 
     $('.my_nav').css({ 'opacity' : 1 });
     //ADDED 8.9
-    $("#main_navbar").addClass('my-background');
+    // $("#main_navbar").addClass('my-background');
 
   });
   

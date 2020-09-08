@@ -74,19 +74,21 @@ z-index: 1050;
 /* box-shadow: 0 0 5px rgba(246, 81, 61, 0.5); */
 /* box-shadow:  3px 3px 5px 6px #ccc;; */
 }
-
+@media (max-width: 991px){
+  .colored{
+    background-color: transparent !important;
+    background-image: url("/assets/Gallery/menuBgMobile.jpg");
+    background-size: cover;
+  }
+}
 .colored{
-  /* background-color: transparent !important;
-  background-image: url("/assets/Gallery/menuBgMobile.jpg");
-  background-repeat: repeat-x;
-  background-size: cover; */
-
-background-color: #f0f0f0 !important;
+  background-color: #f0f0f0 !important;
+}
 
 /* background-image: url("/assets/Gallery/menuBgMobile.jpg");
 background-repeat: repeat-y;
 background-size: cover; */
-}
+
 .navbar-toggler-icon{
 background-image: url("/assets/hamburger.svg") !important;
 }
@@ -171,12 +173,14 @@ stroke-dasharray: 90 207;
 stroke-dashoffset: -134;
 stroke-width: 6;
 }
-
+@media (max-width: 991px){
+  .scrolled{
+    background-color: transparent !important;
+    background-image: url("/assets/Gallery/menuBgMobile.jpg");
+    background-size: cover;
+  }
+}
 .scrolled {
-  /* background-color: transparent !important;
-  background-image: url("/assets/Gallery/menuBgMobile.jpg");
-  background-repeat: repeat-x;
-  background-size: cover; */
 
 background-color: #f0f0f0 !important;
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3) !important;
@@ -1145,10 +1149,10 @@ transition: color 0.5s;
 
 .my-background{
   /* ADDED 8.9 */
-  background-color: transparent !important;
+  /* background-color: transparent !important;
   background-image: url("/assets/Gallery/menuBgMobile_new.jpg");
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* .my_nav{
