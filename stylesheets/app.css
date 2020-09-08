@@ -1148,7 +1148,7 @@ transition: color 0.5s;
 }
 
 .my-background{
-  background-color: transparent !important;
+  
   background-image: url("/assets/Gallery/menuBgMobile.jpg");
   background-repeat: repeat-y;
   background-size: cover;
