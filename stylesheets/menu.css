@@ -358,3 +358,22 @@ button:focus {
       opacity:0;
   }
 }
+
+
+
+.active .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: red;
+    
+}
+
+.active .my_nav::before{
+  content: '';
+  height: 3px;
+  display: block;
+  width: 100%;
+  background: red;
+}

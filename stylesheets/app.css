@@ -108,8 +108,7 @@ border: none;
 .my_nav{
   font-size: 1.5rem;
   color: white !important;
-  /* border-bottom: 3px solid transparent;
-  padding-left: 2.5rem!important; */
+  /* padding-left: 2.5rem!important; */
 }
 
 @media(max-width: 991px)
@@ -124,6 +123,34 @@ border: none;
   color: #FFCA26 !important;
 
   /* color:  rgb(252, 177, 3) !important; */
+}
+
+@media(min-width: 1024px){
+  .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+  }
+  .my_nav:hover::after{
+    background: red;
+
+  }
+
+  .my_nav::before{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+  }
+  .my_nav:hover::before{
+    background: red;
+
+  }
 }
 
 .nav_menu {
@@ -317,7 +344,7 @@ transform-box: fill-box;
 #social_link{
   color:inherit;
 }
-#fb_link{
+.fb_link{
   color:inherit;
 
 }
@@ -808,7 +835,7 @@ transform: rotateY(360deg);
   height: 100vh;
   /* overflow: hidden;
   width: 100%; */
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -820,7 +847,7 @@ transform: rotateY(360deg);
     /* background-image: url("/assets/Gallery/background3.jpg"); */
     /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg"); */
     /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_1024.jpg"); */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_1024_new.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_768_new2_new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
