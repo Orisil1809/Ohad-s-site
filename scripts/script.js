@@ -212,17 +212,17 @@ $(document).ready(function(){
   
   $('.navbar-toggler').click(function(){
     $("#main_navbar").toggleClass('colored');
-    $("#main_navbar").toggleClass('my-background');
     // var element = document.getElementById('navbarCollapse');
     // element.style.height = "100vh !important";
-    
+    // $("#main_navbar").toggleClass('my-background');
+
 
     $('.colored #navbarCollapse').on("click", "li" , function(){
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');
       $('#main_navbar').removeClass('colored');
-      $("#main_navbar").removeClass('my-background');
+      // $("#main_navbar").removeClass('my-background');
       // $("#navbarCollapse").toggleClass('full-navbar');
 
       // $('#navbarCollapse').css( "height" , "800px");
@@ -238,27 +238,40 @@ $(document).ready(function(){
       var $nav = $("#main_navbar");
       $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 80);
       $('.scrolled #navbarCollapse').on("click", "li" , function(){
-        console.log("ORI22");
         $('#navbarCollapse').collapse('hide');
         $('.navbar-toggler').removeClass('opened');
         $('.navbar-toggler').addClass('collapsed');
         $('#main_navbar').removeClass('colored');
+
   
   
       });
     });
   });
   
-  // $('#navbarCollapse').on('hide.bs.collapse', function () {
-  //   // $('.my_nav').css({ 'opacity' : 0 });
-  //   $('.my_nav').animate({'opacity':'0'} ,'fast');
+  $('#navbarCollapse').on('hide.bs.collapse', function () {
+    $('.my_nav').animate({'opacity':'0'} ,'fast');
+    // Commented 8.9
+    // $("#main_navbar").removeClass('my-background');
+
+  
+  });
+
+  // Commented 8.9
+  // $('#navbarCollapse').on('hidden.bs.collapse', function () {
+  //   console.log("ORIIIIIIII");
+  //   $("#main_navbar").toggleClass('my-background');
   
   // });
   
-  // $('#navbarCollapse').on('show.bs.collapse', function () {
-  //   $('.my_nav').css({ 'opacity' : 1 }, 'slow');
-  
-  // });
+  $('#navbarCollapse').on('show.bs.collapse', function () {
+    // Commented 8.9
+    // $('.my_nav').css({ 'opacity' : 1 }, 'slow');
+    $('.my_nav').css({ 'opacity' : 1 });
+    // Commented 8.9
+    // $("#main_navbar").toggleClass('my-background');
+
+  });
   
   function delay (URL) {
     setTimeout( function() { window.location = URL }, 500 );
