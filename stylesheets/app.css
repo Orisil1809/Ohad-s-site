@@ -196,11 +196,20 @@ color: #4b2807 !important;
 }
 
 @media(max-width: 992px){
-#navbarCollapse{
-    margin-bottom: 10vh;
-    min-height: 100vh;
-    
+  #navbarCollapse{
+      margin-bottom: 10vh;
+      min-height: 100vh;
+      
+  }
 }
+/* .collapsing{
+  height: 0px !important;
+} */
+
+/* .full-navbar */
+
+#navbarCollapse{
+  transition: height 1.5s;
 }
 
 .fixed-top.colored .navbar-collapse{
@@ -633,18 +642,18 @@ transform: rotate(360deg);
   background: #3b5999;
 }
 
-#social-footer ul li:nth-child(2) a:before{
+#social-footer ul li:nth-child(2) a:before, #social-footer ul li:nth-child(3) a:before{
   background: linear-gradient(#a8e063, #56ab2f)
 }
 
-#social-footer ul li:nth-child(3) a:before {
+#social-footer ul li:nth-child(4) a:before {
   background: #55acee;
 }
 
-#social-footer ul li:nth-child(4) a:before {
+#social-footer ul li:nth-child(5) a:before, #social-footer ul li:nth-child(6) a:before {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
-#social-footer ul li:nth-child(5) a:before {
+#social-footer ul li:nth-child(7) a:before {
   background: #00AA6C;
 }
 
@@ -1143,4 +1152,88 @@ transition: color 0.5s;
   background-image: url("/assets/Gallery/menuBgMobile.jpg");
   background-repeat: repeat-y;
   background-size: cover;
+}
+
+/* .my_nav{
+  transition: opacity 2s ease;
+} */
+
+
+#nav-icons ul {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+}
+
+#nav-icons ul li {
+  list-style: none;
+}
+
+#nav-icons ul li a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  margin: 0 15px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+#nav-icons ul li a .icon {
+  position: relative;
+  color: #1b1b1b;
+  transition: .5s;
+  z-index: 3;
+}
+
+#nav-icons ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+#nav-icons ul li a:hover .black-icon {
+  color: black;
+  transform: rotateY(360deg);
+}
+
+#nav-icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  z-index: 2;
+}
+
+#nav-icons ul li a:hover:before {
+  top: 0;
+}
+
+#nav-icons ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+#nav-icons ul li:nth-child(2) a:before{
+  background: linear-gradient(#a8e063, #56ab2f)
+}
+
+#nav-icons ul li:nth-child(3) a:before {
+  background: #55acee;
+}
+
+#nav-icons ul li:nth-child(4) a:before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+#nav-icons ul li:nth-child(5) a:before {
+  background: #00AA6C;
 }

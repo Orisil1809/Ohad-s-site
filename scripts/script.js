@@ -129,15 +129,18 @@ $(document).ready(function(){
   
   });
   
-  $("#fb_link").click(function(){
-    const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
-    setTimeout(function (){
-      window.location.replace("fb://profile/1032462220228396");
-    }, 500);
-    setTimeout(function () {
-      window.location.replace(address); }, 1000);
-  })
+  // $("#fb_link").click(function(){
+  //   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
+  //   setTimeout(function (){
+  //     window.location.replace("fb://profile/1032462220228396");
+  //   }, 500);
+  //   setTimeout(function () {
+  //     window.location.replace(address); }, 1000);
+  // })
   
+
+
+
   //#region fb link try
   
   // $("#fb_link").click(function(){
@@ -210,15 +213,22 @@ $(document).ready(function(){
   $('.navbar-toggler').click(function(){
     $("#main_navbar").toggleClass('colored');
     $("#main_navbar").toggleClass('my-background');
+    // var element = document.getElementById('navbarCollapse');
+    // element.style.height = "100vh !important";
+    
+
     $('.colored #navbarCollapse').on("click", "li" , function(){
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');
       $('#main_navbar').removeClass('colored');
       $("#main_navbar").removeClass('my-background');
+      // $("#navbarCollapse").toggleClass('full-navbar');
 
+      // $('#navbarCollapse').css( "height" , "800px");
   
-  
+
+
     });
   
   });
@@ -239,16 +249,16 @@ $(document).ready(function(){
     });
   });
   
-  $('#navbarCollapse').on('hide.bs.collapse', function () {
-    // $('.my_nav').css({ 'opacity' : 0 });
-    $('.my_nav').animate({'opacity':'0'} ,'fast');
+  // $('#navbarCollapse').on('hide.bs.collapse', function () {
+  //   // $('.my_nav').css({ 'opacity' : 0 });
+  //   $('.my_nav').animate({'opacity':'0'} ,'fast');
   
-  });
+  // });
   
-  $('#navbarCollapse').on('show.bs.collapse', function () {
-    $('.my_nav').css({ 'opacity' : 1 });
+  // $('#navbarCollapse').on('show.bs.collapse', function () {
+  //   $('.my_nav').css({ 'opacity' : 1 }, 'slow');
   
-  });
+  // });
   
   function delay (URL) {
     setTimeout( function() { window.location = URL }, 500 );
