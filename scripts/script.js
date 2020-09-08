@@ -217,7 +217,8 @@ $(document).ready(function(){
     // $("#main_navbar").toggleClass('my-background');
 
 
-    $('.colored #navbarCollapse').on("click", "li" , function(){
+    $('.colored #navbarCollapse').on("click", ".navbar-nav li" , function(){
+      
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');
