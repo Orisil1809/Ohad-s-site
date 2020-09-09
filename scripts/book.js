@@ -336,7 +336,14 @@ $('#scroll-arrow').click(function(){
 
 });
 
+$(document).ready(function(){
+  $('#my-img').animate({'width':'show'} , { duration: 800, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
 
+});
+
+
+
+          
 // $('#should-know').click(function(){
 //   var defaultDuration = 1000 // ms
 //   var edgeOffset = -0 // px

@@ -801,7 +801,9 @@ ul li{
     right: -2vw;
     
 }
-
+#my-img{
+    display: none;
+}
 /* .flower-border::before{
     content: url("/assets/Gallery/corner-flowers-01.png");
     position: absolute;
