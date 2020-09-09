@@ -54,17 +54,22 @@ $(document).ready(function(){
   
   $("#read_more").click(function(){
     console.log("CLICKED!!!");
-    if($("#more_story").hasClass("d-block")){
-      $(this).html('<b>קרא עוד</b>');
-      $("#more_story").removeClass("d-block");
-      $("#more_story").addClass("d-none");
-    }
-    else if ($("#more_story").hasClass("d-none")){
-      $(this).html('<b>מזער</b>');
+    if ($("#more_story").hasClass("d-none")){
+      // $(this).html('<b>מזער</b>');
       $("#more_story").removeClass("d-none");
       $("#more_story").addClass("d-block");
     }
-  
+    // else if($("#more_story").hasClass("d-block")){
+    //   $(this).html('<b>קרא עוד</b>');
+    //   $("#more_story").removeClass("d-block");
+    //   $("#more_story").addClass("d-none");
+    // }
+
+    //ADDED 9.9
+    $(this).removeClass('d-inline');
+    $(this).addClass('d-none');
+    
+    
   });
   
   $("#fb_link").click(function(){
