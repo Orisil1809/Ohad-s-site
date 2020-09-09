@@ -360,6 +360,38 @@ transform-box: fill-box;
 }
 
 
+@media(min-width: 1024px){
+  .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+  }
+  .my_nav:hover::after{
+    
+    background: #ED1F28;
+
+  }
+
+  .my_nav::before{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+  }
+  .my_nav:hover::before{
+    background: #ED1F28;
+
+  }
+
+  .my_nav::before, .my_nav::after{
+    transition: background-color .5s ease;
+  }
+}
 
 .active .my_nav::after{
   content: '';

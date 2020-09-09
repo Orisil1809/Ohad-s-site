@@ -738,3 +738,75 @@ html{
     background-color: rgba(255, 202, 38, 0.7);
     transform: translate(40%, 40%);
 }
+
+
+#book-desc{
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    font-size: 1.25rem;
+}
+
+#main-row{
+    margin-top: 5vh;
+}
+
+#book-quote{
+    font-size: 2rem;
+    position: relative;
+}
+
+
+
+#book-quote::before{
+    content: open-quote;
+}
+
+#book-quote::after{
+    content: close-quote;
+}
+
+#book-quote:before,
+#book-quote:after {
+  display: block;
+  vertical-align: bottom;
+  color: orange;
+  font-size: 2em;
+  top: .2em;
+  position: relative;
+}
+
+
+@media (max-width: 767px){
+    #book-quote, ul{
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+    }
+}
+
+.flower-border{
+    content: url("/assets/Gallery/corner-flowers-02.png");
+    position: absolute;
+    overflow: hidden;
+    width: 15vw;
+    height: 15vw;
+    bottom: -2vw;
+    right: -2vw;
+    
+}
+
+/* .flower-border::before{
+    content: url("/assets/Gallery/corner-flowers-01.png");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1050;
+    background-color: rgba(237, 33, 40, 0.3);
+} */

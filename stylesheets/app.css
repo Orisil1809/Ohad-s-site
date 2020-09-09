@@ -1298,6 +1298,9 @@ transition: color 0.5s;
   }
 }
 
-#my_text{
-  margin-top: 12vh;
+@media(min-width: 1024px)
+{
+  #my_text{
+    margin-top: 12vh;
+  }
 }
