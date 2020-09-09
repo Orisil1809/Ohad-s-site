@@ -76,3 +76,15 @@ $(window).on('load', function(){
   function delay (URL) {
     setTimeout( function() { window.location = URL }, 500 );
   }
+
+  $(document).ready(function ($) {
+    var url = window.location.href;
+    var activePage = url;
+    $('#navbarCollapse li a').each(function () {
+        var linkPage = this.href;
+  
+        if (activePage == linkPage) {
+            $(this).closest("li").addClass("active");
+        }
+    });
+  });

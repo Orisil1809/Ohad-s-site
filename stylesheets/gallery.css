@@ -256,7 +256,9 @@ button:focus {
     transform: scale(1.05);
   }
 
-
+#gallery-title{
+  color: #4b2807;
+}
   @media (max-width: 480px) {
     #gallery-title{
         font-size: 3rem;
@@ -286,6 +288,7 @@ button:focus {
     font-family: "Font Awesome 5 Free";
     font-size: 1em;
     line-height: 30px;
+    color: #4b2807;
 
 }
 
@@ -338,3 +341,23 @@ button:focus {
         transform: rotateY(360);
     }
 } */
+
+
+@media(min-width: 992px){
+  .active .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: #ED1F28;
+    
+  }
+
+  .active .my_nav::before{
+  content: '';
+  height: 3px;
+  display: block;
+  width: 100%;
+  background: #ED1F28;
+  }
+}

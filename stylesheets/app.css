@@ -1098,43 +1098,10 @@ padding:0 !important;
 
 
 
-
-/* Group all rule sets together and add them only to colored navbar -
-.scrolled > .collapse > .nav .my_nav, .colored > .collapse > .nav .my_nav{
-
-#orile is the a element  */
-
-/* #orile
-{
-background: linear-gradient(to right, #9c5b00, #9c5b00 50%, #FFCA26 50%);
-
-
-}
-
-#orile{
-
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-size: 200% 100%;
-background-position: 100%;
-}
-
-#orile{
-  font-weight: 800;
-transition: background-position 275ms ease-in-out;
-}
-#orile:hover {
-background-position: 0 100%;
-} */
-
-
-
-
-#orile{
+/* #orile{
 -webkit-transition: color 0.5s;
 transition: color 0.5s;
-}
+} */
 
 
 .scroll-down{

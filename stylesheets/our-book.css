@@ -515,10 +515,10 @@ html{
     }
 }
   
-  #orile{
+  /* #orile{
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-  }
+  } */
   
   
   .scroll-down{
@@ -758,29 +758,37 @@ ul li{
 }
 
 #book-quote{
-    font-size: 2rem;
     position: relative;
+    font-size: 2rem;
+    
 }
 
 
 
 #book-quote::before{
+    position: absolute;
+    /* content: "“"; */
+    margin-right: -1rem;
+
     content: open-quote;
 }
 
 #book-quote::after{
+    position: absolute;
+    /* content: "”"; */
+    margin-left: -1rem;
+
     content: close-quote;
+
+    /* display: inline;
+    content: '"'; */
 }
 
-#book-quote:before,
+/* #book-quote:before,
 #book-quote:after {
-  display: block;
-  vertical-align: bottom;
-  color: orange;
-  font-size: 2em;
-  top: .2em;
-  position: relative;
-}
+  display: inline;
+
+} */
 
 
 @media (max-width: 767px){
@@ -801,6 +809,16 @@ ul li{
     right: -2vw;
     
 }
+/* .heart-border{
+    content: url("/assets/red_heart.png");
+    position: absolute;
+    overflow: hidden;
+    width: 8vw;
+    height: 8vw;
+    bottom: 0;
+    left: 0;
+    
+} */
 #my-img{
     display: none;
 }
@@ -812,3 +830,25 @@ ul li{
     z-index: 1050;
     background-color: rgba(237, 33, 40, 0.3);
 } */
+
+#my-title h1, #book-desc, #book-quote, ul li{
+  color: #4b2807;
+}
+@media(min-width: 992px){
+  .active .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: #ED1F28;
+    
+  }
+
+  .active .my_nav::before{
+  content: '';
+  height: 3px;
+  display: block;
+  width: 100%;
+  background: #ED1F28;
+  }
+}

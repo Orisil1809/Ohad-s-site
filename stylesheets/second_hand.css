@@ -14,8 +14,8 @@ body{
   /* background-color: #EFE2BA; */
   /* background-color: #bee4f8; */
   
-  background-color: rgba(190,228,248, 0.5);
-
+  background-color: rgba(190,228,248, 0.8);
+  
   /* background-image: url("/assets/footer_backgrounds/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg"); */
   /* background-image: url("/assets/menu_background.jpg"); */
 
@@ -459,5 +459,24 @@ transition: background-color .5s ease;
 
   .my_nav::before, .my_nav::after{
     transition: background-color .5s ease;
+  }
+}
+
+@media(min-width: 992px){
+  .active .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: #ED1F28;
+    
+  }
+
+  .active .my_nav::before{
+  content: '';
+  height: 3px;
+  display: block;
+  width: 100%;
+  background: #ED1F28;
   }
 }

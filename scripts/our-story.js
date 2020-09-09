@@ -219,3 +219,15 @@ $('#button').click(function(){
     zenscroll.toY(0)
     // $('#button').css("background-color", "#FCB103");
 });
+
+$(document).ready(function ($) {
+  var url = window.location.href;
+  var activePage = url;
+  $('#navbarCollapse li a').each(function () {
+      var linkPage = this.href;
+
+      if (activePage == linkPage) {
+          $(this).closest("li").addClass("active");
+      }
+  });
+});

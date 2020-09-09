@@ -343,6 +343,17 @@ $(document).ready(function(){
 
 
 
+$(document).ready(function ($) {
+  var url = window.location.href;
+  var activePage = url;
+  $('#navbarCollapse li a').each(function () {
+      var linkPage = this.href;
+
+      if (activePage == linkPage) {
+          $(this).closest("li").addClass("active");
+      }
+  });
+});
           
 // $('#should-know').click(function(){
 //   var defaultDuration = 1000 // ms

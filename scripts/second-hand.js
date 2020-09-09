@@ -139,4 +139,16 @@ $('.front').css('transform', 'rotateY(0deg)')
 
 // });
 
+$(document).ready(function ($) {
+  var url = window.location.href;
+  var activePage = url;
+  $('#navbarCollapse li a').each(function () {
+      var linkPage = this.href;
+
+      if (activePage == linkPage) {
+          $(this).closest("li").addClass("active");
+      }
+  });
+});
+
 

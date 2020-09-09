@@ -393,19 +393,21 @@ transform-box: fill-box;
   }
 }
 
-.active .my_nav::after{
+@media(min-width: 992px){
+  .active .my_nav::after{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 100%;
+    background: #ED1F28;
+    
+  }
+
+  .active .my_nav::before{
   content: '';
   height: 3px;
   display: block;
   width: 100%;
-  background: red;
-  
-}
-
-.active .my_nav::before{
-content: '';
-height: 3px;
-display: block;
-width: 100%;
-background: red;
+  background: #ED1F28;
+  }
 }
