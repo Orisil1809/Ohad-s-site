@@ -18,10 +18,11 @@ $(window).scroll( function(){
 });
 
 $(window).on('load', function(){
-    
     // console.log("Load1 took " + (Date.now() - start));       
     $('.card').each( function(i){
-      $(this).removeClass('anim');
+      // $(this).removeClass('anim');
+      console.log("ASDASD");
+      console.log($(this));
       const top_of_object = $(this).offset().top
       const middle_of_object = $(this).offset().top + $(this).outerHeight()/3;
       const bottom_of_window = $(window).scrollTop() + $(window).height();
