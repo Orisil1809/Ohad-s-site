@@ -843,9 +843,8 @@ transform: rotateY(360deg);
   height: 100vh;
   /* overflow: hidden;
   width: 100%; */
-  /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_desktop.jpg"); */
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/Gallery/DSC_0969_new.JPG");
-  /* background: url("/assets/Gallery/DSC_0969.JPG"); */
+
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/Gallery/DSC_0969_new.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -854,10 +853,7 @@ transform: rotateY(360deg);
 
 @media (max-width: 1024px) {
 #header {
-    /* background-image: url("/assets/Gallery/background3.jpg"); */
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg"); */
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_1024.jpg"); */
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_768_new2_new.jpg"); */
+
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/Gallery/DSC_0969_new.JPG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -869,10 +865,7 @@ transform: rotateY(360deg);
 
 @media (max-width: 767px) {
   #header {
-      /* background-image: url("/assets/Gallery/background3.jpg"); */
-      /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new.jpg"); */
-      /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_768.jpg"); */
-      /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/Gallery/DSC_0535_new_768_new2_new.jpg"); */
+
 
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/Gallery/DSC_0969_new.JPG");
       background-repeat: no-repeat;
