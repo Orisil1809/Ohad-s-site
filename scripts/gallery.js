@@ -18,7 +18,7 @@ $(window).scroll( function(){
 });
 
 $(window).on('load', function(){
-    zenscroll.toY(500);
+    
     // console.log("Load1 took " + (Date.now() - start));       
     $('.card').each( function(i){
       $(this).removeClass('anim');
