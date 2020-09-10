@@ -78,6 +78,10 @@ $('.card').each( function(i){
 $('.front #flip-btn').click(function(){
 $('.ori2').addClass('margined');
 // $('.flip-main').addClass('pressed');
+
+// $('.back').height($('.front').height());
+// console.log("Height for front is:" + $('.front .card').height());
+
 $('.front').css('-webkit-transform', 'rotateY(180deg)')
 $('.front').css('-moz-transform', 'rotateY(180deg)')
 $('.front').css('-o-transform', 'rotateY(180deg)')
@@ -87,9 +91,7 @@ $('.back').css('-webkit-transform', 'rotateY(0deg)')
 $('.back').css('-moz-transform', 'rotateY(0deg)')
 $('.back').css('-o-transform', 'rotateY(0deg)')
 $('.back').css('transform', 'rotateY(0deg)')
-console.log("WHATTTT");
 console.log($('.pressed .front .card .card-body'));
-console.log("WHATTTT222222222222");
 
 });
 
