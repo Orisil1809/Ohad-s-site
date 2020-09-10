@@ -228,8 +228,8 @@ overflow: hidden;
 }
 .scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
 
-/* color: rgb(255, 202, 38, 0.7) !important; */
-color: #4b2807 !important;
+color: rgb(255, 202, 38, 0.5) !important;
+/* color: #4b2807 !important; */
 }
 
 @media(max-width: 992px){
@@ -692,7 +692,9 @@ transform: rotate(360deg);
 
 @media (max-width: 767px) {
   #social-footer ul {
-      padding-left:0px;
+      padding-left:0;
+      padding-right:0;
+
   }
 }
 
