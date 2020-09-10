@@ -844,7 +844,7 @@ transform: rotateY(360deg);
   /* overflow: hidden;
   width: 100%; */
 
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/Gallery/DSC_0969_new.JPG");
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/Gallery/DSC_0969_new.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -854,7 +854,7 @@ transform: rotateY(360deg);
 @media (max-width: 1024px) {
 #header {
 
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/Gallery/DSC_0969_new.JPG");
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/Gallery/DSC_0969_new.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
