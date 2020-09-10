@@ -746,11 +746,11 @@ html{
     font-size: 1.5rem;
 }
 
-ul{
+#credits{
     list-style: none;
 }
 
-ul li{
+#credits li{
     font-size: 1.25rem;
 }
 
@@ -793,7 +793,7 @@ ul li{
 
 
 @media (max-width: 767px){
-    #book-quote, ul{
+    #book-quote, #credits{
         padding-right: 2rem;
         padding-left: 2rem;
 
