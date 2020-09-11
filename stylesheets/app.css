@@ -417,6 +417,8 @@ hr{
 }
 .slick img{
   width: 100%;
+  /* ADDED 11_9 */
+  border-radius: 10px;
   /* height: auto;
   object-fit: cover; */
 }

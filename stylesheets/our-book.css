@@ -72,7 +72,8 @@ html{
   
   .my_nav{
     font-size: 1.5rem;
-    color: white !important;
+    /* color: white !important; */
+    color: #4b2807 !important;
     /* padding-left: 2.5rem!important; */
   }
   
@@ -464,9 +465,9 @@ html{
   
   #header{
     height: 100vh;
-    background-color: #bee4f8;
+    /* background-color: #bee4f8; */
     /* background-color: #f0f0f0; */
-
+    background-color: #F8F8F5;
 
     position: relative;
   }
@@ -707,7 +708,8 @@ html{
   }
 
   /* #my_back{
-      background-color: #f0f0f0;
+    display: flex;
+    align-self: center;
   } */
 
   /* .my-title{
@@ -746,12 +748,18 @@ html{
     font-size: 1.5rem;
 }
 
+@media(max-width: 991px){
+  #book-desc{
+    font-size: 1rem;
+  }
+}
+
 #credits{
     list-style: none;
 }
 
 #credits li{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 #main-row{
@@ -760,10 +768,14 @@ html{
 
 #book-quote{
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
 }
-
+@media(max-width: 991px){
+  #book-quote, #credits li{
+    font-size: 1rem;
+  }
+}
 
 
 #book-quote::before{
@@ -800,15 +812,19 @@ html{
     }
 }
 
-.flower-border{
+#flower-border{
     content: url("/assets/Gallery/corner-flowers-02.png");
     position: absolute;
     overflow: hidden;
-    width: 15vw;
-    height: 15vw;
-    bottom: -2vw;
-    right: -2vw;
+    width: 12vw;
+    height: 12vw;
+    bottom: 0;
+    right: 0;
     
+}
+
+#my_back{
+  margin-top: 10vh;
 }
 /* .heart-border{
     content: url("/assets/red_heart.png");
@@ -822,6 +838,8 @@ html{
 } */
 #my-img{
     display: none;
+    width: 80%;
+    height: 80%;
 }
 /* .flower-border::before{
     content: url("/assets/Gallery/corner-flowers-01.png");
