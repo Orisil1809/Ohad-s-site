@@ -717,10 +717,16 @@ html{
       align-self: flex-start;
   } */
 
-  #here{
+  #book-section{
       align-self: flex-start;
       margin-top: 20vh;
   }
+
+@media(max-width: 991px){
+  #book-section{
+    margin-top: 10vh;
+  }
+}
 
 .circle-1{
     position: absolute;
