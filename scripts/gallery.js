@@ -18,18 +18,13 @@ $(window).scroll( function(){
 });
 
 $(window).on('load', function(){
-    // console.log("Load1 took " + (Date.now() - start));       
     $('.card').each( function(i){
-      // $(this).removeClass('anim');
-      console.log("ASDASD");
-      console.log($(this));
+
       const top_of_object = $(this).offset().top
       const middle_of_object = $(this).offset().top + $(this).outerHeight()/3;
       const bottom_of_window = $(window).scrollTop() + $(window).height();
   
       if( bottom_of_window > middle_of_object ){   
-        // console.log("Load2 took " + (Date.now() - start));       
-        // alert("Load took2 " + (Date.now() - start))
           $(this).addClass('anim');
   
       }
@@ -37,23 +32,6 @@ $(window).on('load', function(){
     }); 
   
   });
-
-// $(document).ready(function () {
-//     $('.card').each( function(i){
-//       $(this).removeClass('anim');
-//       const top_of_object = $(this).offset().top
-//       const middle_of_object = $(this).offset().top + $(this).outerHeight()/3;
-//       const bottom_of_window = $(window).scrollTop() + $(window).height();
-  
-//       if( bottom_of_window > middle_of_object ){ 
-//         console.log(bottom_of_window);  
-//         console.log(middle_of_object);       
-//           $(this).addClass('anim');
-  
-//       }
-  
-//     }); 
-// });
 
   $('.navbar-toggler').click(function(){
 
@@ -87,7 +65,7 @@ $(window).on('load', function(){
   });
   
   $('#navbarCollapse').on('hide.bs.collapse', function () {
-    // $('.my_nav').css({ 'opacity' : 0 });
+
     $('.my_nav').animate({'opacity':'0'} ,'fast');
   
   });
