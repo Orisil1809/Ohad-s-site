@@ -70,6 +70,15 @@ box-shadow: none;
 font-size: 1.5rem;
 color: white !important;
 }
+
+@media(max-width: 991px)
+{
+  .my_nav{
+    font-size: 1.5rem;
+    color: #FFCA26 !important;
+  }
+}
+
 .my_nav:hover{
 /* color:  rgb(252, 177, 3) !important; */
 color: #FFCA26 !important;

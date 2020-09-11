@@ -231,6 +231,16 @@ border: none;
   font-size: 1.5rem;
   color: white !important;
 }
+
+@media(max-width: 991px)
+{
+  .my_nav{
+    font-size: 1.5rem;
+    color: #FFCA26 !important;
+  }
+}
+
+
 .my_nav:hover{
 /* color: rgb(255, 202, 38, 0.7) !important; */
   color:  #FFCA26 !important;
