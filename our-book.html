@@ -231,8 +231,8 @@
             <!-- <h1 id = "book-title" class = "display-4 text-center mb-4">הספר שלנו</h1> -->
 
             <div class="row justify-content-center align-items-center">
-                <div id="book-section" class="col-10 col-lg-6 col-xl-5">
-                    <div id="my-title">
+                <div id="book-section" class="col-10 col-lg-5">
+                    <div id="book-title">
                         <h1 class="display-3 text-right">הספר שלנו</h1>
                     </div>
                     <!-- padding-right: 2.5em; -->
@@ -243,9 +243,18 @@
                         מבטיחים לעדכן ולשתף בפרטים נוספים ברגע שיהיו לנו.
                     </p>
                 </div>
-                <div id="my_back" class="col-lg-6 col-xl-5 d-none d-lg-block">
-                    <!-- <img id="my-img" class="img-fluid" src="/assets/Gallery/best_drawing_version.png" alt=""> -->
-                    <img id="my-img" class="img-fluid" src="/assets/Gallery/Attachment-1.png" alt="">
+                <div id="my_back" class="col-lg-5 d-flex align-items-center justify-content-center d-lg-block">                
+                    <img id="my-img" class="img-fluid" src="/assets/Gallery/drawing_768.jpg" alt="">
+                
+                    <!-- <picture class="d-flex align-items-center justify-content-center">
+                        <source media="(max-width: 991px)" srcset="/assets/Gallery/drawing_768.jpg">
+                        <source media="(min-width: 992px)" srcset="/assets/Gallery/drawing.png">
+                        <img id="my-img" class="img-fluid" src="/assets/Gallery/drawing.png" alt="Chris standing up holding his daughter Elva">
+                    </picture> -->
+                    <!-- <img id="my-img" class="img-fluid" srcset="/assets/Gallery/drawing_768.jpg 600w,
+                        /assets/Gallery/drawing.png 1536w"
+                        src="/assets/Gallery/drawing_768.jpg"
+                        alt="Elva dressed as a fairy"> -->
                 </div>
             </div>
             <!-- <div class="container my-auto d-flex justify-content-center">
@@ -267,10 +276,10 @@
             </div> -->
             <div id="flower-border"></div>
 
-            <div id="my_back" class="d-flex d-lg-none align-items-center justify-content-center">
-                <!-- <img id="my-img" class="img-fluid" src="/assets/Gallery/best_drawing_version.png" alt=""> -->
+            <!-- <div id="my_back" class="d-flex d-lg-none align-items-center justify-content-center">
+                
                 <img id="my-img" class="img-fluid" src="/assets/Gallery/drawing_768.jpg" alt="">
-            </div>
+            </div> -->
 
             <!-- <div class="circle-1"></div> -->
                 
@@ -284,11 +293,10 @@
 
         <section id="second">
 
-            <div id="main-row" class="row justify-content-center align-items-center">
-                <div class="col-lg-6 order-2 order-lg-1">
+            <div id="main-row" class="row justify-content-around align-items-center">
+                <div class="col-10 col-lg-5 order-2 order-lg-1">
                     <blockquote id="book-quote" class="blockquote text-right mt-5 mb-0">
-                        התלבטתי כל כך- במי כדאי לבחור?<br>
-                        
+                        התלבטתי כל כך - במי כדאי לבחור?<br>
                         אולי את הג'ינג'י המצחיק<br>
                         ואולי את הביישן השחור?<br>
                         את המפוספס עם העיניים הטובות<br>
@@ -304,20 +312,20 @@
                     <!-- <img src="/assets/Gallery/red-border-01.png" alt="" style="max-width: 100%;"> -->
                     <ul id="credits" class="text-right mt-5">
                         <li>
-                            כותבים: רות צור, מורן בן יהודה ואוהד ורטהיימר
+                            <span id="bolded">כותבים:&nbsp</span>רות צור, מורן בן יהודה ואוהד ורטהיימר
                         </li>
                         <li>
-                            מאיירת: אוריין שביט
+                            <span id="bolded">מאיירת:&nbsp</span>אוריין שביט
                         </li>
                         <li>
-                            עורכת: מור פוגלמן דבורקין
+                            <span id="bolded">עורכת:&nbsp</span>מור פוגלמן דבורקין
                         </li>
                         <li>
-                            עורכת לשונית: ניצה פלד
+                            <span id="bolded">עורכת לשונית:&nbsp</span>ניצה פלד
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-lg-4 order-1 order-lg-2">
+                <div class="col-5 col-lg-4 order-1 order-lg-2">
                     <img class="img-fluid" src="/assets/Gallery/red rosses boquet-01.png" alt="">
                 </div>
 
@@ -328,7 +336,7 @@
 
         <footer id="my_footer">
 
-            <div id="social-footer" class="">
+            <div id="social-footer" class="d-none d-lg-flex">
                 <div class="container">
                     <ul>
                         <li>
@@ -372,10 +380,8 @@
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-        <script>window.noZensmooth = true</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js" integrity="sha512-u8AVZHNF3Fxvmevg9DJpoSCsc3vs1wr1S52S3XEIVIfIKxXHQexNxEj+fN+XyupzeLvIjPZLZBPmHZveEqhGqA==" crossorigin="anonymous"></script>
+        
+
 
 
         <!-- <script src="owl/owl.carousel.min.js"></script> -->

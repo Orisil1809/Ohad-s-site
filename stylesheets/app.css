@@ -561,7 +561,7 @@ transform: rotate(360deg);
   margin-right: 0;
 }
 
-.social-link {
+/* .social-link {
   width: 60px;
   height: 60px;
   border: 1px solid #FED501;
@@ -572,7 +572,7 @@ transform: rotate(360deg);
   border-radius: 50%;
   transition: all 0.3s;
   font-size: 2.5rem;
-}
+} */
 
 /* .social-link:hover, .social-link:focus {
   background: #FED501;

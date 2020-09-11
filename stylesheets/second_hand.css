@@ -24,7 +24,7 @@ body{
 /* margin-top: 10vh; */
 min-height: 50vh;
 /* background-image: url("/assets/Gallery/DSC_1007.JPG"); */
-background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/Gallery/DSC_1007.JPG");
+background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/assets/Gallery/DSC_1007.JPG");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 50% 30%;
@@ -44,7 +44,7 @@ position: relative;
       
   }
   #main-title{
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
   
 }
@@ -454,10 +454,22 @@ font-weight: 800;
   }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1600px){
   .card-columns .card{
     margin-bottom: 0 !important;
     height: 500px;
+  }
+}
+@media(min-width: 1200px) and (max-width: 1599px){
+  .card-columns .card{
+    margin-bottom: 0 !important;
+    height: 600px;
+  }
+}
+@media(min-width: 992px) and (max-width: 1199px){
+  .card-columns .card{
+    margin-bottom: 0 !important;
+    height: 700px;
   }
 }
 
@@ -489,7 +501,7 @@ min-height: 440px;
 
 #my-title{
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50% ,-30%);
+  transform: translate(-50% ,-40%);
 }

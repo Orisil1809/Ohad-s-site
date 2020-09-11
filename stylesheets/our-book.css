@@ -318,7 +318,7 @@ html{
   
 
   
-  .social-link {
+  /* .social-link {
     width: 60px;
     height: 60px;
     border: 1px solid #FED501;
@@ -329,7 +329,7 @@ html{
     border-radius: 50%;
     transition: all 0.3s;
     font-size: 2.5rem;
-  }
+  } */
   
   /* .social-link:hover, .social-link:focus {
     background: #FED501;
@@ -364,15 +364,14 @@ html{
   
   }
   
-  @media (max-width: 991px) {
+  /* @media (max-width: 991px) {
   #social-footer {
-      /* padding-bottom: env(safe-area-inset-bottom); */
       min-height: 130px;
       align-items: flex-start;
       padding-top: 1vh;
   }
   
-  }
+  } */
   
 
   #social-footer ul {
@@ -453,12 +452,12 @@ html{
     background: #00AA6C;
   }
   
-  @media (max-width: 767px) {
+  /* @media (max-width: 767px) {
     #social-footer ul {
       padding-left:0;
       padding-right:0;
     }
-  }
+  } */
   
 
   
@@ -754,7 +753,7 @@ html{
     font-size: 1.5rem;
 }
 
-@media(max-width: 991px){
+@media(max-width: 768px){
   #book-desc{
     font-size: 1rem;
   }
@@ -775,6 +774,7 @@ html{
 #book-quote{
     position: relative;
     font-size: 1.5rem;
+    line-height: 2;
     
 }
 @media(max-width: 991px){
@@ -829,8 +829,15 @@ html{
     
 }
 
+@media(max-width: 1200px){
+  #flower-border{
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
 #my_back{
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 /* .heart-border{
     content: url("/assets/red_heart.png");
@@ -845,7 +852,7 @@ html{
 #my-img{
     display: none;
     width: 80%;
-    height: 80%;
+    height: 80%
 }
 @media (max-width: 991px){
   #my-img{
@@ -866,7 +873,7 @@ html{
     background-color: rgba(237, 33, 40, 0.3);
 } */
 
-#my-title h1, #book-desc, #book-quote, ul li{
+#book-title h1, #book-desc, #book-quote, ul li{
   color: #4b2807;
 }
 @media(min-width: 992px){
@@ -886,4 +893,12 @@ html{
   width: 100%;
   background: #ED1F28;
   }
+}
+
+#bolded{
+  font-weight: 700;
+}
+
+#credits{
+  line-height: 2;
 }
