@@ -28,6 +28,15 @@ body{
 height: auto;
 
 }
+
+@media(max-width: 767px){
+  .logo-image{
+    /* max-width: 80%; */
+    height: auto;
+    width: 70%;
+    
+    }
+}
 .horizontal_line{
 border: none; 
 border-bottom: 1px solid rgba(255,255,255, 0.5);
@@ -432,13 +441,15 @@ hr{
 
 #bambi{
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 15%;
+  width: 50%;
+  height: 50%;
   /* animation: bambi_animation 2s ease infinite; */
 }
 #rose{
   position: absolute;
-  top: 25%;
+  top: 35%;
   right: 15%;
 }
 
