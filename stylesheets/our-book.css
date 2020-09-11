@@ -464,12 +464,12 @@ html{
   
   
   #header{
-    height: 100vh;
+    min-height: 100vh;
     /* background-color: #bee4f8; */
     /* background-color: #f0f0f0; */
     background-color: #F8F8F5;
-
     position: relative;
+    
   }
   
   
@@ -841,6 +841,16 @@ html{
     width: 80%;
     height: 80%;
 }
+@media (max-width: 991px){
+  #my-img{
+    display: inline;
+  }
+  #my_back{
+    margin-top: 0;
+  }
+
+}
+
 /* .flower-border::before{
     content: url("/assets/Gallery/corner-flowers-01.png");
     position: absolute;

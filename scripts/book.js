@@ -237,7 +237,7 @@ $(document).ready(function(){
   $(function () {
     $(document).scroll(function () {
       var $nav = $("#main_navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 80);
+      $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
       $('.scrolled #navbarCollapse').on("click", "li" , function(){
         $('#navbarCollapse').collapse('hide');
         $('.navbar-toggler').removeClass('opened');
