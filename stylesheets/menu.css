@@ -9,7 +9,7 @@ body{
   margin: 0px;
   font-family: 'Alef', sans-serif;
   /* background-image: url("/assets/menu_background.jpg"); */
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("/assets/menu_background.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("/assets/menu_background_desktop.jpg");
   background-size: cover;
   background-repeat: repeat;
 }
