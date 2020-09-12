@@ -14,6 +14,14 @@ body{
   background-repeat: repeat;
 }
 
+@media(max-width: 1200px){
+  body{
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("/assets/menu_background_768.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
