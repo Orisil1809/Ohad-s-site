@@ -786,3 +786,11 @@ html{
 #credits{
   line-height: 2;
 }
+
+@media(max-width: 767px)
+{
+
+  .display-3{
+    font-size: 4rem !important;
+  }
+}
