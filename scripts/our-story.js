@@ -213,7 +213,7 @@ $(window).scroll( function(){
   });
 });
 
-$('#button').click(function(){
+$('#scroll-button').click(function(){
   zenscroll.toY(0)
   // $('#button').css("background-color", "#FCB103");
 });
