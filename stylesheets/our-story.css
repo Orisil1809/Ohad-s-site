@@ -477,9 +477,9 @@ hr{
 }
 
 #second_row{
-  transform: translateY(25%);
+  /* transform: translateY(25%);
   opacity: 0;
-  transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1.4s ease-in-out; */
 }
 
 #scroll-button {

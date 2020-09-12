@@ -48,11 +48,11 @@ $(document).ready(function(){
 
 //#endregion
 
-$("#story_link").click(function () { 
-    $('#our_story').each(function(i){
-      $(this).animate({ width: 'show'}, 'slow');
-    });
-  });
+// $("#story_link").click(function () { 
+//     $('#our_story').each(function(i){
+//       $(this).animate({ width: 'show'}, 'slow');
+//     });
+//   });
 
 $("#read_more").click(function(){
   console.log("CLICKED!!!");
@@ -61,11 +61,7 @@ $("#read_more").click(function(){
     $("#more_story").removeClass("d-none");
     $("#more_story").addClass("d-block");
   }
-  // else if($("#more_story").hasClass("d-block")){
-  //   $(this).html('<b>קרא עוד</b>');
-  //   $("#more_story").removeClass("d-block");
-  //   $("#more_story").addClass("d-none");
-  // }
+
 
   //ADDED 9.9
   $(this).removeClass('d-inline');
@@ -74,12 +70,12 @@ $("#read_more").click(function(){
   
 });
 
-$("#fb_link").click(function(){
-  const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
-  window.location.replace("fb://profile/1032462220228396");
-  setTimeout(function () {
-    window.location.replace(address); }, 2000);
-})
+// $("#fb_link").click(function(){
+//   const address = "https://www.facebook.com/נוני-ופורטונה-יד-שניה-וינטג-וקפה-1032462220228396/";
+//   window.location.replace("fb://profile/1032462220228396");
+//   setTimeout(function () {
+//     window.location.replace(address); }, 2000);
+// })
 
 //#region fb link try
 
@@ -129,25 +125,25 @@ $("#fb_link").click(function(){
 //#endregion
 
 
-function getMobileOperatingSystem() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  // console.log(userAgent);
-      // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-        return "Windows Phone";
-    }
+// function getMobileOperatingSystem() {
+//   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+//   // console.log(userAgent);
+//       // Windows Phone must come first because its UA also contains "Android"
+//     if (/windows phone/i.test(userAgent)) {
+//         return "Windows Phone";
+//     }
 
-    if (/android/i.test(userAgent)) {
-        return "Android";
-    }
+//     if (/android/i.test(userAgent)) {
+//         return "Android";
+//     }
 
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+//     // iOS detection from: http://stackoverflow.com/a/9039885/177710
+//     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
   
-        return "iOS";
-    }
-    return "unknown";
-}
+//         return "iOS";
+//     }
+//     return "unknown";
+// }
 
 
 $('.navbar-toggler').click(function(){
@@ -197,25 +193,25 @@ function delay (URL) {
 //Commented 29.08
 
 
-$(window).scroll( function(){
+// $(window).scroll( function(){
 
-  $('#second_row').each( function(i){
+//   $('#second_row').each( function(i){
 
-    const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
-    const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
-    const bottom_of_window = $(window).scrollTop() + $(window).height();
+//     const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+//     const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+//     const bottom_of_window = $(window).scrollTop() + $(window).height();
 
-    /* If the object is completely visible in the window, fade it in */
-    if( bottom_of_window > top_of_object ){          
+//     /* If the object is completely visible in the window, fade it in */
+//     if( bottom_of_window > top_of_object ){          
        
-        // $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+//         // $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
 
-        $(this).addClass('anim');
+//         $(this).addClass('anim');
 
-    }
+//     }
 
-  });
-});
+//   });
+// });
 
 $('#button').click(function(){
   zenscroll.toY(0)
