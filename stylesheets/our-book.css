@@ -794,3 +794,14 @@ html{
     font-size: 4rem !important;
   }
 }
+
+.anim{
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+#book-section{
+  transform: translateY(25%);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
+}

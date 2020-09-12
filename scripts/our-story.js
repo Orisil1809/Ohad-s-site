@@ -1,7 +1,9 @@
 //#region slick carousel
 
 $(document).ready(function(){
-  $("#our_story").animate({'opacity':'1'} ,1000);
+  // $("#our_story").animate({'opacity':'1'} ,1000);
+  $('#our_story').addClass('anim');
+
 });
 
 //   $(window).scroll( function(){

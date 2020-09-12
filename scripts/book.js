@@ -64,6 +64,7 @@
 
 $(document).ready(function(){
   $('#my-img').animate({'width':'show'} , { duration: 800, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
+  $('#book-section').addClass('anim');
 
 });
 

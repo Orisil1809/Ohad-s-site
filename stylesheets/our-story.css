@@ -223,10 +223,20 @@ transform-box: fill-box;
 
 
 #our_story{
+  transform: translateY(25%);
   opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
   /* ADDED 10.9 */
   /* transition: opacity 400ms ease; */
 }
+
+
+.anim{
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+
 
 @media (min-width: 768px) {
   /* #story_paragraph {
