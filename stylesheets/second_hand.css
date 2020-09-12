@@ -30,7 +30,7 @@ body{
 /* margin-top: 10vh; */
 min-height: 50vh;
 /* background-image: url("/assets/Gallery/DSC_1007.JPG"); */
-background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/assets/Gallery/DSC_1007.JPG");
+background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/Gallery/DSC_1007_desktop.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 50% 30%;
@@ -38,10 +38,10 @@ background-position: 50% 30%;
 position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #header {
 
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/Gallery/DSC_1007.JPG");
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/Gallery/DSC_1007_mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -588,4 +588,8 @@ font-weight: 800;
 }
 #nav-icons ul li:nth-child(5) a:before {
   background: #00AA6C;
+}
+
+#items{
+  margin-right: 2vw;
 }
