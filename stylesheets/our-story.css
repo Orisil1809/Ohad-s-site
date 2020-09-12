@@ -6,7 +6,7 @@ html{
 }
 
 body{
-
+  /* position: relative; */
   padding: 120px 0px 0px 0px;
   margin: 0px;
   font-family: 'Alef', sans-serif;
@@ -482,7 +482,7 @@ hr{
   transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
 }
 
-#button {
+#scroll-button {
   display: inline-block;
   background-color: #FCB103;
   width: 30px;
@@ -490,13 +490,19 @@ hr{
   text-align: center;
   border-radius: 20%;
   position: absolute;
-  bottom: auto;
+  /* bottom: auto; */
+  margin-bottom: 50vh;
   right: 20px;
   text-decoration: none;
   cursor: pointer;
+  
+  
+  /* position: fixed; */
+  /* position: absolute;
+  bottom: 10vh; */
 }
 
-#button::after {
+#scroll-button::after {
   content: '\f077';
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
