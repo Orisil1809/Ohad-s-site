@@ -724,13 +724,13 @@ html{
     content: '"'; */
 }
 
-@media (max-width: 767px){
+/* @media (max-width: 767px){
     #book-quote, #credits{
         padding-right: 2rem;
         padding-left: 2rem;
 
     }
-}
+} */
 
 #flower-border{
     content: url("/assets/Gallery/corner-flowers-02.png");
