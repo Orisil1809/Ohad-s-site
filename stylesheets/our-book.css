@@ -81,7 +81,9 @@ html{
   {
     .my_nav{
       font-size: 1.5rem;
-      color: #FFCA26 !important;
+      /* color: #FFCA26 !important; */
+      color: #4b2807 !important;
+      font-weight: 600;
     }
   }
   
@@ -181,14 +183,17 @@ html{
   }
   .scrolled > .collapse > .nav .my_nav, .colored > .collapse > .nav .my_nav{
   /* color: #FFCA26 !important; */
-  color: #FFCA26 !important;
+  color: #4b2807 !important;
+  overflow: hidden;
+  font-weight: 600;
   /* overflow: hidden; */
   /* font-weight: 400; */
   }
   .scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
   
-  color: rgb(255, 202, 38, 0.5) !important;
+  /* color: rgb(255, 202, 38, 0.5) !important; */
   /* color: #4b2807 !important; */
+  color: rgba(75, 40, 7, 0.5) !important;
   }
   
   @media(max-width: 992px){
@@ -743,8 +748,12 @@ html{
     height: 20vw;
   }
 }
-
-
+@media (min-width: 991px)
+{
+  #rose-img{
+    max-width: 70%;
+  }
+}
 
 #my_back{
   margin-top: 20vh;
