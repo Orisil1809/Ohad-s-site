@@ -477,9 +477,9 @@ hr{
 }
 
 #second_row{
-  /* transform: translateY(25%);
+  transform: translateY(25%);
   opacity: 0;
-  transition: transform 1s ease-in-out, opacity 1.4s ease-in-out; */
+  transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
 }
 
 #scroll-button {
@@ -491,10 +491,11 @@ hr{
   border-radius: 20%;
   position: absolute;
   /* bottom: auto; */
-  margin-bottom: 50vh;
+  /* margin-bottom: 50vh; */
   right: 20px;
   text-decoration: none;
   cursor: pointer;
+  
   
   
   /* position: fixed; */
@@ -664,4 +665,9 @@ background: #ED1F28;
 }
 #nav-icons ul li:nth-child(5) a:before {
   background: #00AA6C;
+}
+
+#my-footer{
+  position: relative;
+  margin-bottom: 20vh;
 }
