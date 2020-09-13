@@ -335,12 +335,29 @@ color: rgba(75, 40, 7, 0.5) !important;
 }
 
 @media(max-width: 992px){
-#navbarCollapse{
-    margin-bottom: 10vh;
-    min-height: 100vh;
-    
+  #navbarCollapse{
+      /* margin-bottom: 10vh; */
+      /* min-height: 100vh; */
+      height: calc(100vh - 100px);
+      /* max-height: calc(100vh - 60px); */
+      overflow-y: auto;
+      
+  }
 }
+
+@media(max-width: 480px){
+  #navbarCollapse{
+      /* margin-bottom: 10vh; */
+      min-height: 100vh;
+      /* height: calc(100vh - 100px); */
+      overflow-y: auto;
+      
+  }
 }
+
+/* #main_navbar{
+  overflow-y: auto;
+} */
 
 .fixed-top.colored .navbar-collapse{
 display: block;
