@@ -89,4 +89,6 @@ $(window).on('load', function(){
             $(this).closest("li").addClass("active");
         }
     });
+
   });
+

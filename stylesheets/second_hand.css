@@ -17,7 +17,7 @@ body{
   /* background-color: #bee4f8; */
   
   background-color: rgba(190,228,248, 0.8);
-  
+  /* background-color: #f0f0f0; */
 }
 
 *{
@@ -38,7 +38,7 @@ background-position: 50% 30%;
 position: relative;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #header {
 
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/Gallery/DSC_1007_mobile.jpg");
@@ -303,7 +303,7 @@ transform-box: fill-box;
 .card-columns .card {
 display: inline-block;
 width:100%;
-
+/* background-image: url("/assets/menuBgMobile_new.jpg"); */
 /* background-color: transparent;
 border: none; */
 
@@ -489,22 +489,22 @@ font-weight: 800;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+/* @media (min-width: 768px) and (max-width: 991px){
   .card-columns{
-    padding-left: 15rem !important;
-    padding-right: 15rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
-}
+} */
 
 
-@media (min-width: 577px) and (max-width: 767px){
+@media (min-width: 577px) and (max-width: 991px){
   .card-columns{
     padding-left: 5rem !important;
     padding-right: 5rem !important;
   }
 }
 
-#my-title{
+#main-title{
   position: absolute;
   top: 40%;
   left: 50%;
@@ -593,3 +593,24 @@ font-weight: 800;
 #items{
   margin-right: 2vw;
 }
+
+/* #main-title::before{
+  content: '';
+  margin-bottom: 1vh;
+  
+  display: block;
+  box-sizing: border-box;
+  
+  border-top: 3px solid #bee4f8;
+
+}
+
+#main-title::after{
+content: '';
+margin-top: 1vh;
+display: block;
+box-sizing: border-box;
+
+border-top: 3px solid #bee4f8;
+
+} */
