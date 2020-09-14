@@ -303,11 +303,16 @@ transform-box: fill-box;
 .card-columns .card {
 display: inline-block;
 width:100%;
+
 /* background-image: url("/assets/menuBgMobile_new.jpg"); */
 /* background-color: transparent;
 border: none; */
 
 }
+
+
+
+
 
 #store-img{
 width: 90%;
@@ -474,6 +479,7 @@ font-weight: 800;
   .card-columns .card{
     margin-bottom: 0 !important;
     height: 500px;
+    
   }
 }
 @media(min-width: 1200px) and (max-width: 1599px){
