@@ -14,10 +14,6 @@
   
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
-  // var element = document.getElementById('navbarCollapse');
-  // element.style.height = "100vh !important";
-  // $("#main_navbar").toggleClass('my-background');
-
 
   $('.colored #navbarCollapse').on("click", ".navbar-nav li" , function(){
     
@@ -25,12 +21,6 @@ $('.navbar-toggler').click(function(){
     $('.navbar-toggler').removeClass('opened');
     $('.navbar-toggler').addClass('collapsed');
     $('#main_navbar').removeClass('colored');
-    // $("#main_navbar").removeClass('my-background');
-    // $("#navbarCollapse").toggleClass('full-navbar');
-
-    // $('#navbarCollapse').css( "height" , "800px");
-
-
 
   });
 

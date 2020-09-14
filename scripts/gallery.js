@@ -34,15 +34,14 @@ $(window).on('load', function(){
   });
 
   $('.navbar-toggler').click(function(){
-
     $("#main_navbar").toggleClass('colored');
-    $('.colored #navbarCollapse').on("click", "li" , function(){
   
+    $('.colored #navbarCollapse').on("click", ".navbar-nav li" , function(){
+      
       $('#navbarCollapse').collapse('hide');
       $('.navbar-toggler').removeClass('opened');
       $('.navbar-toggler').addClass('collapsed');
       $('#main_navbar').removeClass('colored');
-  
   
     });
   
