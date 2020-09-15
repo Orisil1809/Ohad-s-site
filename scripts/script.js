@@ -54,7 +54,7 @@ $(document).ready(function(){
     ]
     });
 
-    $('#my_text').animate({'height':'show'} , { duration: 1000, easing: "swing" });
+    $('#home-text').animate({'height':'show'} , { duration: 1000, easing: "swing" });
     TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
     var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
 
