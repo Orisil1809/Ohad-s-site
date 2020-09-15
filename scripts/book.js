@@ -1,65 +1,29 @@
   
-  $('.navbar-toggler').click(function(){
-    $("#main_navbar").toggleClass('colored');
-    // var element = document.getElementById('navbarCollapse');
-    // element.style.height = "100vh !important";
-    // $("#main_navbar").toggleClass('my-background');
+$('.navbar-toggler').click(function(){
+  $("#main_navbar").toggleClass('colored');
+
+});
 
 
-    $('.colored #navbarCollapse').on("click", ".navbar-nav li" , function(){
-      
-      $('#navbarCollapse').collapse('hide');
-      $('.navbar-toggler').removeClass('opened');
-      $('.navbar-toggler').addClass('collapsed');
-      $('#main_navbar').removeClass('colored');
-      // $("#main_navbar").removeClass('my-background');
-      // $("#navbarCollapse").toggleClass('full-navbar');
-
-      // $('#navbarCollapse').css( "height" , "800px");
-  
+$(document).scroll(function () {
+  var $nav = $("#main_navbar");
+  $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
+});
 
 
-    });
-  
-  });
-  
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $("#main_navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
-      $('.scrolled #navbarCollapse').on("click", "li" , function(){
-        $('#navbarCollapse').collapse('hide');
-        $('.navbar-toggler').removeClass('opened');
-        $('.navbar-toggler').addClass('collapsed');
-        $('#main_navbar').removeClass('colored');
-        //ADDED 8.9 - NOT
+$('#navbarCollapse').on('hide.bs.collapse', function () {
+  $('.my_nav').animate({'opacity':'0'} ,'fast');
 
-  
-  
-      });
-    });
-  });
-  
-  $('#navbarCollapse').on('hide.bs.collapse', function () {
-    $('.my_nav').animate({'opacity':'0'} ,'fast');
-      //ADDED 8.9
-    // $("#main_navbar").removeClass('my-background');
+});
 
-  
-  });
+$('#navbarCollapse').on('show.bs.collapse', function () {
+  $('.my_nav').animate({ 'opacity' : '1' }, 500);
 
-  
-  $('#navbarCollapse').on('show.bs.collapse', function () {
+});
 
-    $('.my_nav').css({ 'opacity' : 1 });
-    //ADDED 8.9
-    // $("#main_navbar").addClass('my-background');
-
-  });
-  
-  function delay (URL) {
-    setTimeout( function() { window.location = URL }, 500 );
-  }
+function delay (URL) {
+  setTimeout( function() { window.location = URL }, 500 );
+}
   
 
 $(document).ready(function(){

@@ -172,9 +172,9 @@ color: rgb(255, 202, 38, 0.5) !important;
 display: block;
 }
 
-.fixed-top.colored .navbar-collapse .nav-item.nav-link{
+/* .fixed-top.colored .navbar-collapse .nav-item.nav-link{
 opacity: 1 !important;
-}
+} */
 
 
 @media (max-width: 991px) {
@@ -182,7 +182,7 @@ opacity: 1 !important;
     display: none;
 }
 .fixed-top .navbar-collapse .nav-item.nav-link{
-    opacity: 0 !important;
+    opacity: 0;
 }
 }
 @media (min-width: 991px) {

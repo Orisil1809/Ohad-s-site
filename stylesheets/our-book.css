@@ -617,11 +617,7 @@ html{
   }
   
   
-  #book-title{
-    /* color: #ED1F28; */
 
-    /* padding-top: 10vh; */
-  }
   
   @media (max-width: 767px){
     #book-title{
@@ -632,16 +628,21 @@ html{
 
   #book-section{
       align-self: flex-start;
-      margin-top: 18vh;
+      margin-top: 15vh;
   }
 
 @media(max-width: 767px){
   #book-section{
-    margin-top: 10vh;
+    margin-top: 15vh;
 
   }
 }
+@media(max-width: 1200px){
+  #book-section{
+    margin-top: 12vh;
 
+  }
+}
 .circle-1{
     position: absolute;
     overflow: hidden;
@@ -657,7 +658,7 @@ html{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    /* background-color: rgba(237, 33, 40, 0.3); */
+    
     background-color: rgba(255, 202, 38, 0.7);
     transform: translate(40%, 40%);
 }
