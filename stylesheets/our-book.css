@@ -156,34 +156,6 @@ button:focus {
   }
 }
 
-#steam{
-  animation: steam_animation 2s ease infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes steam_animation{
-  0%{
-      transform: translateY(10px);
-      opacity:0;
-  }
-  50%{
-      opacity:1;
-  }
-  100%{
-      transform: translateY(-10px);
-      opacity:0;
-  }
-}
-
-
-@media (max-width: 767px){
-  #coffee-svg{
-      height: 60px;
-      width: 60px;
-  }
-}
-
 
 @media(min-width: 1200px){
   .my_nav::after{
@@ -421,7 +393,7 @@ button:focus {
 }
 
 #flower-border{
-    content: url("/assets/Gallery/corner-flowers-02.png");
+    content: url("/assets/corner-flowers-02.png");
     position: absolute;
     overflow: hidden;
     width: 12vw;

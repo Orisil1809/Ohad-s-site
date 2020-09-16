@@ -170,35 +170,6 @@ opacity: 1 !important;
   }
 }
 
-#steam{
-
-  animation: steam_animation 2s ease infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes steam_animation{
-  0%{
-    transform: translateY(10px);
-    opacity:0;
-  }
-  50%{
-    opacity:1;
-  }
-  100%{
-    transform: translateY(-10px);
-    opacity:0;
-  }
-}
-
-@media (max-width: 767px){
-  #coffee-svg{
-    height: 60px;
-    width: 60px;
-  }
-}
-
-
 @media(min-width: 1200px){
   .my_nav::after{
     content: '';
@@ -327,11 +298,6 @@ opacity: 1 !important;
 #nav-icons ul li:nth-child(5) a:before {
   background: #00AA6C;
 }
-
-
-
-
-
 
 
 #our_story{

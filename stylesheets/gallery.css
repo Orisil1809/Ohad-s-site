@@ -168,7 +168,6 @@ button:focus {
 }
 
 #steam{
-  /* color:yellow; */
   animation: steam_animation 2s ease infinite;
   transform-origin: center;
   transform-box: fill-box;

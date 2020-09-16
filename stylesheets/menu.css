@@ -352,13 +352,13 @@ font-weight: 600; */
   }
 }
 
-@media(max-width: 992px){
+@media(max-width: 991px){
   #navbarCollapse{
       /* margin-bottom: 10vh; */
       /* min-height: 100vh; */
       height: calc(100vh - 100px);
       /* max-height: calc(100vh - 60px); */
-      overflow-y: auto;
+      overflow-y: scroll;
       
   }
 }
@@ -368,7 +368,7 @@ font-weight: 600; */
       /* margin-bottom: 10vh; */
       min-height: 100vh;
       /* height: calc(100vh - 100px); */
-      overflow-y: auto;
+      /* overflow-y: auto; */
       
   }
 }
@@ -410,10 +410,9 @@ opacity: 0 !important;
 }
 
 #steam{
-/* color:yellow; */
-animation: steam_animation 2s ease infinite;
-transform-origin: center;
-transform-box: fill-box;
+  animation: steam_animation 2s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes steam_animation{
