@@ -1,20 +1,14 @@
 
 $(document).ready(function(){
-
   $('#our_story').addClass('anim');
-
 });
 
 
 
 $("#read_more").click(function(){
-  console.log("CLICKED!!!");
-  if ($("#more_story").hasClass("d-none")){
-    // $(this).html('<b>מזער</b>');
-    $("#more_story").removeClass("d-none");
-    $("#more_story").addClass("d-block");
-  }
-
+  
+  $("#more_story").removeClass("d-none");
+  $("#more_story").addClass("d-block");
   //ADDED 9.9
   $(this).removeClass('d-inline');
   $(this).addClass('d-none');
@@ -35,15 +29,15 @@ $(document).scroll(function () {
 });
 
 
-$('#navbarCollapse').on('hide.bs.collapse', function () {
-  $('.my_nav').animate({'opacity':'0'} ,'fast');
+// $('#navbarCollapse').on('hide.bs.collapse', function () {
+//   $('.my_nav').animate({'opacity':'0'} ,'fast');
 
-});
+// });
 
-$('#navbarCollapse').on('show.bs.collapse', function () {
-  $('.my_nav').animate({ 'opacity' : '1' }, 500);
+// $('#navbarCollapse').on('show.bs.collapse', function () {
+//   $('.my_nav').animate({ 'opacity' : '1' }, 500);
 
-});
+// });
 
 function delay (URL) {
   setTimeout( function() { window.location = URL }, 500 );

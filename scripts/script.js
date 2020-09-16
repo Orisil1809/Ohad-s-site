@@ -103,15 +103,15 @@ $(document).scroll(function () {
   $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
 });
 
-$('#navbarCollapse').on('hide.bs.collapse', function () {
-  $('.my_nav').animate({'opacity':'0'} ,'fast');
+// $('#navbarCollapse').on('hide.bs.collapse', function () {
+//   $('.my_nav').animate({'opacity':'0'} ,'fast');
 
-});
+// });
 
-$('#navbarCollapse').on('show.bs.collapse', function () {
-  $('.my_nav').animate({ 'opacity' : '1' }, 500);
+// $('#navbarCollapse').on('show.bs.collapse', function () {
+//   $('.my_nav').animate({ 'opacity' : '1' }, 500);
 
-});
+// });
 
   
 // $('#navbarCollapse').on('hide.bs.collapse', function () {

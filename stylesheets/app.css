@@ -50,7 +50,7 @@ body{
   .my_nav{
     font-size: 1.5rem;
     color: #4b2807 !important;
-    font-weight: 600;
+   
   }
 }
 
@@ -59,7 +59,7 @@ body{
   /* color:  rgb(252, 177, 3) !important; */
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1200px){
   .my_nav::after{
     content: '';
     height: 3px;
@@ -152,14 +152,14 @@ button:focus {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3) !important;
 }
 .scrolled > .collapse > .nav .my_nav, .colored > .collapse > .nav .my_nav{
-color: #FFCA26 !important;
-/* color: #4b2807 !important; */
-overflow: hidden;
+/* color: #FFCA26 !important; */
+/* overflow: hidden; */
+color: #4b2807 !important;
 }
-.scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
-  color: rgb(255, 202, 38, 0.5) !important;
-  /* color: rgba(75, 40, 7, 0.5) !important; */
-  /* color: #4b2807 !important; */
+@media(max-width: 991px){
+  .scrolled > .collapse > .nav .my_nav:hover, .colored > .collapse > .nav .my_nav:hover{
+    color: rgba(75, 40, 7, 0.5) !important;
+  }
 }
 
 @media(max-width: 992px){
@@ -184,12 +184,12 @@ overflow: hidden;
   .fixed-top .navbar-collapse .nav-item.nav-link{
       opacity: 0 !important;
   }
-  }
+}
   @media (min-width: 992px) {
   .fixed-top .navbar-collapse{
       display: block;
   }
-  .fixed-top .navbar-collapse .nav-item.nav-link{
+  .fixed-top .navbar-collapse .my_nav{
       opacity: 1 !important;
   }
 }
