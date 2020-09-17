@@ -290,6 +290,12 @@ button:focus {
   background: #00AA6C;
 }
 
+@media(max-width: 767px){
+  #our-brand{
+    width: 60px;
+    height: 60px;
+  }
+}
 
 #header{
   min-height: 100vh;

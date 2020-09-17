@@ -52,6 +52,10 @@ $(document).ready(function ($) {
           $(this).closest("li").addClass("active");
       }
   });
+    // $('.card-columns').animate({'width':'show'} , { duration: 1000, easing: "linear" }); //Linear or Swing?? Speed of animation? What on mobile?
+    // $('#second-card').animate({'width':'show'} , { duration: 1000, queue: true, easing: "linear" }); //Linear or Swing?? Speed of animation? What on mobile?
+    // $('#third-card').animate({'width':'show'} , { duration: 1500, queue: true, easing: "linear" }); //Linear or Swing?? Speed of animation? What on mobile?
+
 });
 
 

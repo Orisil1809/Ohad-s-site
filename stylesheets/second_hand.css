@@ -40,7 +40,7 @@ body{
       
   }
   #main-title{
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
 }
 
@@ -350,6 +350,13 @@ opacity: 1 !important;
   background: #00AA6C;
 }
 
+@media(max-width: 767px){
+  #our-brand{
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .card-columns .card {
   display: inline-block;
   width:100%;
@@ -462,4 +469,32 @@ box-sizing: border-box;
 
 border-top: 3px solid #bee4f8;
 
+} */
+@media(min-width: 1200px){
+  #main-title{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-left: .15em solid transparent; */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+
+    animation: 
+      typing 3s steps(40, end)
+  }
+
+
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+
+  /* @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+  } */
+}
+
+/* .card-columns{
+  display: none;
 } */

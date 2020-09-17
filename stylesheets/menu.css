@@ -527,3 +527,30 @@ opacity: 0 !important;
 #nav-icons ul li:nth-child(5) a:before {
   background: #00AA6C;
 }
+
+
+@media(max-width: 767px){
+  #our-brand{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.fa-question-circle{
+  display: none;
+}
+#short-desc{
+  display: none;
+}
+@media(min-width: 1400px){
+  .fa-question-circle{
+    display: inline;
+  }
+  
+  #long-desc{
+    display: none;
+  }
+  #short-desc{
+    display: inline-block;
+  }
+}
