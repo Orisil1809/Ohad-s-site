@@ -419,16 +419,16 @@ color: #4b2807 !important;
 
 #home-logo{
   
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   padding-top: 10vh;
 }
 
 #home-text{
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 3.5rem;
   line-height: 1.5;
@@ -779,4 +779,11 @@ hr{
   #phone-space{
     display: block;
   }
+}
+
+@media(min-width: 1400px) {
+  .col-md-6-5 {
+    flex: 0 0 54.16667% !important;
+    max-width: 54.16667% !important;
+   } 
 }
