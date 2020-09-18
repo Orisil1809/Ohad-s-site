@@ -164,30 +164,34 @@ color: #4b2807 !important;
 
 /* DELETE PT-5 FROM COLLAPSE? */
 
-@media(max-width: 991px){
+/* @media(max-width: 991px){
   #navbarCollapse{
       margin-bottom: 10vh;
       min-height: 100vh; 
   }
-}
+} */
 
 
-/* @media(max-width: 991px){
+@media(min-width: 480px) and (max-width: 991px){
   #navbarCollapse{
-      height: calc(100vh - 100px);
+      /* height: calc(100vh - 100px); */
+      height: 80vh;
       overflow-y: scroll;
       
   }
-  body{
-    overflow: hidden;
-  }
 }
+
 
 @media(max-width: 480px){
   #navbarCollapse{
       min-height: 100vh;
   }
-} */
+}
+
+.noscroll { 
+  overflow: hidden;
+  position: fixed;
+}
 
 .fixed-top.colored .navbar-collapse{
   display: block;
@@ -765,10 +769,7 @@ hr{
   text-decoration: underline;
 }
 
-/* .noscroll { 
-  overflow: hidden;
-  position:fixed;
-} */
+
 
 #phone-space{
   display: none;

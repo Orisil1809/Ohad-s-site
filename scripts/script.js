@@ -106,15 +106,21 @@ $(document).scroll(function () {
 
 //#region Prevent bodyscroll on collapse scroll
 
-// $('#navbarCollapse').on('hide.bs.collapse', function () {
-//   $('body').removeClass('noscroll')
-// });
+$('#navbarCollapse').on('hide.bs.collapse', function () {
+  $('body').removeClass('noscroll')
+});
 
 
 // $('#navbarCollapse').on('show.bs.collapse', function () {
 
 //   $('body').addClass('noscroll')
 // });
+
+$('#navbarCollapse').on('shown.bs.collapse', function () {
+
+  $('body').addClass('noscroll')
+});
+
 
 //#endregion
 
