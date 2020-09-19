@@ -40,7 +40,7 @@ body{
       
   }
   #main-title{
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
 }
 
@@ -440,10 +440,10 @@ p, h5{
 }
 
 #main-title{
-  position: absolute;
+  /* position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50% ,-40%);
+  transform: translate(-50% ,-40%); */
 }
 
 #items{
@@ -470,7 +470,7 @@ box-sizing: border-box;
 border-top: 3px solid #bee4f8;
 
 } */
-@media(min-width: 1200px){
+@media(min-width: 1400px){
   #main-title{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-left: .15em solid transparent; */
@@ -479,7 +479,7 @@ border-top: 3px solid #bee4f8;
     letter-spacing: .10em; /* Adjust as needed */
 
     animation: 
-      typing 3s steps(40, end)
+      typing 3s steps(60, end)
   }
 
 
@@ -498,3 +498,12 @@ border-top: 3px solid #bee4f8;
 /* .card-columns{
   display: none;
 } */
+
+#my-container{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  position: relative;
+
+}
