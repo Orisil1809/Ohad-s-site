@@ -333,8 +333,15 @@ color: #4b2807 !important;
 
 #header{
   height: 100vh;
+
   /* overflow: hidden;
   width: 100%; */
+
+  /* overflow: hidden;
+  width: 100%;
+  height: calc(100% - 30px);
+  height: -webkit-calc(100% - 30px);
+  height: -moz-calc(100% - 30px); */
 
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new.jpg");
   background-repeat: no-repeat;

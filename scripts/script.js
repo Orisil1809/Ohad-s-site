@@ -57,9 +57,24 @@ $(document).ready(function(){
     $('#home-text').animate({'height':'show'} , { duration: 1000, easing: "swing" });
     TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
     var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
+    console.log("HELLO");
+    // let window_height = window.innerHeight;
+    // console.log(window_height);
+    // $('#header').height(window_height);
 
   });
   
+  // window.onload = function(){
+
+  // };
+
+
+  function resizeHeader(){
+    let window_height = window.innerHeight;
+    $('#header').height(window_height);
+  }
+
+  // window.addEventListener('resize', resizeHeader);
 
   
   $(window).scroll( function(){
@@ -134,8 +149,6 @@ $('#scroll-arrow').click(function(){
   var edgeOffset = 125 // px
   zenscroll.setup(defaultDuration, edgeOffset)
   zenscroll.to(second)
-
-  console.log(zenscroll.getY());
 
 });
 
