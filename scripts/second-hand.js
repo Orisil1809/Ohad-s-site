@@ -26,7 +26,7 @@ function delay (URL) {
 
 $(document).ready(function ($) {
 
-  tl.fromTo(".card", { y: "100%" }, { y: "0%", delay: 0.2, duration: 1, stagger: 0.5});
+  tl.fromTo(".card", { y: "100%" }, { y: "0%", delay: 0.5, duration: 1, stagger: 0.5});
 
   var url = window.location.href;
   var activePage = url;
