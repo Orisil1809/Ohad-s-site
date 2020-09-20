@@ -507,3 +507,7 @@ border-top: 3px solid #bee4f8;
   position: relative;
 
 }
+
+.card-columns .card{
+  max-width: 550px;
+}
