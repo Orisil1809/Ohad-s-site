@@ -1,3 +1,4 @@
+const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
@@ -25,6 +26,7 @@ function delay (URL) {
 
 $(document).ready(function ($) {
 
+  tl.fromTo(".card", { y: "100%" }, { y: "0%", delay: 0.2, duration: 1, stagger: 0.5});
 
   var url = window.location.href;
   var activePage = url;
