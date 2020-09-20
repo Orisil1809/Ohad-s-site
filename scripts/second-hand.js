@@ -1,4 +1,3 @@
-const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
@@ -25,7 +24,7 @@ function delay (URL) {
 }
 
 $(document).ready(function ($) {
-
+  const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
   // tl.fromTo(".card", { opacity: 0 }, { opacity: 1, delay: 0.2, duration: 1, stagger: 0.5});
   tl.fromTo(".card", { y: "100%" }, { y: "0%", delay: 0.2, duration: 1, stagger: 0.25});
 
