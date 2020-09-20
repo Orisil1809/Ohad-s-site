@@ -58,9 +58,9 @@ $(document).ready(function(){
     TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
     var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
     
-    let window_height = window.innerHeight;
-    console.log(window_height);
-    $('#header').height(window_height);
+    // let window_height = window.innerHeight;
+    // console.log(window_height);
+    // $('#header').height(window_height);
 
   });
   
@@ -69,10 +69,10 @@ $(document).ready(function(){
   // };
 
 
-  function resizeHeader(){
-    let window_height = window.innerHeight;
-    $('#header').height(window_height);
-  }
+  // function resizeHeader(){
+  //   let window_height = window.innerHeight;
+  //   $('#header').height(window_height);
+  // }
 
   // window.addEventListener('resize', resizeHeader);
 
