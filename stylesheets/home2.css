@@ -365,7 +365,7 @@ color: #4b2807 !important;
 
 @media (max-width: 767px) {
   #header {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_1024.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
