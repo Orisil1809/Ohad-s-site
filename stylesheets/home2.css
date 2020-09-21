@@ -339,10 +339,10 @@ color: #4b2807 !important;
 
   /* COMMENTED 21_9 */
 
-  /* overflow: hidden;
-  width: 100%; */
+  overflow: hidden;
+  width: 100%;
 
-  
+
   /* overflow: hidden;
   width: 100%;
   height: calc(100% - 30px);
