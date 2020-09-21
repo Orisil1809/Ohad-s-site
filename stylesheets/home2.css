@@ -462,8 +462,8 @@ color: #4b2807 !important;
 
 @media (max-width: 767px){
   #home-logo{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
   }
   #home-text{
     font-size: 2.5rem;
@@ -482,10 +482,18 @@ color: #4b2807 !important;
 @media(min-width: 991px)
 {
   #home-text{
-    margin-top: 12vh;
+    margin-top: 6rem;
   }
 }
-
+/* ADDED 21_9 */
+#home-text{
+  margin-top: 6rem;
+}
+@media (max-width: 767px){
+  #home-text{
+    margin-top: 3rem;
+  }
+}
 #swipeIcon{
   position: absolute;
   bottom: 5%;
@@ -556,7 +564,6 @@ padding: 0px 100px;
 
 
 .hide {
-  
   overflow: hidden;
 }
 
