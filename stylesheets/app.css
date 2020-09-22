@@ -174,6 +174,7 @@ color: #4b2807 !important;
 @media(max-width: 991px){
   #navbarCollapse{
       min-height: 100vh;
+      
   }
 }
 
@@ -336,8 +337,11 @@ color: #4b2807 !important;
 #header{
   height: 100vh;
 
-  /* overflow: hidden;
-  width: 100%; */
+  /* COMMENTED 21_9 */
+
+  overflow: hidden;
+  width: 100%;
+
 
   /* overflow: hidden;
   width: 100%;
@@ -357,7 +361,7 @@ color: #4b2807 !important;
   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/DSC_0969_new_1024.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 70%;
+  background-position: 45%;
   font-size: 0.5rem;
 }
 
@@ -365,13 +369,13 @@ color: #4b2807 !important;
 
 @media (max-width: 767px) {
   #header {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_1024.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_try.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     /* background-position: 70%; */
-    background-position: 40%;
-    font-size: .5rem;
+    background-position: 20%;
+    font-size: 0.5rem;
   }
 }
 
@@ -426,13 +430,19 @@ color: #4b2807 !important;
   margin: auto;
 }
 
+
 #home-logo{
+  
+  width: 50%;
+  height: 50%;
+}
+/* #home-logo{
   
   width: 25%;
   height: 25%;
   padding-top: 10vh;
-}
-
+} */
+/*
 #home-text{
   position: absolute;
   top: 50%;
@@ -441,31 +451,56 @@ color: #4b2807 !important;
   color: white;
   font-size: 3.5rem;
   line-height: 1.5;
+} */
+
+#content{
+  margin-top: 10vh;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 767px){
   #home-logo{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
   }
   #home-text{
     font-size: 2.5rem;
   }
 }
 
-@media(max-width: 480px)
+
+/* @media (max-height: 480px){
+
+  #home-text{
+    display: none;
+  }
+} */
+
+
+/* @media(min-width: 991px)
+{
+  #home-text{
+    margin-top: 6rem;
+  }
+} */
+
+/* ADDED 21_9 */
+#home-text{
+  margin-top: 6rem;
+}
+
+@media(max-width: 767px)
 {
   #home-text{
     font-size: 1.75rem;
-    margin-top: 6vh;
+    margin-top: 3rem;
 
-  }
-}
-
-@media(min-width: 991px)
-{
-  #home-text{
-    margin-top: 12vh;
   }
 }
 
@@ -530,8 +565,23 @@ padding: 0px 100px;
 }
 
 #home-text{
-  display: none;
+  transform: translateY(200%);
 }
+
+/* #home-text .p1{
+  transform: translateY(200%);
+} */
+
+
+.hide {
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(400%);
+  display: inline-block;
+}
+
 
 @media(min-width: 1200px){
   .slick-next::before, .slick-prev::before{

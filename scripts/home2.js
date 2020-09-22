@@ -59,7 +59,7 @@ $(document).ready(function(){
   // COMMENTED 21_9
 
   // console.log("!@#!@#");
-  // let my_div = $('.my-div');
+  // let my_div = $('#content');
   // let my_header = $('#header');
   // let header_height = my_header.height();
   // let div_height = my_div.height();
@@ -91,7 +91,7 @@ $(document).ready(function(){
 // COMMENTED 21_9
 
 // function resizeHeader(){
-//   let my_div = $('.my-div');
+//   let my_div = $('#content');
 //   let my_header = $('#header');
 //   let header_height = my_header.height();
 //   let div_height = my_div.height();

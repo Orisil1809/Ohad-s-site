@@ -453,7 +453,7 @@ color: #4b2807 !important;
   line-height: 1.5;
 } */
 
-.my-div{
+#content{
   margin-top: 10vh;
   position: absolute;
   top: 15%;
@@ -473,6 +473,15 @@ color: #4b2807 !important;
     font-size: 2.5rem;
   }
 }
+
+
+/* @media (max-height: 480px){
+
+  #home-text{
+    display: none;
+  }
+} */
+
 
 /* @media(min-width: 991px)
 {
