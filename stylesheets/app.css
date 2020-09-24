@@ -352,8 +352,8 @@ body{
   justify-self: flex-end;
   z-index: 9;
   cursor: pointer;
-  /* margin: 100px 0; */
-  margin: 10rem 0;
+  margin: 100px 0;
+  /* margin: 10rem 0; */
   
 
   /* position: absolute;
