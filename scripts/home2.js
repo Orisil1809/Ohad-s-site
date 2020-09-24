@@ -184,13 +184,13 @@ $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
 
 
 
-document.querySelector('.nav_menu ').addEventListener('click', () => {
-  const el = document.body;
-  console.log(el);
-  el.classList.contains('noscroll')
-    ? el.classList.remove('noscroll')
-    : el.classList.add('noscroll');
-});
+// document.querySelector('.nav_menu ').addEventListener('click', () => {
+//   const el = document.body;
+//   console.log(el);
+//   el.classList.contains('noscroll')
+//     ? el.classList.remove('noscroll')
+//     : el.classList.add('noscroll');
+// });
 
 
 function delay (URL) {
