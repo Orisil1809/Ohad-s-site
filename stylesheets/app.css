@@ -352,7 +352,9 @@ body{
   justify-self: flex-end;
   z-index: 9;
   cursor: pointer;
-  margin: 100px 0;
+  /* margin: 100px 0; */
+  margin: 10rem 0;
+  
 
   /* position: absolute;
   bottom: 4%;
@@ -369,6 +371,7 @@ body{
 #scroll-arrow {
   display: block;
   margin-bottom: auto;
+  /* transform: translateY(400%); */
 }
 
 /* @media (max-width: 767px)
@@ -435,7 +438,9 @@ body{
   margin-top: 3rem;
 }
 
-@media (max-height: 887px) {
+
+
+/* @media (max-height: 887px) {
   .scroll-down {
     margin: 1.8rem 0;
   }
@@ -443,7 +448,7 @@ body{
     margin-top: 3rem !important;
     font-size: 3rem;
   }
-}
+} */
 
 @media (max-width: 767px){
   /* #home-logo{
