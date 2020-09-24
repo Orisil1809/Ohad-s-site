@@ -144,6 +144,7 @@ $(window).scroll( function(){
 
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
+  $('body').toggleClass('noscroll');
     // $('body').toggleClass('noscroll')
   $('.colored #navbarCollapse').on("click", ".navbar-nav li #contact" , function(){
     
@@ -162,6 +163,7 @@ $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
 });
 
 
+
 //#region Prevent bodyscroll on collapse scroll
 
 // $('#navbarCollapse').on('hide.bs.collapse', function () {
@@ -176,22 +178,6 @@ $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
 
 
 //#endregion
-
-
-// $('.navbar-toggler').click(function(){
-//   $('body').toggleClass('noscroll')
-// });
-
-
-
-// document.querySelector('.nav_menu ').addEventListener('click', () => {
-//   const el = document.body;
-//   console.log(el);
-//   el.classList.contains('noscroll')
-//     ? el.classList.remove('noscroll')
-//     : el.classList.add('noscroll');
-// });
-
 
 function delay (URL) {
 setTimeout( function() { window.location = URL }, 500 );
