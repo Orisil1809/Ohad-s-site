@@ -78,6 +78,7 @@ $(document).ready(function(){
   // $('#home-text').animate({'height':'show'} , { duration: 1000, easing: "swing" });
   tl.to (".text", {y: "0%", delay: 0.5, duration: 1, stagger: 0.5});
   tl.to("#home-text", {y: "0%", delay: 0.5, duration: 1}, "-=3");
+  tl.to(".scroll-down", {opacity: 1, duration: 1}, "-=0.5");
   // tl.to("#scroll-arrow", {y: "0%", duration: 1});
 
   TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
