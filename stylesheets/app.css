@@ -314,7 +314,7 @@ body{
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/DSC_0969_new.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -324,7 +324,7 @@ body{
 
 @media (max-width: 1024px) {
 #header {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/DSC_0969_new_1024.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_1024.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 45%;
@@ -440,7 +440,7 @@ body{
 
 
 
-/* @media (max-height: 887px) {
+@media (max-height: 887px) and (min-width: 480px){
   .scroll-down {
     margin: 1.8rem 0;
   }
@@ -448,7 +448,7 @@ body{
     margin-top: 3rem !important;
     font-size: 3rem;
   }
-} */
+}
 
 @media (max-width: 767px){
   /* #home-logo{
@@ -511,6 +511,10 @@ body{
 .hide span {
   transform: translateY(400%);
   display: inline-block;
+}
+
+#last-text{
+  margin-top: 10px;
 }
 
 #swipeIcon{
@@ -817,3 +821,5 @@ hr{
     max-width: 54.16667% !important;
    } 
 }
+
+
