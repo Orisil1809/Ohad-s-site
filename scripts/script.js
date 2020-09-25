@@ -147,9 +147,8 @@ $(window).scroll( function(){
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
   $('body').toggleClass('noscroll');
-    // $('body').toggleClass('noscroll')
   $('.colored #navbarCollapse').on("click", ".navbar-nav li #contact" , function(){
-    
+    $('body').removeClass('noscroll');
     $('#navbarCollapse').collapse('hide');
     $('.navbar-toggler').removeClass('opened');
     $('.navbar-toggler').addClass('collapsed');

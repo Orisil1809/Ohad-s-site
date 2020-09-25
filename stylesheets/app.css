@@ -352,8 +352,9 @@ body{
   justify-self: flex-end;
   z-index: 9;
   cursor: pointer;
-  margin: 100px 0;
-  /* margin: 10rem 0; */
+  /* margin: 100px 0; */
+  /* margin: 15rem 0; */
+  padding-top: 2rem;
   
 
   /* position: absolute;
@@ -440,9 +441,10 @@ body{
 
 
 
-@media (max-height: 887px) and (min-width: 480px){
+@media (max-height: 887px) and (min-width: 768px){
   .scroll-down {
-    margin: 1.8rem 0;
+    /* margin: 1.8rem 0; */
+    padding-top: 2rem;
   }
   #home-text {
     margin-top: 3rem !important;
@@ -513,9 +515,15 @@ body{
   display: inline-block;
 }
 
-#last-text{
+/* #last-text{
   margin-top: 10px;
-}
+} */
+
+/* @media(min-height: 992px){
+  #last-text{
+    margin-top: 20px;
+  }
+} */
 
 #swipeIcon{
   position: absolute;
