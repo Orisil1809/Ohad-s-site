@@ -60,7 +60,8 @@ body{
   }
 }
 
-.my_nav:hover{
+.my_nav:hover,
+.my_nav:focus{
     /* color:  rgb(252, 177, 3) !important; */
     color: #FFCA26 !important;
 
@@ -202,8 +203,9 @@ body{
     background: transparent;
     
   }
-  .my_nav:hover::after{
-    
+
+  .my_nav:hover::after,
+  .my_nav:focus::after{    
     background: #ED1F28;
 
   }
@@ -216,9 +218,9 @@ body{
     background: transparent;
     
   }
-  .my_nav:hover::before{
+  .my_nav:hover::before,
+  .my_nav:focus::before{
     background: #ED1F28;
-
   }
 
   .my_nav::before, .my_nav::after{

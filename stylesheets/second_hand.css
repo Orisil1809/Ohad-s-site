@@ -84,7 +84,8 @@ body{
   }
 }
 
-.my_nav:hover{
+.my_nav:hover,
+.my_nav:focus{
   /* color:  rgb(252, 177, 3) !important; */
   color: #FFCA26 !important;
 }
@@ -221,33 +222,6 @@ opacity: 1 !important;
   }
 }
 
-#steam{
-  animation: steam_animation 2s ease infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes steam_animation{
-  0%{
-    transform: translateY(10px);
-    opacity:0;
-  }
-  50%{
-    opacity:1;
-  }
-  100%{
-    transform: translateY(-10px);
-    opacity:0;
-  }
-}
-
-@media (max-width: 767px){
-  #coffee-svg{
-    height: 60px;
-    width: 60px;
-  }
-}
-
 @media(min-width: 1200px){
   .my_nav::after{
     content: '';
@@ -257,10 +231,9 @@ opacity: 1 !important;
     background: transparent;
     
   }
-  .my_nav:hover::after{
-    
+  .my_nav:hover::after,
+  .my_nav:focus::after{    
     background: #ED1F28;
-
   }
 
   .my_nav::before{
@@ -271,9 +244,9 @@ opacity: 1 !important;
     background: transparent;
     
   }
-  .my_nav:hover::before{
+  .my_nav:hover::before,
+  .my_nav:focus::before{
     background: #ED1F28;
-
   }
 
   .my_nav::before, .my_nav::after{
@@ -395,7 +368,7 @@ opacity: 1 !important;
 .card-columns{
 column-count: 1;
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .card-columns{
     column-count: 3;
   }
@@ -433,11 +406,14 @@ p, h5{
   }
 }
 
-@media(min-width: 1600px){
+/* @media(min-width: 1600px){
   .card-columns .card{
     margin-bottom: 0 !important;
     height: 500px;
     
+  }
+  #second-card{
+    height: auto;
   }
 }
 @media(min-width: 1200px) and (max-width: 1599px){
@@ -450,6 +426,12 @@ p, h5{
   .card-columns .card{
     margin-bottom: 0 !important;
     height: 700px;
+  }
+} */
+
+@media (max-width: 991px){
+  .card-columns .card{
+    height: auto !important;
   }
 }
 

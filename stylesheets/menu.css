@@ -250,9 +250,11 @@ background-color: #f0f0f0 !important;
   }
 }
 
-.my_nav:hover{
+.my_nav:hover,
+.my_nav:focus{
 /* color: rgb(255, 202, 38, 0.7) !important; */
-  color:  #FFCA26 !important;
+  /* color:  #FFCA26 !important; */
+  color: #4B2907 !important;
   
 }
 
@@ -265,8 +267,9 @@ background-color: #f0f0f0 !important;
     background: transparent;
     
   }
-  .my_nav:hover::after{
-    
+  .my_nav:hover::after,
+  .my_nav:focus::after{
+
     background: #ED1F28;
 
   }
@@ -279,9 +282,9 @@ background-color: #f0f0f0 !important;
     background: transparent;
     
   }
-  .my_nav:hover::before{
+  .my_nav:hover::before,
+  .my_nav:focus::before{
     background: #ED1F28;
-
   }
 
   .my_nav::before, .my_nav::after{
