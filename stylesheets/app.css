@@ -191,6 +191,9 @@ body{
       overflow-y: scroll;
       
   }
+  .navbar-nav{
+    padding-top: 0 !important;
+  }
 }
 
 
@@ -325,6 +328,7 @@ body{
 @media (max-width: 1024px) {
 #header {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_1024.jpg");
+  /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/DSC_0969_mobile.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 45%;

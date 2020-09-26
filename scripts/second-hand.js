@@ -2,7 +2,7 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
-
+  $('body').toggleClass('noscroll');
 });
 
 $(document).scroll(function () {

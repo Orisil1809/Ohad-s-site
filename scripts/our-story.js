@@ -19,6 +19,7 @@ $("#read_more").click(function(){
 
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
+  $('body').toggleClass('noscroll');
 
 });
 

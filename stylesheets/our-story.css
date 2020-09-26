@@ -19,6 +19,10 @@ body{
   box-sizing: border-box;
 }
 
+.navbar-collapse a, #my_brand, #second_row a, #visit-us, #social-footer a{
+  outline: none;
+}
+
 .logo-image{
   /* max-width: 80%; */
   height: auto;
@@ -39,7 +43,7 @@ body{
 
 #main_navbar{
   min-height: 40px;
-  transition: background-color 300ms linear;
+  /* transition: background-color 300ms linear; */
   box-shadow: none;
   z-index: 1050;
 
@@ -84,9 +88,18 @@ background-color: #f0f0f0 !important;
 
 }
 
-button:focus {
+/* button:focus {
   outline: 0 !important;
+} */
+
+#my_brand:hover,
+#my_brand:focus{
+  transition: all ease-in-out 0.5s;
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
 }
+
 .line {
   fill: none;
   stroke: black;
@@ -136,12 +149,28 @@ box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3) !important;
   }
 }
 
-@media(max-width: 992px){
+@media(max-width: 991px){
   #navbarCollapse{
-      margin-bottom: 10vh;
       min-height: 100vh;
-    
   }
+}
+
+@media(min-width: 480px) and (max-width: 991px) and (max-height: 480px){
+  #navbarCollapse{
+      /* height: calc(100vh - 100px); */
+      height: 80vh;
+      min-height: 80vh;
+      overflow-y: scroll;
+      
+  }
+  .navbar-nav{
+    padding-top: 0 !important;
+  }
+}
+
+.noscroll { 
+  overflow: hidden;
+  position: fixed;
 }
 
 .fixed-top.colored .navbar-collapse{
