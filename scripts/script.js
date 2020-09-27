@@ -1,6 +1,6 @@
-$(window).on('load', function(){  
-  $(".se-pre-con").fadeOut("slow");;
-});
+// $(window).on('load', function(){  
+//   $(".se-pre-con").fadeOut("slow");;
+// });
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 let firstModal = false;
