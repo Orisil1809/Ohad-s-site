@@ -1,10 +1,18 @@
-// $(window).on('load', function(){  
-//   $(".se-pre-con").fadeOut("slow");;
-// });
+
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
+const tl2 = gsap.timeline({ defaults: { ease: "power3.out" }});
+
 let firstModal = false;
 //#region slick carousel
+
+$(window).on('load', function(){  
+  // $(".se-pre-con").fadeOut("slow");
+  tl2.to($(".se-pre-con"),
+  {height: "0%", ease: "slow(0.7, 0.7, false)"});
+});
+// {height: "0%", ease: "slow(0.7, 0.7, false)"});
+// {height: "0%", ease: "power3.out"});
 
 $(document).ready(function(){
 
