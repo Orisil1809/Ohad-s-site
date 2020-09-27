@@ -170,13 +170,6 @@ body{
   }
 }
 
-/* @media(max-width: 991px){
-  #navbarCollapse{
-      margin-bottom: 10vh;
-      min-height: 100vh; 
-  }
-} */
-
 @media(max-width: 991px){
   #navbarCollapse{
       min-height: 100vh;
@@ -190,6 +183,9 @@ body{
       min-height: 80vh;
       overflow-y: scroll;
       
+  }
+  .navbar-nav{
+    padding-top: 0 !important;
   }
 }
 
@@ -314,7 +310,7 @@ body{
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/DSC_0969_new.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -324,7 +320,8 @@ body{
 
 @media (max-width: 1024px) {
 #header {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/DSC_0969_new_1024.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_1024.jpg");
+  /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/DSC_0969_mobile.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 45%;
@@ -335,11 +332,12 @@ body{
 
 @media (max-width: 767px) {
   #header {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/assets/DSC_0969_new_try.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/DSC_0969_mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-position: 20%;
+    /* background-position: 20%; */
+    background-position: 70%;
     font-size: 0.5rem;
   }
 }
@@ -352,12 +350,8 @@ body{
   justify-self: flex-end;
   z-index: 9;
   cursor: pointer;
-  margin: 100px 0;
-
-  /* position: absolute;
-  bottom: 4%;
-  width: 100%;
-  text-align: center; */
+  padding-top: 5rem;
+  opacity: 0;
 
   animation-iteration-count: 5 !important;
   -webkit-animation: upAnddown 1s infinite !important;
@@ -370,20 +364,6 @@ body{
   display: block;
   margin-bottom: auto;
 }
-
-/* @media (max-width: 767px)
-{
-  .scroll-down {
-      bottom: 20%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px)
-{
-  .scroll-down {
-      bottom: 15%;
-  }
-} */
 
 @keyframes upAnddown{
   0% {
@@ -406,11 +386,7 @@ body{
 }
 
 #content{
-  /* margin-top: 10vh;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -15%); */
+
   max-width: 140rem;
   display: flex;
   flex-direction: column;
@@ -422,7 +398,6 @@ body{
 }
 
 #home-logo{
-  
   width: 50%;
   height: 50%;
 }
@@ -435,51 +410,32 @@ body{
   margin-top: 3rem;
 }
 
-@media (max-height: 887px) {
+
+@media (max-height: 887px){
+  .scroll-down{
+    padding-top: 2rem;
+  }
+  #home-text {
+    font-size: 3rem;
+  }
+}
+/* @media (max-height: 887px) and (min-width: 768px){
   .scroll-down {
-    margin: 1.8rem 0;
+    padding-top: 2rem;
   }
   #home-text {
     margin-top: 3rem !important;
     font-size: 3rem;
   }
-}
+} */
 
 @media (max-width: 767px){
-  /* #home-logo{
-    width: 80%;
-    height: 80%;
-  } */
-  #home-text{
-    font-size: 2.5rem;
-  }
-}
 
-@media(max-width: 767px)
-{
   #home-text{
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-top: 3rem;
-
   }
 }
-
-/* @media (max-height: 480px){
-
-  #home-text{
-    display: none;
-  }
-} */
-
-
-/* @media(min-width: 991px)
-{
-  #home-text{
-    margin-top: 6rem;
-  }
-} */
-
-/* ADDED 21_9 */
 
 
 #home-text::before{
@@ -507,6 +463,10 @@ body{
   transform: translateY(400%);
   display: inline-block;
 }
+
+/* #last-text{
+  margin-top: 10px;
+} */
 
 #swipeIcon{
   position: absolute;
@@ -579,7 +539,6 @@ padding: 0px 100px;
 .slick img{
   width: 100%;
   border-radius: 10px;
-  /* height: auto; */
 }
 
 
@@ -612,10 +571,8 @@ padding: 0px 100px;
 #footer{
   margin-left: 0;
   padding-left: 0;
-  width:100%;
+  width: 100%;
   padding-top: 2vh;  
-  /* Commented recently */
-  /* width: 100%; */
   background-color: #FFCA26;
 
 }
@@ -623,7 +580,6 @@ padding: 0px 100px;
 @media (max-width: 767px) {
   #footer{
     padding-top: 8vh;
-    /* margin-top: 15vh; */
   }
 }
 
@@ -802,7 +758,7 @@ hr{
 
 #visit-us:focus,
 #visit-us:hover{
-  color: #4b2807
+  opacity: 0.7;
 }
 
 
@@ -811,4 +767,15 @@ hr{
     flex: 0 0 54.16667% !important;
     max-width: 54.16667% !important;
    } 
+}
+
+
+#close-button{
+  margin-right: 0.25rem !important;
+  margin-left: auto !important;
+}
+
+#close-icon{
+  margin-left: 0.25rem !important;
+  margin-right: auto !important;
 }

@@ -1,6 +1,18 @@
-const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 
+
+const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
+const tl2 = gsap.timeline({ defaults: { ease: "power3.out" }});
+
+let firstModal = false;
 //#region slick carousel
+
+$(window).on('load', function(){  
+  // $(".se-pre-con").fadeOut("slow");
+  tl2.to($(".overlay"),
+  {height: "0%", ease: "slow(0.7, 0.7, false)"});
+});
+// {height: "0%", ease: "slow(0.7, 0.7, false)"});
+// {height: "0%", ease: "power3.out"});
 
 $(document).ready(function(){
 
@@ -78,6 +90,9 @@ $(document).ready(function(){
   // $('#home-text').animate({'height':'show'} , { duration: 1000, easing: "swing" });
   tl.to (".text", {y: "0%", delay: 0.5, duration: 1, stagger: 0.5});
   tl.to("#home-text", {y: "0%", delay: 0.5, duration: 1}, "-=3");
+  tl.to(".scroll-down", {opacity: 1, duration: 1}, "-=0.5");
+  // tl.to("#scroll-arrow", {y: "0%", duration: 1});
+
   TweenMax.set(".hand-x", {rotation:-20, transformOrigin:"bottom center", x:-20});
   var tween = TweenMax.to(".hand-x", 1, {x:20, rotation:20, repeat:100, ease:Power3.easeInOut, yoyo:true})
   
@@ -117,27 +132,25 @@ $(document).ready(function(){
 
 
 
+// $('#myModal').modal(options)
 
 
 $(window).scroll( function(){
-    // if(window)
-  /* Check the location of each desired element */
-  $('#our_story').each( function(i){
+  if(!firstModal){
+    $('#info-section').each( function(i){
+        
+        const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+        const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+        const bottom_of_window = $(window).scrollTop() + $(window).height();
 
-      // var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-      const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
-      const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
-      const bottom_of_window = $(window).scrollTop() + $(window).height();
+        /* If the object is completely visible in the window, fade it in */
+        if( bottom_of_window > middle_of_object ){    
+          $('#myModal').modal();
+          firstModal = true;
+        }
 
-      /* If the object is completely visible in the window, fade it in */
-      if( bottom_of_window > middle_of_object ){          
-          // $(this).animate({'opacity':'1'} ,'slow');
-          $(this).animate({'width':'show'} , { duration: 1000, easing: "swing" }); //Linear or Swing?? Speed of animation? What on mobile?
-
-
-      }
-
-  }); 
+    }); 
+  }
 
 });
 
@@ -145,9 +158,8 @@ $(window).scroll( function(){
 $('.navbar-toggler').click(function(){
   $("#main_navbar").toggleClass('colored');
   $('body').toggleClass('noscroll');
-    // $('body').toggleClass('noscroll')
   $('.colored #navbarCollapse').on("click", ".navbar-nav li #contact" , function(){
-    
+    $('body').removeClass('noscroll');
     $('#navbarCollapse').collapse('hide');
     $('.navbar-toggler').removeClass('opened');
     $('.navbar-toggler').addClass('collapsed');

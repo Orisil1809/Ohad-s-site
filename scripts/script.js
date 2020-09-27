@@ -8,8 +8,8 @@ let firstModal = false;
 
 $(window).on('load', function(){  
   // $(".se-pre-con").fadeOut("slow");
-  tl2.to($(".se-pre-con"),
-  {height: "0%", ease: "slow(0.7, 0.7, false)", delay: "0.1"});
+  tl2.to($(".overlay"),
+  {height: "0%", ease: "slow(0.7, 0.7, false)"});
 });
 // {height: "0%", ease: "slow(0.7, 0.7, false)"});
 // {height: "0%", ease: "power3.out"});

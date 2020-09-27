@@ -23,7 +23,7 @@
     <Style>
         .no-js #loader { display: none;  }
         .js #loader { display: block; position: absolute; left: 100px; top: 0; }
-        #se-pre-con1 {
+        #first-overlay {
         position: fixed;
         left: 0px;
         top: 0px;
@@ -34,9 +34,9 @@
         background: #fff;
 
 }
-#se-pre-con2 {
+#second-overlay {
         position: fixed;
-        right: 0px;
+        left: 0px;
         bottom: 0px;
         width: 100%;
         height: 50%;
@@ -46,13 +46,13 @@
 
     </Style>
     <body>
-        <div id="se-pre-con1" class="se-pre-con"></div>
-        <div id="se-pre-con2" class="se-pre-con"></div>
+        <div id="first-overlay" class="overlay"></div>
+        <div id="second-overlay" class="overlay"></div>
         <Section id="header">
             <nav id="main_navbar" class="navbar navbar-expand-lg mb-4 py-0 navbar-light fixed-top">
 
-                <a id="my_brand" class="navbar-brand mr-0" href="home.html">
-                <!-- <a id="my_brand" class="navbar-brand mr-0" href="/" > -->
+                <!-- <a id="my_brand" class="navbar-brand mr-0" href="home.html"> -->
+                <a id="my_brand" class="navbar-brand mr-0" href="/" >
                     <img id="our-brand" src="/assets/nav_icon2_new.png" width="70" height="70" alt="נוני ופורטונה - חותמת">
                 </a>
 
@@ -66,22 +66,22 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="nav navbar-nav pr-0 pt-5 pr-lg-5 pt-lg-0">
                         <!-- pt-5 -->
-                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu.html">התפריט שלנו</a></li>
-                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu">התפריט שלנו</a></li> -->
+                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu.html">התפריט שלנו</a></li> -->
+                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-menu">התפריט שלנו</a></li>
 
                         <li><a id="contact" class="nav-item nav-link my_nav pl-lg-4" href="#info-footer">צור קשר</a></li>
 
-                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-story.html">מי אנחנו</a></li>
-                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our_story">מי אנחנו</a></li> -->
+                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-story.html">מי אנחנו</a></li> -->
+                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="our_story">מי אנחנו</a></li>
 
-                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand.html">אפשר להביא</a></li>
-                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand">אפשר להביא</a></li> -->
+                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand.html">אפשר להביא</a></li> -->
+                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="second-hand">אפשר להביא</a></li>
 
-                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery.html">גלריה</a></li>
-                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery">גלריה</a></li> -->
+                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery.html">גלריה</a></li> -->
+                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="gallery">גלריה</a></li>
 
-                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-book.html">הספר שלנו</a></li>
-                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-book">הספר שלנו</a></li> -->
+                        <!-- <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-book.html">הספר שלנו</a></li> -->
+                        <li><a class="nav-item nav-link my_nav pl-lg-4" href="our-book">הספר שלנו</a></li>
                         <!-- Added 8.9 -->
                     </ul>
                     <div id="nav-icons" class="d-block d-lg-none">
@@ -134,15 +134,15 @@
                     <div class="slick">
 
                         <div>
-                            <img src="/assets/slider_pics/partners.jpg" alt="">
+                            <img data-lazy="/assets/slider_pics/partners.jpg" alt="">
                         </div>
                         
                         <div>
-                            <img src="/assets/slider_pics/store1_new.jpg" alt="">
+                            <img data-lazy="/assets/slider_pics/store1_new.jpg" alt="">
                         </div>
                         
                         <div>
-                            <img src="/assets/slider_pics/sandwich2_new.jpg" alt="">
+                            <img data-lazy="/assets/slider_pics/sandwich2_new.jpg" alt="">
                         </div>
                         <div>
                             <img data-lazy="/assets/slider_pics/cookies.jpg" alt="">
