@@ -1,5 +1,4 @@
 
-
 const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 const tl2 = gsap.timeline({ defaults: { ease: "power3.out" }});
 
@@ -21,7 +20,7 @@ $(document).ready(function(){
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 3,
-  dots:true,
+  dots: true,
   speed: 350,
   autoplay: true,
   autoplaySpeed: 2500,

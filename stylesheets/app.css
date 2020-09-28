@@ -779,3 +779,7 @@ hr{
   margin-left: 0.25rem !important;
   margin-right: auto !important;
 }
+
+.close{
+  font-size: 2rem;
+}
