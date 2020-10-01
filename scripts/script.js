@@ -135,6 +135,19 @@ $(document).ready(function(){
 
 
 $(window).scroll( function(){
+  $('.header-title').each( function(i){
+        
+    const top_of_object = $(this).offset().top; //As soon as it appears, animate it in
+    const middle_of_object = $(this).offset().top + $(this).outerHeight()/3; //As soon as it appears, animate it in
+    const bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    /* If the object is completely visible in the window, fade it in */
+    if( bottom_of_window > middle_of_object ){   
+      $('.wrapper').addClass("anim");
+    }
+
+  }); 
+
   if(!firstModal){
     $('#info-section').each( function(i){
         
@@ -169,8 +182,8 @@ $('.navbar-toggler').click(function(){
 
 
 $(document).scroll(function () {
-var $nav = $("#main_navbar");
-$nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
+  var $nav = $("#main_navbar");
+  $nav.toggleClass('scrolled', $(this).scrollTop() + 20 > 40);
 });
 
 
