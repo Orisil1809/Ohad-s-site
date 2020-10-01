@@ -473,6 +473,9 @@ body{
   .header-title{
     font-size: 3rem;
   }
+  #flower-border{
+    width: 100%;
+  }
 }
 
 .anim{
