@@ -35,8 +35,30 @@ function resizeCards(){
 window.addEventListener('resize', resizeCards);
 
 
-$(document).ready(function ($) {
-  tl.fromTo(".card", { opacity: 0 }, { opacity: 1, delay: 0.2, duration: 1, stagger: 0.5});
+// $(document).ready(function ($) {
+//   tl.fromTo(".card", { opacity: 0 }, { opacity: 1, delay: 0.2, duration: 1, stagger: 0.5});
+
+
+//   var url = window.location.href;
+//   var activePage = url;
+//   $('#navbarCollapse li a').each(function () {
+//       var linkPage = this.href;
+
+//       if (activePage == linkPage) {
+//           $(this).closest("li").addClass("active");
+//       }
+//   });
+
+//   let card_height = $('#second-card').height();
+//   $('#first-card').height(card_height);
+//   $('#third-card').height(card_height);
+
+
+// });
+
+
+$(window).on('load', function(){
+    tl.fromTo(".card", { opacity: 0 }, { opacity: 1, delay: 0.2, duration: 1, stagger: 0.5});
 
 
   var url = window.location.href;
@@ -55,5 +77,3 @@ $(document).ready(function ($) {
 
 
 });
-
-

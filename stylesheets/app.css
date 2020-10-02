@@ -9,6 +9,7 @@ body{
   margin: 0px;
   font-family: 'Alef', sans-serif;
   background-color: #f1ead2;
+  padding-right: 0px !important;
 }
 
 *{
@@ -30,6 +31,10 @@ body{
   /* transition: background-color 300ms linear; */
   box-shadow: none;
   z-index: 1050;
+}
+
+.navbar{
+  padding-right: 1rem !important;
 }
 
 .colored{
