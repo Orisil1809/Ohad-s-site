@@ -460,7 +460,9 @@ body{
 }
 
 #flower-border{
+  height: auto;
   width: 50%;
+  max-width: 100%;
 }
 
 @media(max-width: 991px){
@@ -474,7 +476,7 @@ body{
     font-size: 3rem;
   }
   #flower-border{
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -492,9 +494,9 @@ body{
 
 #swipeIcon{
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 50%;
-  transform: translate(-50%, 5%);
+  transform: translate(-50%, 3%);
 }
 
 #swipeIcon svg {
