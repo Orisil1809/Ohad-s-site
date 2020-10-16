@@ -827,6 +827,7 @@ hr{
     border-color: #545b62;
   }
 }
+*/
 
 @media (max-width: 991px){
   .navbar-nav li{
@@ -835,7 +836,7 @@ hr{
   .navbar-nav{
     display: inline-block;
   }
-} */
+}
 
 
 
