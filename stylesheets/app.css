@@ -4,6 +4,7 @@ html{
 }
 
 body{
+  width: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0px;
@@ -802,6 +803,9 @@ hr{
 #close-button{
   margin-right: 0.25rem !important;
   margin-left: auto !important;
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 #close-icon{
@@ -811,4 +815,22 @@ hr{
 
 .close{
   font-size: 2rem;
+}
+
+
+@media (pointer: fine) {
+  #close-button:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+}
+
+@media (max-width: 991px){
+  .navbar-nav li{
+    white-space:nowrap;
+  }
+  .navbar-nav{
+    display: inline-block;
+  }
 }
