@@ -839,6 +839,14 @@ hr{
 }
 
 
+.wrapper2{
+  display: flex;
+  place-content: center;
+}
 
-
-
+@media(max-width: 767px){
+  .mapouter, .gmap_canvas{
+    height: 200px !important;
+    width: 100% !important;
+  }
+}
