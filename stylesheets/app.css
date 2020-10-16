@@ -803,9 +803,7 @@ hr{
 #close-button{
   margin-right: 0.25rem !important;
   margin-left: auto !important;
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+
 }
 
 #close-icon{
@@ -813,12 +811,16 @@ hr{
   margin-right: auto !important;
 }
 
+#close-icon:focus{
+  outline: none !important;
+}
+
 .close{
   font-size: 2rem;
 }
 
 
-@media (pointer: fine) {
+/* @media (pointer: fine) and (min-width: 768px){
   #close-button:hover {
     color: #fff;
     background-color: #5a6268;
@@ -833,4 +835,9 @@ hr{
   .navbar-nav{
     display: inline-block;
   }
-}
+} */
+
+
+
+
+
