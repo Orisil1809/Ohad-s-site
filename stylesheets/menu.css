@@ -560,3 +560,12 @@ font-weight: 600; */
     display: inline-block;
   }
 }
+
+@media (max-width: 991px){
+  .navbar-nav li{
+    white-space:nowrap;
+  }
+  .navbar-nav{
+    display: inline-block;
+  }
+}
