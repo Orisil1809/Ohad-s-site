@@ -434,8 +434,10 @@ background-color: #f0f0f0;
   content: url("/assets/corner-flowers-02.png");
   position: absolute;
   overflow: hidden;
-  width: 12vw;
-  height: 12vw;
+  /* width: 12vw;
+  height: 12vw; */
+  width: 10vw;
+  height: 10vw;
   bottom: 0;
   right: 0;
   
@@ -512,6 +514,19 @@ transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
 #back_cover{
   margin-top: 15vh;
 }
+
+@media(max-width: 767px){
+  #back_cover{
+    margin-top: 5vh;
+  
+  }
+  }
+  @media(max-width: 1200px){
+  #back_cover{
+    margin-top: 5vh;
+  
+  }
+  }
 /* #cover-img{
   width: 70%;
   height: 80%;
