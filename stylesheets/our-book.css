@@ -536,3 +536,10 @@ transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
   padding-right: 10vh;
   padding-top: 10vh;
 } */
+
+#support_btn{
+  color: #212529;
+  background-color: #FFDC6C;
+  
+  
+}
