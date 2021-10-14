@@ -565,6 +565,14 @@ transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
   max-width: 80%;
 }
 
+@media(min-width: 767px)
+{
+  #good_things-img
+  {
+    max-width: 80%;
+  }
+}  
+
 #good_things-img{
-  max-width: 80%;
+  
 }
