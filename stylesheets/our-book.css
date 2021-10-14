@@ -535,10 +535,9 @@ transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
   }
   }
 
-/* #cover-img{
-  max-width: 70%;
-  max-height: 70%;
-} */
+#cover-img{
+  max-width: 80%;
+}
 
 #support_btn{
   color: #212529;
