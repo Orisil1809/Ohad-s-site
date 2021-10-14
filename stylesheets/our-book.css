@@ -520,6 +520,7 @@ transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
 
 #back_cover{
   margin-top: 15vh;
+  margin-bottom: 5vh;
 }
 
 @media(max-width: 767px){
@@ -575,4 +576,20 @@ transition: transform 1s ease-in-out, opacity 1.4s ease-in-out;
 
 #good_things-img{
   
+}
+
+@media(min-width: 767px)
+{
+  #good_things-img
+  {
+    max-width: 80%;
+  }
+}
+
+@media(max-width: 976px)
+{
+  #credits
+  {
+    margin-bottom: 0
+  }
 }
