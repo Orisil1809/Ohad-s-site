@@ -837,3 +837,9 @@ hr{
     display: inline-block;
   }
 }
+
+#support_btn{
+  color: #212529;
+  background-color: #FFDC6C;
+   
+}
